@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prevenção Inteligente | MigueCaue Recomenda</title>
+    <meta
+      name="description"
+      content="Guias e recomendações para preparar sua casa e sua família para emergências com mais segurança."
+    />
+    <link
+      rel="icon"
+      type="image/webp"
+      href="../../../assets/images/favicon.webp"
+    />
+    <style>
+      :root {
+        --primary: #0f4c81;
+        --primary-dark: #083456;
+        --accent: #f4a261;
+        --background: #f7f8fa;
+        --text: #1f2937;
+        --border: #e5e7eb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+      }
+
+      .site-header {
+        background: #ffffff;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .site-header-inner,
+      main,
+      .site-footer-inner {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .site-header-inner {
+        min-height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .site-logo img,
+      .site-footer-logo img {
+        display: block;
+        width: 170px;
+        height: auto;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px 18px;
+        font-weight: 700;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: var(--accent);
+      }
+
+      main {
+        padding: 72px 0;
+      }
+
+      .category-hero {
+        max-width: 760px;
+        padding: 42px;
+        background: #ffffff;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: 0 12px 35px rgba(15, 76, 129, 0.1);
+      }
+
+      .eyebrow {
+        color: var(--primary);
+        font-size: 0.85rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 12px 0 16px;
+        color: var(--primary-dark);
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        line-height: 1.1;
+      }
+
+      .category-hero p {
+        margin: 0 0 24px;
+      }
+
+      .site-footer {
+        padding: 42px 0 24px;
+        background: var(--primary-dark);
+        color: #ffffff;
+      }
+
+      .site-footer p {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      @media (max-width: 760px) {
+        .site-header-inner {
+          align-items: flex-start;
+          flex-direction: column;
+          padding: 14px 0;
+        }
+
+        main {
+          padding: 40px 0;
+        }
+
+        .category-hero {
+          padding: 28px 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Cabeçalho do site">
+      <div class="site-header-inner">
+        <a
+          class="site-logo"
+          href="../../../public/index.html"
+          aria-label="Página inicial do MigueCaue Recomenda"
+        >
+          <img
+            src="../../../assets/images/logo-cabeçalho.webp"
+            alt="Logo MigueCaue Recomenda"
+            width="170"
+            height="78"
+          />
+        </a>
+        <nav aria-label="Navegação principal">
+          <a href="../../../public/index.html">Início</a>
+          <a href="../../../public/blog.html">Blog</a>
+          <a href="../../../public/guias-de-compras.html">Guias</a>
+          <a href="../../../public/comparativos.html">Comparativos</a>
+          <a href="../../../public/ofertas.html">Ofertas</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="category-hero" aria-labelledby="category-title">
+        <span class="eyebrow">Subcategoria</span>
+        <h1 id="category-title">Prevenção Inteligente</h1>
+        <p>
+          Conteúdos para ajudar você a antecipar riscos, organizar itens
+          essenciais e proteger sua família em situações de emergência.
+        </p>
+        <a href="../../../blog/artigos/kit-catastrofes.html">
+          Ler o guia de emergência para enchentes
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="Rodapé do site">
+      <div class="site-footer-inner">
+        <a
+          class="site-footer-logo"
+          href="../../../public/index.html"
+          aria-label="Página inicial do MigueCaue Recomenda"
+        >
+          <img
+            src="../../../assets/images/logo-rodape.webp"
+            alt="Logo MigueCaue Recomenda"
+            width="170"
+            height="72"
+          />
+        </a>
+        <p>Recomendações práticas para escolhas mais seguras e conscientes.</p>
+      </div>
+    </footer>
+  </body>
+</html>
