@@ -1,0 +1,2175 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- =====================================================
+    CONFIGURAÇÕES BÁSICAS
+  ====================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =====================================================
+    SEO BÁSICO
+  ====================================================== -->
+    <title>Comparativos | MigueCaue Recomenda</title>
+
+    <meta
+      name="description"
+      content="Compare smartphones, notebooks, eletrodomésticos, produtos de casa inteligente e tecnologia no MigueCaue Recomenda. Veja preços, avaliações e escolha melhor."
+    />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="MigueCaue Recomenda" />
+    <meta name="theme-color" content="#102a43" />
+
+    <!-- =====================================================
+    FAVICON
+    Asset localizado na pasta compartilhada do projeto.
+  ====================================================== -->
+    <link rel="icon" type="image/webp" href="../assets/images/favicon.webp" />
+    <link
+      rel="shortcut icon"
+      type="image/webp"
+      href="../assets/images/favicon.webp"
+    />
+    <link
+      rel="canonical"
+      href="https://www.miguecaue.com.br/comparativos.html"
+    />
+
+    <!-- =====================================================
+    OPEN GRAPH
+  ====================================================== -->
+    <meta property="og:title" content="Comparativos | MigueCaue Recomenda" />
+    <meta
+      property="og:description"
+      content="Comparativos claros e objetivos para ajudar você a escolher produtos com melhor custo-benefício."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- =====================================================
+    GOOGLE FONTS
+  ====================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* =====================================================
+      VARIÁVEIS GLOBAIS
+    ====================================================== */
+
+      :root {
+        --color-primary: #ff6b35;
+        --color-primary-light: #ff8c42;
+        --color-secondary: #ffb703;
+
+        --color-dark: #102a43;
+        --color-dark-2: #0b1f33;
+
+        --color-text: #1f2937;
+        --color-muted: #64748b;
+        --color-muted-light: #94a3b8;
+
+        --color-bg: #f6f8fb;
+        --color-white: #ffffff;
+        --color-border: #dbe3ef;
+
+        --color-success: #16a34a;
+        --color-warning: #f59e0b;
+
+        --shadow-sm: 0 8px 22px rgba(15, 23, 42, 0.04);
+        --shadow-md: 0 14px 34px rgba(15, 23, 42, 0.06);
+        --shadow-lg: 0 24px 50px rgba(15, 23, 42, 0.12);
+
+        --radius-sm: 12px;
+        --radius-md: 18px;
+        --radius-lg: 26px;
+        --radius-xl: 34px;
+
+        --container: 1120px;
+        --transition: 0.22s ease;
+      }
+
+      /* =====================================================
+      RESET E BASE
+    ====================================================== */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", Arial, sans-serif;
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        line-height: 1.6;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      button,
+      input,
+      select {
+        font-family: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      :focus-visible {
+        outline: 3px solid var(--color-primary);
+        outline-offset: 4px;
+      }
+
+      .container {
+        width: min(var(--container), 92%);
+        margin: 0 auto;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -90px;
+        z-index: 9999;
+        background: var(--color-dark);
+        color: var(--color-white);
+        padding: 10px 14px;
+        border-radius: 999px;
+        font-weight: 800;
+        transition: top var(--transition);
+      }
+
+      .skip-link:focus {
+        top: 16px;
+      }
+
+      /* =====================================================
+      BOTÕES
+    ====================================================== */
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 44px;
+        border: none;
+        border-radius: 999px;
+        font-weight: 800;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition),
+          background var(--transition);
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        background: linear-gradient(
+          135deg,
+          var(--color-primary),
+          var(--color-primary-light)
+        );
+        color: var(--color-white);
+        padding: 12px 18px;
+        box-shadow: 0 12px 24px rgba(255, 107, 53, 0.25);
+      }
+
+      .btn-dark {
+        background: var(--color-dark);
+        color: var(--color-white);
+        padding: 12px 18px;
+      }
+
+      .btn-light {
+        background: var(--color-white);
+        color: var(--color-dark);
+        padding: 12px 18px;
+      }
+
+      /* =====================================================
+      CABEÇALHO
+    ====================================================== */
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background: rgba(255, 255, 255, 0.94);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+      }
+
+      .header-content {
+        position: relative;
+        min-height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      .logo img {
+        width: 160px;
+        height: auto;
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .nav-item {
+        position: relative;
+      }
+
+      .nav-link {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #475569;
+        transition: color var(--transition);
+      }
+
+      .nav-link:hover,
+      .nav-link.active {
+        color: var(--color-primary);
+      }
+
+      .dropdown-toggle::after {
+        content: "▾";
+        margin-left: 6px;
+        font-size: 0.75rem;
+      }
+
+      .dropdown-menu {
+        position: absolute;
+        top: calc(100% + 16px);
+        left: 0;
+        min-width: 240px;
+        display: none;
+        padding: 10px;
+        background: var(--color-white);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .nav-item:hover .dropdown-menu,
+      .nav-item:focus-within .dropdown-menu {
+        display: grid;
+        gap: 4px;
+      }
+
+      .dropdown-menu a {
+        display: block;
+        padding: 10px 12px;
+        border-radius: 12px;
+        color: #475569;
+        font-weight: 700;
+        font-size: 0.92rem;
+        transition:
+          background var(--transition),
+          color var(--transition);
+      }
+
+      .dropdown-menu a:hover {
+        background: #fff3ec;
+        color: var(--color-primary);
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .header-search input {
+        width: 200px;
+        padding: 11px 14px;
+        border-radius: 999px;
+        border: 1px solid var(--color-border);
+        background-color: var(--color-white);
+        color: #334155;
+        outline: none;
+        transition:
+          border var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .header-search input:focus {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 4px rgba(255, 122, 69, 0.14);
+      }
+
+      .mobile-menu-button {
+        display: none;
+        width: 44px;
+        height: 44px;
+        border: none;
+        border-radius: var(--radius-sm);
+        background-color: #eef2f7;
+        color: var(--color-dark);
+        font-size: 1.35rem;
+      }
+
+      /* =====================================================
+      HERO
+    ====================================================== */
+
+      .hero {
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(255, 122, 69, 0.22),
+            transparent 34%
+          ),
+          linear-gradient(
+            135deg,
+            var(--color-dark) 0%,
+            var(--color-dark-2) 100%
+          );
+        color: var(--color-white);
+        padding: 82px 0 70px;
+        overflow: hidden;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: center;
+        gap: 48px;
+      }
+
+      .breadcrumb {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        color: #cbd5e1;
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 18px;
+      }
+
+      .breadcrumb a {
+        color: #ffd6c5;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        color: #ffd6c5;
+        font-size: 0.9rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.2rem, 5vw, 4.4rem);
+        line-height: 1.03;
+        letter-spacing: -0.06em;
+        margin-bottom: 22px;
+      }
+
+      .hero h1 span {
+        color: var(--color-secondary);
+      }
+
+      .hero p {
+        font-size: 1.08rem;
+        color: #dbeafe;
+        max-width: 650px;
+        margin-bottom: 32px;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .hero-card {
+        background: var(--color-white);
+        color: var(--color-dark);
+        border-radius: 30px;
+        padding: 26px;
+        box-shadow: 0 30px 70px rgba(0, 0, 0, 0.25);
+        transform: rotate(1.2deg);
+      }
+
+      .hero-card-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .hero-card h2 {
+        font-size: 1.3rem;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        padding: 7px 11px;
+        border-radius: 999px;
+        background: #fff3ec;
+        color: var(--color-primary);
+        font-size: 0.78rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .ranking-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .ranking-list li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+        padding: 14px;
+        background: #f8fafc;
+        border-radius: var(--radius-md);
+        border: 1px solid #eef2f7;
+      }
+
+      .ranking-name {
+        font-weight: 900;
+        color: var(--color-dark);
+      }
+
+      .ranking-score {
+        color: var(--color-primary);
+        font-weight: 900;
+      }
+
+      /* =====================================================
+      SEÇÕES
+    ====================================================== */
+
+      .section {
+        padding: 76px 0;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 28px;
+      }
+
+      .section-kicker {
+        color: var(--color-primary);
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        margin-bottom: 8px;
+      }
+
+      .section-header h2 {
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        line-height: 1.1;
+        color: var(--color-dark);
+        letter-spacing: -0.05em;
+      }
+
+      .section-header p {
+        color: var(--color-muted);
+        max-width: 620px;
+        margin-top: 10px;
+      }
+
+      /* =====================================================
+      FILTROS
+    ====================================================== */
+
+      .filters-panel {
+        background: var(--color-white);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: var(--radius-lg);
+        padding: 22px;
+        box-shadow: var(--shadow-md);
+        margin-bottom: 24px;
+      }
+
+      .filters-grid {
+        display: grid;
+        grid-template-columns: 1.4fr repeat(3, 1fr);
+        gap: 16px;
+        align-items: end;
+      }
+
+      .field-group {
+        display: grid;
+        gap: 7px;
+      }
+
+      .field-group label {
+        font-size: 0.88rem;
+        font-weight: 800;
+        color: var(--color-dark);
+      }
+
+      .field-group input,
+      .field-group select {
+        width: 100%;
+        min-height: 46px;
+        border: 1px solid var(--color-border);
+        background: var(--color-white);
+        border-radius: var(--radius-sm);
+        padding: 0 13px;
+        color: #334155;
+        outline: none;
+        transition:
+          border var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .field-group input:focus,
+      .field-group select:focus {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 4px rgba(255, 122, 69, 0.12);
+      }
+
+      .results-summary {
+        margin-bottom: 18px;
+        color: var(--color-muted);
+        font-size: 0.95rem;
+      }
+
+      .results-summary strong {
+        color: var(--color-dark);
+      }
+
+      /* =====================================================
+      CARDS MOBILE
+    ====================================================== */
+
+      .comparison-cards {
+        display: none;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+        margin-bottom: 30px;
+      }
+
+      .product-card {
+        background: var(--color-white);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        box-shadow: var(--shadow-md);
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .product-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 22px 42px rgba(15, 23, 42, 0.1);
+      }
+
+      .product-image {
+        height: 180px;
+        display: grid;
+        place-items: center;
+        font-size: 3.2rem;
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(255, 107, 53, 0.18),
+            transparent 34%
+          ),
+          #eef2f7;
+      }
+
+      .product-content {
+        padding: 22px;
+      }
+
+      .product-category {
+        color: var(--color-primary);
+        font-weight: 900;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 6px;
+      }
+
+      .product-title {
+        color: var(--color-dark);
+        font-size: 1.2rem;
+        line-height: 1.25;
+        margin-bottom: 10px;
+        letter-spacing: -0.03em;
+      }
+
+      .product-description {
+        color: var(--color-muted);
+        font-size: 0.95rem;
+        margin-bottom: 18px;
+      }
+
+      .product-specs {
+        display: grid;
+        gap: 8px;
+        margin-bottom: 18px;
+        font-size: 0.92rem;
+      }
+
+      .product-specs li {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        border-bottom: 1px dashed var(--color-border);
+        padding-bottom: 7px;
+      }
+
+      .product-specs strong {
+        color: var(--color-dark);
+      }
+
+      .price-row {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+
+      .old-price {
+        color: var(--color-muted);
+        text-decoration: line-through;
+        font-size: 0.9rem;
+      }
+
+      .current-price {
+        color: var(--color-success);
+        font-size: 1.2rem;
+        font-weight: 900;
+      }
+
+      .card-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 42px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        background: var(--color-dark);
+        color: var(--color-white);
+        font-weight: 800;
+        font-size: 0.88rem;
+        transition:
+          background var(--transition),
+          transform var(--transition);
+      }
+
+      .card-link:hover {
+        background: var(--color-primary);
+        transform: translateY(-2px);
+      }
+
+      /* =====================================================
+      TABELA DESKTOP
+    ====================================================== */
+
+      .table-wrapper {
+        background: var(--color-white);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-md);
+        overflow: hidden;
+      }
+
+      .responsive-table {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        min-width: 920px;
+        border-collapse: collapse;
+      }
+
+      thead {
+        background: var(--color-dark);
+        color: var(--color-white);
+      }
+
+      th,
+      td {
+        padding: 16px;
+        text-align: left;
+        border-bottom: 1px solid var(--color-border);
+        vertical-align: middle;
+      }
+
+      th {
+        font-size: 0.82rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        white-space: nowrap;
+      }
+
+      td {
+        font-size: 0.95rem;
+      }
+
+      tbody tr {
+        transition: background var(--transition);
+      }
+
+      tbody tr:hover {
+        background: #f8fafc;
+      }
+
+      .table-product {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 220px;
+      }
+
+      .table-icon {
+        width: 46px;
+        height: 46px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: #fff3ec;
+        font-size: 1.45rem;
+        flex-shrink: 0;
+      }
+
+      .table-product-name {
+        color: var(--color-dark);
+        font-weight: 900;
+      }
+
+      .table-product-brand {
+        color: var(--color-muted);
+        font-size: 0.82rem;
+      }
+
+      .score {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 42px;
+        padding: 5px 8px;
+        border-radius: 999px;
+        font-weight: 900;
+        background: #dcfce7;
+        color: #166534;
+      }
+
+      .score.medium {
+        background: #fef3c7;
+        color: #92400e;
+      }
+
+      .price {
+        color: var(--color-success);
+        font-weight: 900;
+      }
+
+      .compare-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--color-primary);
+        color: var(--color-white);
+        padding: 9px 13px;
+        border-radius: 999px;
+        font-size: 0.86rem;
+        font-weight: 900;
+        transition:
+          background var(--transition),
+          transform var(--transition);
+        white-space: nowrap;
+      }
+
+      .compare-link:hover {
+        background: var(--color-dark);
+        transform: translateY(-2px);
+      }
+
+      .empty-state {
+        display: none;
+        text-align: center;
+        background: var(--color-white);
+        border: 1px dashed var(--color-border);
+        border-radius: var(--radius-lg);
+        padding: 44px 20px;
+        color: var(--color-muted);
+      }
+
+      .empty-state strong {
+        display: block;
+        color: var(--color-dark);
+        font-size: 1.25rem;
+        margin-bottom: 8px;
+      }
+
+      /* =====================================================
+      CTA
+    ====================================================== */
+
+      .cta-section {
+        padding: 10px 0 78px;
+      }
+
+      .cta-box {
+        background:
+          radial-gradient(
+            circle at bottom left,
+            rgba(255, 183, 3, 0.28),
+            transparent 28%
+          ),
+          linear-gradient(
+            135deg,
+            var(--color-primary),
+            var(--color-primary-light)
+          );
+        color: var(--color-white);
+        border-radius: var(--radius-xl);
+        padding: 44px;
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 28px;
+        align-items: center;
+        box-shadow: 0 24px 50px rgba(255, 107, 53, 0.28);
+      }
+
+      .cta-box h2 {
+        font-size: clamp(1.7rem, 3vw, 2.5rem);
+        line-height: 1.1;
+        letter-spacing: -0.05em;
+        margin-bottom: 12px;
+      }
+
+      .cta-box p {
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 650px;
+      }
+
+      .newsletter-form {
+        display: flex;
+        gap: 10px;
+        background: rgba(255, 255, 255, 0.16);
+        padding: 8px;
+        border-radius: 999px;
+      }
+
+      .newsletter-form input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 13px 16px;
+        border-radius: 999px;
+        min-width: 0;
+      }
+
+      .newsletter-form button {
+        border: none;
+        border-radius: 999px;
+        padding: 13px 18px;
+        background: var(--color-dark);
+        color: var(--color-white);
+        font-weight: 800;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+
+      /* =====================================================
+      RODAPÉ
+    ====================================================== */
+
+      .site-footer {
+        background: var(--color-dark-2);
+        color: #cbd5e1;
+        padding: 64px 0 28px;
+      }
+
+      .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 44px;
+      }
+
+      .footer-logo {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footer-logo-img {
+        width: 170px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .footer-description {
+        width: 100%;
+        max-width: 960px;
+        margin: 24px auto 0;
+        color: rgba(255, 255, 255, 0.72);
+        font-size: 1rem;
+        line-height: 1.7;
+        text-align: center;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 28px;
+        margin-bottom: 32px;
+        padding-bottom: 34px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .footer-column h3 {
+        color: var(--color-white);
+        font-size: 1rem;
+        margin-bottom: 14px;
+      }
+
+      .footer-links {
+        display: grid;
+        gap: 9px;
+      }
+
+      .footer-links a {
+        color: var(--color-muted-light);
+        transition:
+          color var(--transition),
+          transform var(--transition);
+        font-size: 0.95rem;
+      }
+
+      .footer-links a:hover {
+        color: var(--color-secondary);
+        transform: translateX(3px);
+      }
+
+      .footer-affiliate-notice {
+        max-width: 920px;
+        margin: 0 auto 28px;
+        padding: 18px 22px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-md);
+      }
+
+      .footer-affiliate-notice p {
+        color: var(--color-muted-light);
+        font-size: 0.92rem;
+        line-height: 1.6;
+      }
+
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 18px;
+        flex-wrap: wrap;
+        color: var(--color-muted-light);
+        font-size: 0.9rem;
+      }
+
+      .footer-bottom p {
+        color: var(--color-muted-light);
+      }
+
+      /* =====================================================
+      BOTÃO FLUTUANTE
+    ====================================================== */
+
+      .floating-cta {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 900;
+        width: 58px;
+        height: 58px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--color-primary);
+        color: var(--color-white);
+        font-size: 1.4rem;
+        box-shadow: 0 12px 28px rgba(15, 23, 42, 0.24);
+        transition:
+          transform var(--transition),
+          background var(--transition);
+      }
+
+      .floating-cta:hover {
+        transform: translateY(-4px) scale(1.03);
+        background: var(--color-dark);
+      }
+
+      /* =====================================================
+      RESPONSIVIDADE
+    ====================================================== */
+
+      @media (max-width: 980px) {
+        .header-search,
+        .header-actions .btn-primary,
+        .nav-menu {
+          display: none;
+        }
+
+        .mobile-menu-button {
+          display: inline-grid;
+          place-items: center;
+        }
+
+        .nav-menu.mobile-active {
+          position: absolute;
+          top: 76px;
+          left: 0;
+          right: 0;
+          display: grid;
+          gap: 0;
+          background: var(--color-white);
+          border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+          box-shadow: 0 18px 32px rgba(15, 23, 42, 0.08);
+        }
+
+        .nav-item {
+          width: 100%;
+        }
+
+        .nav-link {
+          display: block;
+          padding: 15px 24px;
+          border-top: 1px solid #eef2f7;
+        }
+
+        .dropdown-menu {
+          position: static;
+          display: grid;
+          min-width: 100%;
+          box-shadow: none;
+          border: none;
+          border-radius: 0;
+          padding: 0 24px 12px;
+        }
+
+        .dropdown-menu a {
+          padding: 9px 12px;
+        }
+
+        .hero-grid,
+        .cta-box {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding: 62px 0;
+        }
+
+        .hero-card {
+          transform: none;
+        }
+
+        .filters-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 760px) {
+        .comparison-cards {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .table-wrapper {
+          display: none !important;
+        }
+
+        .section-header {
+          display: block;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .header-content {
+          min-height: 68px;
+        }
+
+        .logo img {
+          width: 145px;
+        }
+
+        .nav-menu.mobile-active {
+          top: 68px;
+        }
+
+        .hero {
+          padding: 48px 0;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+        }
+
+        .hero-actions .btn {
+          width: 100%;
+        }
+
+        .section {
+          padding: 56px 0;
+        }
+
+        .filters-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .cta-box {
+          padding: 30px 22px;
+          border-radius: var(--radius-lg);
+        }
+
+        .newsletter-form {
+          flex-direction: column;
+          border-radius: 22px;
+        }
+
+        .newsletter-form button {
+          width: 100%;
+        }
+
+        .site-footer {
+          padding: 52px 0 26px;
+        }
+
+        .footer-logo-img {
+          width: 145px;
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .footer-links a:hover {
+          transform: none;
+        }
+
+        .footer-bottom {
+          display: grid;
+          text-align: center;
+          justify-content: center;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo</a>
+
+    <!-- =====================================================
+    CABEÇALHO
+  ====================================================== -->
+    <header class="site-header" aria-label="Cabeçalho do site">
+      <div class="container header-content">
+        <!-- Logo do header -->
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Página inicial do MigueCaue Recomenda"
+        >
+          <img
+            src="../assets/images/logo-cabeçalho.webp"
+            alt="Logo MigueCaue Recomenda"
+            width="160"
+            height="90"
+            loading="eager"
+            decoding="async"
+          />
+        </a>
+
+        <!-- Menu principal com hierarquia -->
+        <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+          <div class="nav-item">
+            <a href="categorias.html" class="nav-link dropdown-toggle"
+              >Categorias</a
+            >
+
+            <div class="dropdown-menu" aria-label="Submenu de categorias">
+              <a href="../pages/categorias/categoria-casa-inteligente.html"
+                >Casa Inteligente</a
+              >
+              <a href="../pages/categorias/categoria-eletrodomesticos.html"
+                >Eletrodomésticos</a
+              >
+              <a href="../pages/categorias/categoria-tecnologia.html"
+                >Tecnologia</a
+              >
+              <a href="ofertas.html">Ofertas</a>
+              <a href="guias-de-compras.html">Guias de Compra</a>
+              <a href="comparativos.html">Comparativos</a>
+            </div>
+          </div>
+
+          <div class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </div>
+
+          <div class="nav-item">
+            <a href="guias-de-compras.html" class="nav-link">Guias</a>
+          </div>
+
+          <div class="nav-item">
+            <a href="comparativos.html" class="nav-link active">Comparativos</a>
+          </div>
+
+          <div class="nav-item">
+            <a href="ofertas.html" class="nav-link">Ofertas</a>
+          </div>
+
+          <div class="nav-item">
+            <a href="index.html#sobre" class="nav-link">Sobre</a>
+          </div>
+
+          <div class="nav-item">
+            <a href="index.html#duvidas" class="nav-link">Dúvidas</a>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <form
+            class="header-search"
+            id="headerSearchForm"
+            role="search"
+            aria-label="Buscar comparativos"
+          >
+            <label class="sr-only" for="headerSearchInput"
+              >Buscar comparativos</label
+            >
+            <input
+              type="search"
+              id="headerSearchInput"
+              placeholder="Buscar produto..."
+              autocomplete="off"
+            />
+          </form>
+
+          <a href="#newsletter" class="btn btn-primary">Receber ofertas</a>
+
+          <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================
+    CONTEÚDO PRINCIPAL
+  ====================================================== -->
+    <main id="conteudo-principal">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div>
+            <div class="breadcrumb">
+              <a href="index.html">Início</a>
+              <span>/</span>
+              <span>Comparativos</span>
+            </div>
+
+            <span class="hero-badge">⚖️ Comparações simples e úteis</span>
+
+            <h1 id="hero-title">
+              Compare produtos antes de comprar com mais <span>segurança</span>.
+            </h1>
+
+            <p>
+              Veja preços, desempenho, bateria, avaliação, marcas e principais
+              destaques lado a lado para escolher a melhor opção de compra.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#comparar" class="btn btn-primary">Ver comparativos</a>
+              <a href="#newsletter" class="btn btn-light">Receber alertas</a>
+            </div>
+          </div>
+
+          <aside
+            class="hero-card"
+            aria-label="Ranking de produtos bem avaliados"
+          >
+            <div class="hero-card-header">
+              <h2>Mais bem avaliados</h2>
+              <span class="badge">Atualizado</span>
+            </div>
+
+            <ul class="ranking-list">
+              <li>
+                <span class="ranking-name">Galaxy S25</span>
+                <span class="ranking-score">9.5</span>
+              </li>
+
+              <li>
+                <span class="ranking-name">Notebook Pro X</span>
+                <span class="ranking-score">9.2</span>
+              </li>
+
+              <li>
+                <span class="ranking-name">Câmera Vision 4K</span>
+                <span class="ranking-score">8.9</span>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Comparativos -->
+      <section class="section" id="comparar" aria-labelledby="comparar-title">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">Comparativos</p>
+
+              <h2 id="comparar-title">
+                Escolha a categoria e compare os melhores produtos
+              </h2>
+
+              <p>
+                Use os filtros abaixo para encontrar produtos por categoria,
+                marca, faixa de preço e critério de classificação.
+              </p>
+            </div>
+          </div>
+
+          <!-- Filtros -->
+          <div class="filters-panel">
+            <div class="filters-grid">
+              <div class="field-group">
+                <label for="searchInput">Pesquisar produto</label>
+                <input
+                  type="search"
+                  id="searchInput"
+                  placeholder="Ex: smartphone, notebook, câmera..."
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="field-group">
+                <label for="categoryFilter">Categoria</label>
+                <select id="categoryFilter">
+                  <option value="todos">Todas</option>
+                  <option value="smartphones">Smartphones</option>
+                  <option value="notebooks">Notebooks</option>
+                  <option value="cameras">Câmeras</option>
+                  <option value="casa-inteligente">Casa Inteligente</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="brandFilter">Marca</label>
+                <select id="brandFilter">
+                  <option value="todas">Todas</option>
+                  <option value="Samsung">Samsung</option>
+                  <option value="Apple">Apple</option>
+                  <option value="Dell">Dell</option>
+                  <option value="Lenovo">Lenovo</option>
+                  <option value="Canon">Canon</option>
+                  <option value="Intelbras">Intelbras</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="sortFilter">Ordenar por</label>
+                <select id="sortFilter">
+                  <option value="recomendado">Mais recomendado</option>
+                  <option value="menor-preco">Menor preço</option>
+                  <option value="maior-preco">Maior preço</option>
+                  <option value="melhor-desempenho">Melhor desempenho</option>
+                  <option value="melhor-bateria">Melhor bateria</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <p class="results-summary" id="resultsSummary">
+            Exibindo <strong>0</strong> produtos encontrados.
+          </p>
+
+          <!-- Cards para mobile -->
+          <div class="comparison-cards" id="comparisonCards"></div>
+
+          <!-- Tabela para desktop -->
+          <div class="table-wrapper" id="tableWrapper">
+            <div class="responsive-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Produto</th>
+                    <th>Categoria</th>
+                    <th>Preço</th>
+                    <th>Desempenho</th>
+                    <th>Bateria</th>
+                    <th>Avaliação</th>
+                    <th>Destaque</th>
+                    <th>Ação</th>
+                  </tr>
+                </thead>
+
+                <tbody id="comparisonTableBody">
+                  <!-- Conteúdo gerado via JavaScript -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div
+            class="empty-state"
+            id="emptyState"
+            role="status"
+            aria-live="polite"
+          >
+            <strong>Nenhum produto encontrado</strong>
+            Tente ajustar os filtros ou pesquisar por outro termo.
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter / CTA -->
+      <section
+        class="cta-section"
+        id="newsletter"
+        aria-labelledby="newsletter-title"
+      >
+        <div class="container">
+          <div class="cta-box">
+            <div>
+              <h2 id="newsletter-title">
+                Receba comparativos e ofertas no seu e-mail
+              </h2>
+
+              <p>
+                Cadastre-se para receber uma curadoria com produtos úteis, guias
+                rápidos, comparativos e oportunidades de compra selecionadas.
+              </p>
+            </div>
+
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <label class="sr-only" for="newsletterEmail"
+                >Digite seu e-mail</label
+              >
+
+              <input
+                type="email"
+                id="newsletterEmail"
+                name="email"
+                placeholder="Seu melhor e-mail"
+                autocomplete="email"
+                required
+              />
+
+              <button type="submit">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+    RODAPÉ
+  ====================================================== -->
+    <footer class="site-footer" aria-label="Rodapé do site">
+      <div class="container">
+        <div class="footer-top">
+          <!-- Logo do footer -->
+          <a
+            href="index.html"
+            class="footer-logo"
+            aria-label="Página inicial do MigueCaue Recomenda"
+          >
+            <img
+              src="../assets/images/logo-rodape.webp"
+              alt="Logo MigueCaue Recomenda"
+              class="footer-logo-img"
+              width="170"
+              height="90"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+
+          <p class="footer-description">
+            Recomendações, guias, comparativos e ofertas para ajudar
+            consumidores brasileiros a comprarem melhor online com mais
+            segurança, economia e praticidade.
+          </p>
+        </div>
+
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Categorias</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a href="../pages/categorias/categoria-casa-inteligente.html"
+                  >Casa Inteligente</a
+                >
+              </li>
+              <li>
+                <a href="../pages/categorias/categoria-eletrodomesticos.html"
+                  >Eletrodomésticos</a
+                >
+              </li>
+              <li>
+                <a href="../pages/categorias/categoria-tecnologia.html"
+                  >Tecnologia</a
+                >
+              </li>
+              <li><a href="ofertas.html">Ofertas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Conteúdos</h3>
+
+            <ul class="footer-links">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="guias-de-compras.html">Guias de Compra</a></li>
+              <li><a href="comparativos.html">Comparativos</a></li>
+              <li><a href="ofertas.html">Ofertas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Institucional</h3>
+
+            <ul class="footer-links">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="index.html#sobre">Sobre</a></li>
+              <li><a href="index.html#duvidas">Dúvidas</a></li>
+              <li><a href="#newsletter">Receber ofertas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a href="index.html#duvidas">Política de Privacidade</a>
+              </li>
+              <li><a href="index.html#duvidas">Termos de Uso</a></li>
+              <li><a href="index.html#duvidas">Aviso de Afiliados</a></li>
+              <li><a href="index.html#duvidas">Divulgação de Links</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-affiliate-notice">
+          <p>
+            Alguns links deste site podem ser links de afiliados. Isso significa
+            que podemos receber uma comissão por compras qualificadas, sem custo
+            adicional para você.
+          </p>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © <span id="current-year"></span> MigueCaue Recomenda. Todos os
+            direitos reservados.
+          </p>
+
+          <p>
+            Site independente de recomendações. Preços e disponibilidade podem
+            mudar sem aviso prévio.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botão flutuante -->
+    <a href="ofertas.html" class="floating-cta" aria-label="Ir para ofertas">
+      🔥
+    </a>
+
+    <script>
+      (function () {
+        "use strict";
+
+        /*
+        =====================================================
+        DADOS DOS PRODUTOS
+        Para atualizar:
+        - Adicione novos objetos dentro do array products.
+        - Mantenha as chaves usadas abaixo.
+        =====================================================
+      */
+
+        const products = [
+          {
+            name: "Galaxy S25",
+            brand: "Samsung",
+            category: "smartphones",
+            categoryLabel: "Smartphones",
+            price: 4299,
+            oldPrice: 4999,
+            performance: 95,
+            battery: 88,
+            rating: 9.5,
+            highlight: "Melhor Android premium",
+            icon: "📱",
+            description:
+              "Smartphone premium com ótimo desempenho, tela de alta qualidade e câmeras avançadas.",
+            link: "ofertas.html",
+          },
+          {
+            name: "iPhone 16",
+            brand: "Apple",
+            category: "smartphones",
+            categoryLabel: "Smartphones",
+            price: 5799,
+            oldPrice: 6299,
+            performance: 97,
+            battery: 84,
+            rating: 9.4,
+            highlight: "Melhor ecossistema",
+            icon: "📱",
+            description:
+              "Modelo com ótima performance, integração ao ecossistema Apple e câmeras consistentes.",
+            link: "ofertas.html",
+          },
+          {
+            name: "Notebook Pro X",
+            brand: "Dell",
+            category: "notebooks",
+            categoryLabel: "Notebooks",
+            price: 4899,
+            oldPrice: 5499,
+            performance: 92,
+            battery: 81,
+            rating: 9.2,
+            highlight: "Ideal para produtividade",
+            icon: "💻",
+            description:
+              "Notebook rápido e confiável para trabalho, estudo, reuniões e multitarefas.",
+            link: "ofertas.html",
+          },
+          {
+            name: "IdeaPad Ultra",
+            brand: "Lenovo",
+            category: "notebooks",
+            categoryLabel: "Notebooks",
+            price: 3299,
+            oldPrice: 3899,
+            performance: 84,
+            battery: 86,
+            rating: 8.8,
+            highlight: "Melhor custo-benefício",
+            icon: "💻",
+            description:
+              "Boa opção para quem busca desempenho equilibrado e preço competitivo.",
+            link: "ofertas.html",
+          },
+          {
+            name: "Câmera Vision 4K",
+            brand: "Canon",
+            category: "cameras",
+            categoryLabel: "Câmeras",
+            price: 2599,
+            oldPrice: 2999,
+            performance: 89,
+            battery: 76,
+            rating: 8.9,
+            highlight: "Boa para criadores",
+            icon: "📷",
+            description:
+              "Câmera versátil para fotos, vídeos e produção de conteúdo em alta resolução.",
+            link: "ofertas.html",
+          },
+          {
+            name: "Fechadura Smart Lock Pro",
+            brand: "Intelbras",
+            category: "casa-inteligente",
+            categoryLabel: "Casa Inteligente",
+            price: 899,
+            oldPrice: 1099,
+            performance: 86,
+            battery: 90,
+            rating: 8.7,
+            highlight: "Segurança inteligente",
+            icon: "🔐",
+            description:
+              "Fechadura digital com senha, biometria e recursos inteligentes para sua casa.",
+            link: "ofertas.html",
+          },
+          {
+            name: "Câmera Wi-Fi Full HD",
+            brand: "Intelbras",
+            category: "casa-inteligente",
+            categoryLabel: "Casa Inteligente",
+            price: 249,
+            oldPrice: 329,
+            performance: 78,
+            battery: 70,
+            rating: 8.4,
+            highlight: "Monitoramento acessível",
+            icon: "📹",
+            description:
+              "Câmera inteligente para monitoramento residencial com acesso remoto pelo celular.",
+            link: "ofertas.html",
+          },
+        ];
+
+        /*
+        =====================================================
+        SELETORES
+        =====================================================
+      */
+
+        const currentYear = document.getElementById("current-year");
+
+        const mobileMenuButton = document.getElementById("mobileMenuButton");
+        const navMenu = document.getElementById("navMenu");
+
+        const searchInput = document.getElementById("searchInput");
+        const headerSearchInput = document.getElementById("headerSearchInput");
+        const headerSearchForm = document.getElementById("headerSearchForm");
+
+        const categoryFilter = document.getElementById("categoryFilter");
+        const brandFilter = document.getElementById("brandFilter");
+        const sortFilter = document.getElementById("sortFilter");
+
+        const tableBody = document.getElementById("comparisonTableBody");
+        const comparisonCards = document.getElementById("comparisonCards");
+        const emptyState = document.getElementById("emptyState");
+        const tableWrapper = document.getElementById("tableWrapper");
+        const resultsSummary = document.getElementById("resultsSummary");
+
+        const newsletterForm = document.getElementById("newsletterForm");
+        const newsletterEmail = document.getElementById("newsletterEmail");
+
+        /*
+        =====================================================
+        ANO AUTOMÁTICO
+        =====================================================
+      */
+
+        if (currentYear) {
+          currentYear.textContent = new Date().getFullYear();
+        }
+
+        /*
+        =====================================================
+        MENU MOBILE
+        =====================================================
+      */
+
+        if (mobileMenuButton && navMenu) {
+          mobileMenuButton.addEventListener("click", function () {
+            const isOpen = navMenu.classList.toggle("mobile-active");
+
+            mobileMenuButton.setAttribute("aria-expanded", String(isOpen));
+            mobileMenuButton.textContent = isOpen ? "×" : "☰";
+            mobileMenuButton.setAttribute(
+              "aria-label",
+              isOpen ? "Fechar menu" : "Abrir menu",
+            );
+          });
+
+          navMenu.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+              navMenu.classList.remove("mobile-active");
+              mobileMenuButton.setAttribute("aria-expanded", "false");
+              mobileMenuButton.textContent = "☰";
+              mobileMenuButton.setAttribute("aria-label", "Abrir menu");
+            });
+          });
+        }
+
+        /*
+        =====================================================
+        FUNÇÕES AUXILIARES
+        =====================================================
+      */
+
+        function formatCurrency(value) {
+          return value.toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          });
+        }
+
+        function normalizeText(value) {
+          return String(value || "")
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .trim();
+        }
+
+        function getScoreClass(score) {
+          return score >= 85 ? "score" : "score medium";
+        }
+
+        /*
+        =====================================================
+        FILTRO E ORDENAÇÃO
+        =====================================================
+      */
+
+        function sortProducts(items, sortType) {
+          const sortedItems = [...items];
+
+          switch (sortType) {
+            case "menor-preco":
+              return sortedItems.sort((a, b) => a.price - b.price);
+
+            case "maior-preco":
+              return sortedItems.sort((a, b) => b.price - a.price);
+
+            case "melhor-desempenho":
+              return sortedItems.sort((a, b) => b.performance - a.performance);
+
+            case "melhor-bateria":
+              return sortedItems.sort((a, b) => b.battery - a.battery);
+
+            case "recomendado":
+            default:
+              return sortedItems.sort((a, b) => b.rating - a.rating);
+          }
+        }
+
+        function filterProducts() {
+          if (!searchInput || !categoryFilter || !brandFilter || !sortFilter) {
+            return;
+          }
+
+          const searchTerm = normalizeText(searchInput.value);
+          const selectedCategory = categoryFilter.value;
+          const selectedBrand = brandFilter.value;
+          const selectedSort = sortFilter.value;
+
+          let filtered = products.filter(function (product) {
+            const searchableText = normalizeText(
+              product.name +
+                " " +
+                product.brand +
+                " " +
+                product.categoryLabel +
+                " " +
+                product.highlight +
+                " " +
+                product.description,
+            );
+
+            const matchesSearch =
+              searchTerm === "" || searchableText.includes(searchTerm);
+
+            const matchesCategory =
+              selectedCategory === "todos" ||
+              product.category === selectedCategory;
+
+            const matchesBrand =
+              selectedBrand === "todas" || product.brand === selectedBrand;
+
+            return matchesSearch && matchesCategory && matchesBrand;
+          });
+
+          filtered = sortProducts(filtered, selectedSort);
+
+          renderProducts(filtered);
+        }
+
+        /*
+        =====================================================
+        RENDERIZAÇÃO DOS PRODUTOS
+        =====================================================
+      */
+
+        function renderProducts(items) {
+          if (
+            !tableBody ||
+            !comparisonCards ||
+            !resultsSummary ||
+            !emptyState ||
+            !tableWrapper
+          ) {
+            return;
+          }
+
+          tableBody.innerHTML = "";
+          comparisonCards.innerHTML = "";
+
+          resultsSummary.innerHTML = `Exibindo <strong>${items.length}</strong> produto(s) encontrado(s).`;
+
+          if (items.length === 0) {
+            emptyState.style.display = "block";
+            tableWrapper.style.display = "none";
+            comparisonCards.style.display = "none";
+            return;
+          }
+
+          emptyState.style.display = "none";
+          tableWrapper.style.display = "";
+
+          items.forEach(function (product) {
+            const row = document.createElement("tr");
+
+            row.innerHTML = `
+            <td>
+              <div class="table-product">
+                <span class="table-icon" aria-hidden="true">${product.icon}</span>
+                <div>
+                  <div class="table-product-name">${product.name}</div>
+                  <div class="table-product-brand">${product.brand}</div>
+                </div>
+              </div>
+            </td>
+
+            <td>${product.categoryLabel}</td>
+
+            <td>
+              <span class="price">${formatCurrency(product.price)}</span>
+            </td>
+
+            <td>
+              <span class="${getScoreClass(product.performance)}">${product.performance}</span>
+            </td>
+
+            <td>
+              <span class="${getScoreClass(product.battery)}">${product.battery}</span>
+            </td>
+
+            <td>
+              <span class="score">${product.rating}</span>
+            </td>
+
+            <td>${product.highlight}</td>
+
+            <td>
+              <a href="${product.link}" class="compare-link" rel="nofollow sponsored">Ver produto</a>
+            </td>
+          `;
+
+            tableBody.appendChild(row);
+
+            const card = document.createElement("article");
+            card.className = "product-card";
+
+            card.innerHTML = `
+            <div class="product-image" aria-hidden="true">${product.icon}</div>
+
+            <div class="product-content">
+              <div class="product-category">${product.categoryLabel}</div>
+
+              <h3 class="product-title">${product.name}</h3>
+
+              <p class="product-description">${product.description}</p>
+
+              <ul class="product-specs">
+                <li>
+                  <span>Marca</span>
+                  <strong>${product.brand}</strong>
+                </li>
+
+                <li>
+                  <span>Desempenho</span>
+                  <strong>${product.performance}/100</strong>
+                </li>
+
+                <li>
+                  <span>Bateria</span>
+                  <strong>${product.battery}/100</strong>
+                </li>
+
+                <li>
+                  <span>Avaliação</span>
+                  <strong>${product.rating}/10</strong>
+                </li>
+              </ul>
+
+              <div class="price-row">
+                <span class="old-price">${formatCurrency(product.oldPrice)}</span>
+                <span class="current-price">${formatCurrency(product.price)}</span>
+              </div>
+
+              <a href="${product.link}" class="card-link" rel="nofollow sponsored">
+                Ver produto
+              </a>
+            </div>
+          `;
+
+            comparisonCards.appendChild(card);
+          });
+        }
+
+        /*
+        =====================================================
+        EVENTOS DOS FILTROS
+        =====================================================
+      */
+
+        if (searchInput) {
+          searchInput.addEventListener("input", filterProducts);
+        }
+
+        if (categoryFilter) {
+          categoryFilter.addEventListener("change", filterProducts);
+        }
+
+        if (brandFilter) {
+          brandFilter.addEventListener("change", filterProducts);
+        }
+
+        if (sortFilter) {
+          sortFilter.addEventListener("change", filterProducts);
+        }
+
+        if (headerSearchInput && searchInput) {
+          headerSearchInput.addEventListener("input", function () {
+            searchInput.value = headerSearchInput.value;
+            filterProducts();
+          });
+        }
+
+        if (headerSearchForm) {
+          headerSearchForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const comparisonSection = document.getElementById("comparar");
+
+            if (comparisonSection) {
+              comparisonSection.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        }
+
+        /*
+        =====================================================
+        NEWSLETTER
+        =====================================================
+      */
+
+        if (newsletterForm && newsletterEmail) {
+          newsletterForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            if (!newsletterEmail.checkValidity()) {
+              newsletterEmail.reportValidity();
+              return;
+            }
+
+            alert("Cadastro realizado com sucesso! Obrigado por se inscrever.");
+
+            newsletterForm.reset();
+          });
+        }
+
+        /*
+        =====================================================
+        INICIALIZAÇÃO
+        =====================================================
+      */
+
+        filterProducts();
+      })();
+    </script>
+  </body>
+</html>

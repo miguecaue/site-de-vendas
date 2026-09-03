@@ -1,0 +1,2208 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- =====================================================
+    CONFIGURAÇÕES BÁSICAS
+  ====================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =====================================================
+    SEO
+  ====================================================== -->
+    <title>Guia de Compras | MigueCaue Recomenda</title>
+
+    <meta
+      name="description"
+      content="Confira guias de compras, produtos recomendados, comparativos e dicas para comprar melhor online com segurança, economia e praticidade."
+    />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="MigueCaue Recomenda" />
+    <link
+      rel="canonical"
+      href="https://www.miguecaue.com.br/guias-de-compras.html"
+    />
+    <link rel="icon" type="image/webp" href="../assets/images/favicon.webp" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Guia de Compras | MigueCaue Recomenda" />
+    <meta
+      property="og:description"
+      content="Guias práticos, recomendações e comparativos para ajudar você a comprar melhor."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.miguecaue.com.br/guias-de-compras.html"
+    />
+    <meta
+      property="og:image"
+      content="https://www.miguecaue.com.br/../assets/images/logo-cabeçalho.webp"
+    />
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+    SCHEMA.ORG
+  ====================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Guia de Compras",
+        "description": "Guias de compra, recomendações, comparativos e dicas para consumidores brasileiros comprarem melhor online.",
+        "url": "https://www.miguecaue.com.br/guias-de-compras.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "MigueCaue Recomenda"
+        }
+      }
+    </script>
+
+    <style>
+      /* =====================================================
+      VARIÁVEIS GLOBAIS
+    ====================================================== */
+
+      :root {
+        --color-primary: #ff6b35;
+        --color-primary-light: #ff8c42;
+        --color-secondary: #ffb703;
+
+        --color-dark: #102a43;
+        --color-dark-strong: #0b1f33;
+
+        --color-text: #1f2937;
+        --color-muted: #64748b;
+        --color-border: #dbe3ef;
+
+        --color-bg: #f6f8fb;
+        --color-white: #ffffff;
+        --color-success: #16a34a;
+
+        --radius-sm: 12px;
+        --radius-md: 18px;
+        --radius-lg: 26px;
+        --radius-xl: 34px;
+        --radius-pill: 999px;
+
+        --shadow-sm: 0 8px 22px rgba(15, 23, 42, 0.05);
+        --shadow-md: 0 16px 36px rgba(15, 23, 42, 0.08);
+        --shadow-lg: 0 26px 56px rgba(15, 23, 42, 0.12);
+
+        --container: 1120px;
+        --transition: 0.2s ease;
+      }
+
+      /* =====================================================
+      RESET E BASE
+    ====================================================== */
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", Arial, sans-serif;
+        background: var(--color-bg);
+        color: var(--color-text);
+        line-height: 1.6;
+        text-rendering: optimizeLegibility;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      :focus-visible {
+        outline: 3px solid rgba(255, 107, 53, 0.45);
+        outline-offset: 3px;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      .container {
+        width: min(var(--container), 92%);
+        margin-inline: auto;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: -100px;
+        left: 16px;
+        z-index: 9999;
+        padding: 10px 14px;
+        border-radius: var(--radius-sm);
+        background: var(--color-dark);
+        color: var(--color-white);
+        font-weight: 700;
+        transition: top var(--transition);
+      }
+
+      .skip-link:focus {
+        top: 16px;
+      }
+
+      /* =====================================================
+      BOTÕES
+    ====================================================== */
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 0;
+        border-radius: var(--radius-pill);
+        font-weight: 800;
+        line-height: 1;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition),
+          background var(--transition);
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        padding: 13px 20px;
+        background: linear-gradient(
+          135deg,
+          var(--color-primary),
+          var(--color-primary-light)
+        );
+        color: var(--color-white);
+        box-shadow: 0 14px 28px rgba(255, 107, 53, 0.25);
+      }
+
+      .btn-dark {
+        padding: 12px 18px;
+        background: var(--color-dark);
+        color: var(--color-white);
+      }
+
+      .btn-dark:hover {
+        background: var(--color-primary);
+      }
+
+      .btn-light {
+        padding: 13px 20px;
+        background: var(--color-white);
+        color: var(--color-dark);
+      }
+
+      .btn-outline {
+        padding: 12px 18px;
+        border: 1px solid var(--color-border);
+        background: var(--color-white);
+        color: var(--color-dark);
+      }
+
+      .btn-outline:hover {
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+      }
+
+      /* =====================================================
+      HEADER
+    ====================================================== */
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.94);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+        backdrop-filter: blur(14px);
+      }
+
+      .header-content {
+        min-height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        position: relative;
+      }
+
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      .logo img {
+        width: 160px;
+        height: auto;
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+      }
+
+      .nav-menu a {
+        color: #475569;
+        font-size: 0.95rem;
+        font-weight: 700;
+        transition: color var(--transition);
+      }
+
+      .nav-menu a:hover,
+      .nav-menu a[aria-current="page"] {
+        color: var(--color-primary);
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .header-search input {
+        width: 210px;
+        padding: 11px 14px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-pill);
+        background: var(--color-white);
+        color: #334155;
+        outline: none;
+        transition:
+          border var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .header-search input:focus {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.14);
+      }
+
+      .mobile-menu-button {
+        display: none;
+        width: 44px;
+        height: 44px;
+        border: 0;
+        border-radius: var(--radius-sm);
+        background: #eef2f7;
+        color: var(--color-dark);
+        font-size: 1.4rem;
+        font-weight: 800;
+      }
+
+      /* =====================================================
+      HERO
+    ====================================================== */
+
+      .guide-hero {
+        padding: 74px 0 58px;
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(255, 122, 69, 0.24),
+            transparent 34%
+          ),
+          linear-gradient(135deg, var(--color-dark), var(--color-dark-strong));
+        color: var(--color-white);
+        overflow: hidden;
+      }
+
+      .breadcrumb {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 24px;
+        color: #cbd5e1;
+        font-size: 0.92rem;
+      }
+
+      .breadcrumb a {
+        color: #ffd6c5;
+        font-weight: 700;
+      }
+
+      .guide-hero-grid {
+        display: grid;
+        grid-template-columns: 1.12fr 0.88fr;
+        align-items: center;
+        gap: 42px;
+      }
+
+      .guide-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: var(--radius-pill);
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffd6c5;
+        font-size: 0.9rem;
+        font-weight: 800;
+      }
+
+      .guide-hero h1 {
+        max-width: 760px;
+        margin-bottom: 20px;
+        font-size: clamp(2.3rem, 5vw, 4.4rem);
+        line-height: 1.03;
+        letter-spacing: -0.06em;
+      }
+
+      .guide-hero h1 span {
+        color: var(--color-secondary);
+      }
+
+      .guide-hero p {
+        max-width: 650px;
+        margin-bottom: 30px;
+        color: #dbeafe;
+        font-size: 1.06rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .hero-panel {
+        padding: 26px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: var(--radius-xl);
+        background: rgba(255, 255, 255, 0.09);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .hero-panel h2 {
+        margin-bottom: 16px;
+        font-size: 1.35rem;
+        letter-spacing: -0.03em;
+      }
+
+      .guide-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+
+      .stat-card {
+        padding: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .stat-card strong {
+        display: block;
+        color: var(--color-white);
+        font-size: 1.45rem;
+        line-height: 1.1;
+      }
+
+      .stat-card span {
+        color: #cbd5e1;
+        font-size: 0.88rem;
+      }
+
+      /* =====================================================
+      SEÇÕES
+    ====================================================== */
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 30px;
+      }
+
+      .section-kicker {
+        margin-bottom: 8px;
+        color: var(--color-primary);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .section-title {
+        color: var(--color-dark);
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        line-height: 1.1;
+        letter-spacing: -0.05em;
+      }
+
+      .section-description {
+        max-width: 650px;
+        margin-top: 10px;
+        color: var(--color-muted);
+      }
+
+      /* =====================================================
+      CATEGORIAS RÁPIDAS
+    ====================================================== */
+
+      .quick-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+
+      .quick-card {
+        display: grid;
+        gap: 10px;
+        padding: 22px;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: var(--radius-lg);
+        background: var(--color-white);
+        box-shadow: var(--shadow-sm);
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition),
+          border-color var(--transition);
+      }
+
+      .quick-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(255, 107, 53, 0.34);
+        box-shadow: var(--shadow-md);
+      }
+
+      .quick-icon {
+        width: 46px;
+        height: 46px;
+        display: grid;
+        place-items: center;
+        border-radius: 16px;
+        background: #fff3ec;
+        color: var(--color-primary);
+        font-size: 1.35rem;
+      }
+
+      .quick-card h3 {
+        color: var(--color-dark);
+        font-size: 1.05rem;
+        letter-spacing: -0.03em;
+      }
+
+      .quick-card p {
+        color: var(--color-muted);
+        font-size: 0.93rem;
+      }
+
+      /* =====================================================
+      DESTAQUE
+    ====================================================== */
+
+      .featured-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        align-items: center;
+        padding: 28px;
+        border-radius: var(--radius-xl);
+        background: var(--color-white);
+        box-shadow: var(--shadow-md);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+      }
+
+      .featured-image {
+        overflow: hidden;
+        border-radius: var(--radius-lg);
+        aspect-ratio: 16 / 10;
+        background: #e2e8f0;
+      }
+
+      .featured-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .featured-content .tag {
+        display: inline-flex;
+        margin-bottom: 12px;
+        padding: 7px 12px;
+        border-radius: var(--radius-pill);
+        background: #fff3ec;
+        color: var(--color-primary);
+        font-size: 0.78rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .featured-content h2 {
+        margin-bottom: 12px;
+        color: var(--color-dark);
+        font-size: clamp(1.7rem, 3vw, 2.5rem);
+        line-height: 1.1;
+        letter-spacing: -0.05em;
+      }
+
+      .featured-content p {
+        margin-bottom: 20px;
+        color: var(--color-muted);
+      }
+
+      .featured-list {
+        display: grid;
+        gap: 8px;
+        margin-bottom: 22px;
+        color: #334155;
+        font-weight: 600;
+      }
+
+      .featured-list li::before {
+        content: "✓";
+        margin-right: 8px;
+        color: var(--color-success);
+        font-weight: 800;
+      }
+
+      /* =====================================================
+      TOOLBAR E FILTROS
+    ====================================================== */
+
+      .content-toolbar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+        margin-bottom: 24px;
+        align-items: center;
+      }
+
+      .search-box input,
+      .sort-box select {
+        width: 100%;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-white);
+        color: #334155;
+        outline: none;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .search-box input {
+        padding: 15px 18px;
+      }
+
+      .sort-box select {
+        min-width: 210px;
+        padding: 15px 16px;
+      }
+
+      .search-box input:focus,
+      .sort-box select:focus {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.12);
+      }
+
+      .filter-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 28px;
+      }
+
+      .filter-btn {
+        padding: 10px 14px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-pill);
+        background: var(--color-white);
+        color: #475569;
+        font-weight: 800;
+        transition:
+          background var(--transition),
+          color var(--transition),
+          border-color var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .filter-btn:hover,
+      .filter-btn.is-active {
+        border-color: var(--color-primary);
+        background: var(--color-primary);
+        color: var(--color-white);
+        box-shadow: 0 10px 20px rgba(255, 107, 53, 0.2);
+      }
+
+      /* =====================================================
+      CARDS
+    ====================================================== */
+
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+
+      .guide-card {
+        overflow: hidden;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: var(--radius-lg);
+        background: var(--color-white);
+        box-shadow: var(--shadow-sm);
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .guide-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .guide-card-image {
+        position: relative;
+        aspect-ratio: 16 / 10;
+        overflow: hidden;
+        background: #e2e8f0;
+      }
+
+      .guide-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .guide-card:hover .guide-card-image img {
+        transform: scale(1.04);
+      }
+
+      .card-badge {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        padding: 7px 11px;
+        border-radius: var(--radius-pill);
+        background: rgba(255, 255, 255, 0.94);
+        color: var(--color-primary);
+        font-size: 0.78rem;
+        font-weight: 800;
+      }
+
+      .popular-badge {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        padding: 7px 11px;
+        border-radius: var(--radius-pill);
+        background: var(--color-secondary);
+        color: var(--color-dark);
+        font-size: 0.78rem;
+        font-weight: 900;
+      }
+
+      .guide-card-body {
+        padding: 22px;
+      }
+
+      .card-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+        color: var(--color-muted);
+        font-size: 0.86rem;
+        font-weight: 700;
+      }
+
+      .guide-card h3 {
+        margin-bottom: 10px;
+        color: var(--color-dark);
+        font-size: 1.16rem;
+        line-height: 1.28;
+        letter-spacing: -0.03em;
+      }
+
+      .guide-card p {
+        margin-bottom: 18px;
+        color: var(--color-muted);
+        font-size: 0.95rem;
+      }
+
+      .card-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 14px;
+      }
+
+      .card-price {
+        color: var(--color-dark);
+        font-weight: 800;
+        font-size: 0.98rem;
+      }
+
+      .empty-state {
+        padding: 38px 20px;
+        margin-top: 22px;
+        border: 1px dashed #cbd5e1;
+        border-radius: var(--radius-lg);
+        background: var(--color-white);
+        color: var(--color-muted);
+        text-align: center;
+      }
+
+      /* =====================================================
+      RECOMENDAÇÕES COMPLEMENTARES
+    ====================================================== */
+
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+
+      .related-card {
+        padding: 22px;
+        border-radius: var(--radius-lg);
+        background: var(--color-white);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .related-card strong {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--color-dark);
+        font-size: 1.05rem;
+      }
+
+      .related-card p {
+        margin-bottom: 14px;
+        color: var(--color-muted);
+        font-size: 0.94rem;
+      }
+
+      .related-card a {
+        color: var(--color-primary);
+        font-weight: 800;
+      }
+
+      /* =====================================================
+      NEWSLETTER
+    ====================================================== */
+
+      .newsletter-section {
+        padding: 24px 0 76px;
+      }
+
+      .newsletter-box {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 28px;
+        align-items: center;
+        padding: 42px;
+        border-radius: var(--radius-xl);
+        background:
+          radial-gradient(
+            circle at bottom left,
+            rgba(255, 183, 3, 0.28),
+            transparent 28%
+          ),
+          linear-gradient(
+            135deg,
+            var(--color-primary),
+            var(--color-primary-light)
+          );
+        color: var(--color-white);
+        box-shadow: 0 24px 50px rgba(255, 107, 53, 0.28);
+      }
+
+      .newsletter-box h2 {
+        margin-bottom: 12px;
+        font-size: clamp(1.7rem, 3vw, 2.4rem);
+        line-height: 1.1;
+        letter-spacing: -0.05em;
+      }
+
+      .newsletter-box p {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .newsletter-form {
+        display: flex;
+        gap: 10px;
+        padding: 8px;
+        border-radius: var(--radius-pill);
+        background: rgba(255, 255, 255, 0.16);
+      }
+
+      .newsletter-form input {
+        flex: 1;
+        min-width: 0;
+        padding: 13px 16px;
+        border: 0;
+        border-radius: var(--radius-pill);
+        outline: none;
+      }
+
+      .newsletter-status {
+        margin-top: 10px;
+        color: #fff8e7;
+        font-size: 0.92rem;
+        font-weight: 700;
+      }
+
+      /* =====================================================
+      FOOTER
+    ====================================================== */
+
+      .site-footer {
+        padding: 64px 0 28px;
+        background: var(--color-dark-strong);
+        color: #cbd5e1;
+      }
+
+      .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 44px;
+        text-align: center;
+      }
+
+      .footer-logo-img {
+        width: 170px;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .footer-description {
+        max-width: 720px;
+        margin-top: 22px;
+        color: #94a3b8;
+        font-size: 0.98rem;
+        line-height: 1.7;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 28px;
+        padding-bottom: 34px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .footer-column h3 {
+        margin-bottom: 14px;
+        color: var(--color-white);
+        font-size: 1rem;
+      }
+
+      .footer-links {
+        display: grid;
+        gap: 9px;
+      }
+
+      .footer-links a {
+        color: #94a3b8;
+        font-size: 0.95rem;
+        transition:
+          color var(--transition),
+          transform var(--transition);
+      }
+
+      .footer-links a:hover {
+        color: var(--color-secondary);
+        transform: translateX(3px);
+      }
+
+      .footer-affiliate-notice {
+        max-width: 920px;
+        padding: 18px 22px;
+        margin: 0 auto 28px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.06);
+        text-align: center;
+      }
+
+      .footer-affiliate-notice p {
+        color: #94a3b8;
+        font-size: 0.92rem;
+        line-height: 1.6;
+      }
+
+      .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        flex-wrap: wrap;
+        color: #94a3b8;
+        font-size: 0.9rem;
+      }
+
+      /* =====================================================
+      RESPONSIVIDADE
+    ====================================================== */
+
+      @media (max-width: 980px) {
+        .header-search,
+        .header-actions .btn-primary {
+          display: none;
+        }
+
+        .mobile-menu-button {
+          display: inline-grid;
+          place-items: center;
+        }
+
+        .nav-menu {
+          position: absolute;
+          top: 76px;
+          left: 0;
+          right: 0;
+          display: none;
+          padding: 6px 0;
+          background: var(--color-white);
+          border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+          box-shadow: var(--shadow-md);
+        }
+
+        .nav-menu.is-open {
+          display: grid;
+          gap: 0;
+        }
+
+        .nav-menu a {
+          padding: 16px 24px;
+          border-top: 1px solid #eef2f7;
+        }
+
+        .guide-hero-grid,
+        .featured-box,
+        .newsletter-box {
+          grid-template-columns: 1fr;
+        }
+
+        .quick-grid,
+        .cards-grid,
+        .related-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 680px) {
+        .header-content {
+          min-height: 68px;
+        }
+
+        .logo img {
+          width: 142px;
+        }
+
+        .nav-menu {
+          top: 68px;
+        }
+
+        .guide-hero {
+          padding: 48px 0;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+        }
+
+        .hero-actions .btn {
+          width: 100%;
+        }
+
+        .guide-stats,
+        .quick-grid,
+        .cards-grid,
+        .related-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section {
+          padding: 56px 0;
+        }
+
+        .section-header {
+          display: block;
+        }
+
+        .content-toolbar {
+          grid-template-columns: 1fr;
+        }
+
+        .sort-box select {
+          min-width: 100%;
+        }
+
+        .card-footer {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .newsletter-box {
+          padding: 30px 22px;
+          border-radius: var(--radius-lg);
+        }
+
+        .newsletter-form {
+          flex-direction: column;
+          border-radius: 22px;
+        }
+
+        .newsletter-form .btn {
+          width: 100%;
+        }
+
+        .footer-grid {
+          text-align: center;
+        }
+
+        .footer-links a:hover {
+          transform: none;
+        }
+
+        .footer-bottom {
+          display: grid;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#conteudo-principal" class="skip-link"
+      >Pular para o conteúdo principal</a
+    >
+
+    <!-- =====================================================
+    CABEÇALHO
+  ====================================================== -->
+    <header class="site-header">
+      <div class="container header-content">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Página inicial do MigueCaue Recomenda"
+        >
+          <img
+            src="../assets/images/logo-cabeçalho.webp"
+            alt="MigueCaue Recomenda"
+            width="160"
+            height="90"
+            loading="eager"
+          />
+        </a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="blog.html">Blog</a>
+          <a href="../pages/categorias/categoria-tecnologia.html">Tecnologia</a>
+          <a href="../pages/categorias/categoria-casa-inteligente.html"
+            >Casa Inteligente</a
+          >
+          <a href="guias-de-compras.html" aria-current="page">Guias</a>
+          <a href="ofertas.html">Ofertas</a>
+        </nav>
+
+        <div class="header-actions">
+          <form class="header-search" role="search" id="headerSearchForm">
+            <input
+              type="search"
+              id="headerSearchInput"
+              placeholder="Buscar guia..."
+              aria-label="Buscar guia de compras"
+            />
+          </form>
+
+          <a href="#newsletter" class="btn btn-primary"> Receber dicas </a>
+
+          <button
+            type="button"
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <!-- =====================================================
+      HERO
+    ====================================================== -->
+      <section class="guide-hero" aria-labelledby="guide-title">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Você está em">
+            <a href="index.html">Início</a>
+            <span aria-hidden="true">/</span>
+            <span>Guia de Compras</span>
+          </nav>
+
+          <div class="guide-hero-grid">
+            <div>
+              <span class="guide-badge">🛒 Guia de Compras</span>
+
+              <h1 id="guide-title">
+                Compre melhor com guias, comparativos e
+                <span>recomendações confiáveis</span>.
+              </h1>
+
+              <p>
+                Encontre dicas práticas para escolher produtos com bom
+                custo-benefício, evitar compras por impulso e aproveitar ofertas
+                com mais segurança.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#guias" class="btn btn-primary">Ver guias</a>
+                <a href="#populares" class="btn btn-light"
+                  >Produtos populares</a
+                >
+              </div>
+            </div>
+
+            <aside class="hero-panel" aria-labelledby="hero-panel-title">
+              <h2 id="hero-panel-title">Resumo da categoria</h2>
+
+              <div class="guide-stats">
+                <div class="stat-card">
+                  <strong>60+</strong>
+                  <span>guias publicados</span>
+                </div>
+
+                <div class="stat-card">
+                  <strong>120+</strong>
+                  <span>produtos analisados</span>
+                </div>
+
+                <div class="stat-card">
+                  <strong>18+</strong>
+                  <span>categorias cobertas</span>
+                </div>
+
+                <div class="stat-card">
+                  <strong>4.9</strong>
+                  <span>média dos conteúdos</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      CATEGORIAS RÁPIDAS
+    ====================================================== -->
+      <section class="section" aria-labelledby="quick-title">
+        <div class="container">
+          <header class="section-header">
+            <div>
+              <p class="section-kicker">Navegue por interesse</p>
+
+              <h2 class="section-title" id="quick-title">
+                Encontre o guia ideal para sua compra
+              </h2>
+
+              <p class="section-description">
+                Use os atalhos abaixo para localizar rapidamente guias por tipo
+                de produto, necessidade ou momento de compra.
+              </p>
+            </div>
+          </header>
+
+          <div class="quick-grid">
+            <a
+              href="#guias"
+              class="quick-card"
+              data-filter-shortcut="tecnologia"
+            >
+              <span class="quick-icon" aria-hidden="true">💻</span>
+              <h3>Tecnologia</h3>
+              <p>Notebooks, celulares, fones, carregadores e acessórios.</p>
+            </a>
+
+            <a
+              href="#guias"
+              class="quick-card"
+              data-filter-shortcut="casa inteligente"
+            >
+              <span class="quick-icon" aria-hidden="true">🏠</span>
+              <h3>Casa Inteligente</h3>
+              <p>Lâmpadas smart, câmeras, fechaduras e automações.</p>
+            </a>
+
+            <a
+              href="#guias"
+              class="quick-card"
+              data-filter-shortcut="eletrodomesticos"
+            >
+              <span class="quick-icon" aria-hidden="true">🔌</span>
+              <h3>Eletrodomésticos</h3>
+              <p>Geladeiras, micro-ondas, lavadoras, fogões e air fryers.</p>
+            </a>
+
+            <a
+              href="#guias"
+              class="quick-card"
+              data-filter-shortcut="custo beneficio"
+            >
+              <span class="quick-icon" aria-hidden="true">💰</span>
+              <h3>Custo-benefício</h3>
+              <p>Produtos bons, úteis e com preço justo para o dia a dia.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      GUIA EM DESTAQUE
+    ====================================================== -->
+      <section class="section" id="populares" aria-labelledby="featured-title">
+        <div class="container">
+          <div class="featured-box">
+            <figure class="featured-image">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80"
+                alt="Pessoa pesquisando produtos em uma loja online"
+                width="1200"
+                height="750"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="featured-content">
+              <span class="tag">Mais acessado</span>
+
+              <h2 id="featured-title">
+                Como escolher produtos online sem cair em compra ruim
+              </h2>
+
+              <p>
+                Um guia prático para avaliar preço, avaliações, reputação da
+                loja, garantia, frete, especificações e compatibilidade antes de
+                comprar.
+              </p>
+
+              <ul class="featured-list">
+                <li>Checklist antes de comprar</li>
+                <li>Dicas para comparar preços</li>
+                <li>Cuidados com avaliações falsas</li>
+                <li>Como identificar ofertas realmente boas</li>
+              </ul>
+
+              <a href="#guias" class="btn btn-primary"> Ler guia completo </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      LISTA DE GUIAS
+    ====================================================== -->
+      <section class="section" id="guias" aria-labelledby="guides-list-title">
+        <div class="container">
+          <header class="section-header">
+            <div>
+              <p class="section-kicker">Conteúdos recomendados</p>
+
+              <h2 class="section-title" id="guides-list-title">
+                Guias de compras recentes
+              </h2>
+
+              <p class="section-description">
+                Pesquise, filtre e ordene os principais guias do MigueCaue
+                Recomenda para encontrar rapidamente o conteúdo certo.
+              </p>
+            </div>
+          </header>
+
+          <div class="content-toolbar">
+            <div class="search-box">
+              <label class="sr-only" for="contentSearch">Buscar guias</label>
+
+              <input
+                type="search"
+                id="contentSearch"
+                placeholder="Buscar por notebook, air fryer, câmera, lâmpada smart..."
+                aria-label="Buscar guias de compras"
+              />
+            </div>
+
+            <div class="sort-box">
+              <label class="sr-only" for="sortContent">Ordenar guias</label>
+
+              <select id="sortContent" aria-label="Ordenar guias">
+                <option value="recentes">Mais recentes</option>
+                <option value="antigos">Mais antigos</option>
+                <option value="az">Título A-Z</option>
+                <option value="za">Título Z-A</option>
+              </select>
+            </div>
+          </div>
+
+          <div
+            class="filter-list"
+            id="filterList"
+            aria-label="Filtros de guias"
+          >
+            <button
+              type="button"
+              class="filter-btn is-active"
+              data-type="todos"
+              aria-pressed="true"
+            >
+              Todos
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-type="tecnologia"
+              aria-pressed="false"
+            >
+              Tecnologia
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-type="casa-inteligente"
+              aria-pressed="false"
+            >
+              Casa Inteligente
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-type="eletrodomesticos"
+              aria-pressed="false"
+            >
+              Eletrodomésticos
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-type="ofertas"
+              aria-pressed="false"
+            >
+              Ofertas
+            </button>
+          </div>
+
+          <div class="cards-grid" id="contentGrid">
+            <!-- Card 1 -->
+            <article
+              class="guide-card"
+              data-type="tecnologia"
+              data-date="2026-07-30"
+              data-title="Como escolher um notebook para estudo e trabalho"
+              data-tags="notebook tecnologia estudo trabalho produtividade custo beneficio"
+            >
+              <a
+                href="../blog/artigos/guia-compra-notebook.html"
+                aria-label="Ler guia sobre notebook para estudo e trabalho"
+              >
+                <figure class="guide-card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
+                    alt="Notebook aberto sobre uma mesa de trabalho"
+                    width="900"
+                    height="560"
+                    loading="lazy"
+                  />
+                  <figcaption class="card-badge">Tecnologia</figcaption>
+                  <span class="popular-badge">Popular</span>
+                </figure>
+
+                <div class="guide-card-body">
+                  <div class="card-meta">
+                    <span>Atualizado em 30/07/2026</span>
+                    <span>9 min</span>
+                  </div>
+
+                  <h3>Como escolher um notebook para estudo e trabalho</h3>
+
+                  <p>
+                    Veja processador, memória, tela, bateria e armazenamento
+                    antes de comprar.
+                  </p>
+
+                  <div class="card-footer">
+                    <span class="card-price">Guia completo</span>
+                    <span class="btn btn-dark">Ler guia</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Card 2 -->
+            <article
+              class="guide-card"
+              data-type="casa-inteligente"
+              data-date="2026-07-26"
+              data-title="Como começar uma casa inteligente gastando pouco"
+              data-tags="casa inteligente lampada smart tomada camera alexa automacao"
+            >
+              <a href="#guias" aria-label="Ler guia sobre casa inteligente">
+                <figure class="guide-card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=80"
+                    alt="Pessoa controlando dispositivos inteligentes pelo celular"
+                    width="900"
+                    height="560"
+                    loading="lazy"
+                  />
+                  <figcaption class="card-badge">Casa Inteligente</figcaption>
+                </figure>
+
+                <div class="guide-card-body">
+                  <div class="card-meta">
+                    <span>Atualizado em 26/07/2026</span>
+                    <span>8 min</span>
+                  </div>
+
+                  <h3>Como começar uma casa inteligente gastando pouco</h3>
+
+                  <p>
+                    Comece com lâmpadas, tomadas smart, assistentes virtuais e
+                    sensores simples.
+                  </p>
+
+                  <div class="card-footer">
+                    <span class="card-price">Guia inicial</span>
+                    <span class="btn btn-dark">Ver dicas</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+              class="guide-card"
+              data-type="eletrodomesticos"
+              data-date="2026-07-22"
+              data-title="Como escolher uma air fryer para sua casa"
+              data-tags="air fryer eletrodomesticos cozinha capacidade potencia limpeza"
+            >
+              <a href="#guias" aria-label="Ler guia sobre air fryer">
+                <figure class="guide-card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=900&q=80"
+                    alt="Cozinha moderna com eletrodomésticos"
+                    width="900"
+                    height="560"
+                    loading="lazy"
+                  />
+                  <figcaption class="card-badge">Eletrodomésticos</figcaption>
+                  <span class="popular-badge">Novo</span>
+                </figure>
+
+                <div class="guide-card-body">
+                  <div class="card-meta">
+                    <span>Publicado em 22/07/2026</span>
+                    <span>7 min</span>
+                  </div>
+
+                  <h3>Como escolher uma air fryer para sua casa</h3>
+
+                  <p>
+                    Compare capacidade, potência, limpeza, recursos extras e
+                    consumo de energia.
+                  </p>
+
+                  <div class="card-footer">
+                    <span class="card-price">Lista recomendada</span>
+                    <span class="btn btn-dark">Ler guia</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Card 4 -->
+            <article
+              class="guide-card"
+              data-type="ofertas"
+              data-date="2026-07-18"
+              data-title="Como saber se uma promoção realmente vale a pena"
+              data-tags="ofertas desconto promocao preço historico comprar online"
+            >
+              <a href="#guias" aria-label="Ler guia sobre promoções online">
+                <figure class="guide-card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1607083206968-13611e3d76db?auto=format&fit=crop&w=900&q=80"
+                    alt="Pessoa comprando online pelo celular"
+                    width="900"
+                    height="560"
+                    loading="lazy"
+                  />
+                  <figcaption class="card-badge">Ofertas</figcaption>
+                </figure>
+
+                <div class="guide-card-body">
+                  <div class="card-meta">
+                    <span>Publicado em 18/07/2026</span>
+                    <span>6 min</span>
+                  </div>
+
+                  <h3>Como saber se uma promoção realmente vale a pena</h3>
+
+                  <p>
+                    Aprenda a analisar preço original, histórico, frete, cupom e
+                    reputação da loja.
+                  </p>
+
+                  <div class="card-footer">
+                    <span class="card-price">Checklist gratuito</span>
+                    <span class="btn btn-dark">Conferir</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Card 5 -->
+            <article
+              class="guide-card"
+              data-type="tecnologia"
+              data-date="2026-07-12"
+              data-title="Melhores fones bluetooth custo-benefício"
+              data-tags="fones bluetooth tecnologia audio custo beneficio celular"
+            >
+              <a
+                href="comparativos.html"
+                aria-label="Ver guia de fones Bluetooth"
+              >
+                <figure class="guide-card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
+                    alt="Fone de ouvido moderno em fundo laranja"
+                    width="900"
+                    height="560"
+                    loading="lazy"
+                  />
+                  <figcaption class="card-badge">Tecnologia</figcaption>
+                </figure>
+
+                <div class="guide-card-body">
+                  <div class="card-meta">
+                    <span>Publicado em 12/07/2026</span>
+                    <span>7 min</span>
+                  </div>
+
+                  <h3>Melhores fones Bluetooth custo-benefício</h3>
+
+                  <p>
+                    Veja modelos confortáveis, com boa bateria e qualidade
+                    sonora para o dia a dia.
+                  </p>
+
+                  <div class="card-footer">
+                    <span class="card-price">A partir de R$ 129</span>
+                    <span class="btn btn-dark">Comparar</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+
+            <!-- Card 6 -->
+            <article
+              class="guide-card"
+              data-type="eletrodomesticos"
+              data-date="2026-07-05"
+              data-title="Geladeira frost free ou cycle defrost qual escolher"
+              data-tags="geladeira eletrodomesticos frost free cozinha economia energia"
+            >
+              <a href="#guias" aria-label="Ler guia sobre geladeiras">
+                <figure class="guide-card-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=900&q=80"
+                    alt="Geladeira em cozinha moderna"
+                    width="900"
+                    height="560"
+                    loading="lazy"
+                  />
+                  <figcaption class="card-badge">Eletrodomésticos</figcaption>
+                </figure>
+
+                <div class="guide-card-body">
+                  <div class="card-meta">
+                    <span>Publicado em 05/07/2026</span>
+                    <span>10 min</span>
+                  </div>
+
+                  <h3>Geladeira frost free ou cycle defrost: qual escolher?</h3>
+
+                  <p>
+                    Entenda diferenças, consumo, praticidade, capacidade e
+                    melhor uso para cada casa.
+                  </p>
+
+                  <div class="card-footer">
+                    <span class="card-price">Guia completo</span>
+                    <span class="btn btn-dark">Ler guia</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <div
+            class="empty-state"
+            id="emptyState"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            Nenhum guia encontrado. Tente outro termo de busca ou remova algum
+            filtro.
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      RECOMENDAÇÕES COMPLEMENTARES
+    ====================================================== -->
+      <section class="section" aria-labelledby="related-title">
+        <div class="container">
+          <header class="section-header">
+            <div>
+              <p class="section-kicker">Continue navegando</p>
+
+              <h2 class="section-title" id="related-title">
+                Categorias relacionadas
+              </h2>
+
+              <p class="section-description">
+                Veja outras áreas do MigueCaue Recomenda para encontrar ofertas,
+                produtos e conteúdos complementares.
+              </p>
+            </div>
+          </header>
+
+          <div class="related-grid">
+            <div class="related-card">
+              <strong>Tecnologia</strong>
+              <p>Guias sobre notebooks, smartphones, fones e acessórios.</p>
+              <a href="../pages/categorias/categoria-tecnologia.html"
+                >Acessar categoria</a
+              >
+            </div>
+
+            <div class="related-card">
+              <strong>Casa Inteligente</strong>
+              <p>Produtos smart para segurança, iluminação e automação.</p>
+              <a href="../pages/categorias/categoria-casa-inteligente.html"
+                >Ver recomendações</a
+              >
+            </div>
+
+            <div class="related-card">
+              <strong>Eletrodomésticos</strong>
+              <p>Comparativos de cozinha, lavanderia e itens para casa.</p>
+              <a href="../pages/categorias/categoria-eletrodomesticos.html"
+                >Explorar produtos</a
+              >
+            </div>
+
+            <div class="related-card">
+              <strong>Ofertas</strong>
+              <p>Promoções selecionadas, descontos e oportunidades atuais.</p>
+              <a href="ofertas.html">Ver ofertas</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      NEWSLETTER
+    ====================================================== -->
+      <section
+        class="newsletter-section"
+        id="newsletter"
+        aria-labelledby="newsletter-title"
+      >
+        <div class="container">
+          <div class="newsletter-box">
+            <div>
+              <h2 id="newsletter-title">
+                Receba guias e ofertas selecionadas no seu e-mail
+              </h2>
+
+              <p>
+                Cadastre-se para receber dicas rápidas, comparativos e
+                recomendações para comprar melhor online.
+              </p>
+            </div>
+
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <div style="flex: 1">
+                <input
+                  type="email"
+                  id="newsletterEmail"
+                  name="email"
+                  placeholder="Seu melhor e-mail"
+                  aria-label="Digite seu e-mail"
+                  autocomplete="email"
+                  required
+                />
+
+                <p
+                  class="newsletter-status"
+                  id="newsletterStatus"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </div>
+
+              <button type="submit" class="btn btn-dark">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+    RODAPÉ
+  ====================================================== -->
+    <footer class="site-footer" aria-label="Rodapé do site">
+      <div class="container">
+        <div class="footer-top">
+          <a
+            href="index.html"
+            aria-label="Página inicial do MigueCaue Recomenda"
+          >
+            <img
+              src="../assets/images/logo-rodape.webp"
+              alt="MigueCaue Recomenda"
+              class="footer-logo-img"
+              width="170"
+              height="90"
+              loading="lazy"
+            />
+          </a>
+
+          <p class="footer-description">
+            Recomendações, guias, comparativos e ofertas para ajudar
+            consumidores brasileiros a comprarem melhor online com mais
+            segurança, economia e praticidade.
+          </p>
+        </div>
+
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Categorias</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a href="../pages/categorias/categoria-tecnologia.html"
+                  >Tecnologia</a
+                >
+              </li>
+              <li>
+                <a href="../pages/categorias/categoria-casa-inteligente.html"
+                  >Casa Inteligente</a
+                >
+              </li>
+              <li>
+                <a href="../pages/categorias/categoria-eletrodomesticos.html"
+                  >Eletrodomésticos</a
+                >
+              </li>
+              <li><a href="ofertas.html">Ofertas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Guias</h3>
+
+            <ul class="footer-links">
+              <li><a href="#guias">Guias recentes</a></li>
+              <li><a href="#populares">Mais populares</a></li>
+              <li><a href="#guias">Comprar melhor online</a></li>
+              <li><a href="comparativos.html">Comparativos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Conteúdos</h3>
+
+            <ul class="footer-links">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="guias-de-compras.html">Guia de Compras</a></li>
+              <li><a href="#populares">Reviews</a></li>
+              <li><a href="ofertas.html">Cupons</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+
+            <ul class="footer-links">
+              <li><a href="index.html#legal">Política de Privacidade</a></li>
+              <li><a href="index.html#legal">Termos de Uso</a></li>
+              <li><a href="index.html#legal">Aviso de Afiliados</a></li>
+              <li><a href="index.html#sobre">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-affiliate-notice">
+          <p>
+            Alguns links deste site podem ser links de afiliados. Isso significa
+            que podemos receber uma comissão por compras qualificadas, sem custo
+            adicional para você.
+          </p>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © <span id="current-year"></span> MigueCaue Recomenda. Todos os
+            direitos reservados.
+          </p>
+
+          <p>Preços e disponibilidade podem mudar sem aviso prévio.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /*
+      =====================================================
+      JAVASCRIPT PRINCIPAL
+      - Menu mobile
+      - Busca
+      - Filtros
+      - Ordenação
+      - Newsletter
+      - Ano automático
+    ======================================================
+    */
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const mobileMenuButton = document.getElementById("mobileMenuButton");
+        const navMenu = document.getElementById("navMenu");
+
+        /*
+        =====================================================
+        MENU MOBILE
+      ======================================================
+      */
+
+        if (mobileMenuButton && navMenu) {
+          mobileMenuButton.addEventListener("click", function () {
+            const isOpen = navMenu.classList.toggle("is-open");
+
+            mobileMenuButton.setAttribute("aria-expanded", String(isOpen));
+            mobileMenuButton.textContent = isOpen ? "×" : "☰";
+            mobileMenuButton.setAttribute(
+              "aria-label",
+              isOpen ? "Fechar menu" : "Abrir menu",
+            );
+          });
+
+          navMenu.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+              navMenu.classList.remove("is-open");
+              mobileMenuButton.setAttribute("aria-expanded", "false");
+              mobileMenuButton.textContent = "☰";
+              mobileMenuButton.setAttribute("aria-label", "Abrir menu");
+            });
+          });
+
+          document.addEventListener("keydown", function (event) {
+            if (
+              event.key === "Escape" &&
+              navMenu.classList.contains("is-open")
+            ) {
+              navMenu.classList.remove("is-open");
+              mobileMenuButton.setAttribute("aria-expanded", "false");
+              mobileMenuButton.textContent = "☰";
+              mobileMenuButton.focus();
+            }
+          });
+        }
+
+        /*
+        =====================================================
+        BUSCA, FILTRO E ORDENAÇÃO
+      ======================================================
+      */
+
+        const contentGrid = document.getElementById("contentGrid");
+        const contentSearch = document.getElementById("contentSearch");
+        const sortContent = document.getElementById("sortContent");
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const emptyState = document.getElementById("emptyState");
+        const shortcutLinks = document.querySelectorAll(
+          "[data-filter-shortcut]",
+        );
+
+        let activeType = "todos";
+
+        function normalizeText(value) {
+          return String(value || "")
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .trim();
+        }
+
+        function getCards() {
+          return Array.from(document.querySelectorAll(".guide-card"));
+        }
+
+        function sortCards(cards) {
+          if (!contentGrid || !sortContent) return;
+
+          const sortValue = sortContent.value;
+
+          cards.sort(function (a, b) {
+            const titleA = normalizeText(a.dataset.title);
+            const titleB = normalizeText(b.dataset.title);
+            const dateA = new Date(a.dataset.date);
+            const dateB = new Date(b.dataset.date);
+
+            if (sortValue === "recentes") return dateB - dateA;
+            if (sortValue === "antigos") return dateA - dateB;
+            if (sortValue === "az") return titleA.localeCompare(titleB);
+            if (sortValue === "za") return titleB.localeCompare(titleA);
+
+            return 0;
+          });
+
+          cards.forEach(function (card) {
+            contentGrid.appendChild(card);
+          });
+        }
+
+        function filterContent() {
+          const cards = getCards();
+          const searchTerm = normalizeText(
+            contentSearch ? contentSearch.value : "",
+          );
+          let visibleCount = 0;
+
+          cards.forEach(function (card) {
+            const cardType = card.dataset.type || "";
+            const cardTitle = normalizeText(card.dataset.title);
+            const cardTags = normalizeText(card.dataset.tags);
+            const cardText = normalizeText(card.textContent);
+
+            const matchesType =
+              activeType === "todos" || cardType === activeType;
+            const matchesSearch =
+              !searchTerm ||
+              cardTitle.includes(searchTerm) ||
+              cardTags.includes(searchTerm) ||
+              cardText.includes(searchTerm);
+
+            const shouldShow = matchesType && matchesSearch;
+
+            card.hidden = !shouldShow;
+
+            if (shouldShow) {
+              visibleCount++;
+            }
+          });
+
+          if (emptyState) {
+            emptyState.hidden = visibleCount > 0;
+          }
+        }
+
+        if (contentGrid) {
+          sortCards(getCards());
+          filterContent();
+        }
+
+        if (contentSearch) {
+          contentSearch.addEventListener("input", filterContent);
+        }
+
+        if (sortContent) {
+          sortContent.addEventListener("change", function () {
+            sortCards(getCards());
+            filterContent();
+          });
+        }
+
+        filterButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            filterButtons.forEach(function (btn) {
+              btn.classList.remove("is-active");
+              btn.setAttribute("aria-pressed", "false");
+            });
+
+            button.classList.add("is-active");
+            button.setAttribute("aria-pressed", "true");
+
+            activeType = button.dataset.type || "todos";
+            filterContent();
+          });
+        });
+
+        shortcutLinks.forEach(function (link) {
+          link.addEventListener("click", function () {
+            const shortcut = link.dataset.filterShortcut;
+
+            if (contentSearch && shortcut) {
+              contentSearch.value = shortcut;
+              filterContent();
+            }
+          });
+        });
+
+        /*
+        =====================================================
+        BUSCA DO CABEÇALHO
+      ======================================================
+      */
+
+        const headerSearchForm = document.getElementById("headerSearchForm");
+        const headerSearchInput = document.getElementById("headerSearchInput");
+
+        if (headerSearchForm && headerSearchInput && contentSearch) {
+          headerSearchForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            contentSearch.value = headerSearchInput.value.trim();
+            filterContent();
+
+            document.getElementById("guias")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          });
+        }
+
+        /*
+        =====================================================
+        NEWSLETTER
+      ======================================================
+      */
+
+        const newsletterForm = document.getElementById("newsletterForm");
+        const newsletterEmail = document.getElementById("newsletterEmail");
+        const newsletterStatus = document.getElementById("newsletterStatus");
+
+        function isValidEmail(email) {
+          return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        if (newsletterForm && newsletterEmail && newsletterStatus) {
+          newsletterForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const email = newsletterEmail.value.trim();
+
+            if (!isValidEmail(email)) {
+              newsletterStatus.textContent =
+                "Informe um e-mail válido para continuar.";
+              newsletterEmail.focus();
+              return;
+            }
+
+            newsletterStatus.textContent =
+              "Cadastro realizado com sucesso. Obrigado por se inscrever!";
+            newsletterForm.reset();
+          });
+        }
+
+        /*
+        =====================================================
+        ANO AUTOMÁTICO
+      ======================================================
+      */
+
+        const currentYear = document.getElementById("current-year");
+
+        if (currentYear) {
+          currentYear.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
+  </body>
+</html>

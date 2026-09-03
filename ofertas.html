@@ -1,0 +1,2594 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- =====================================================
+    CONFIGURAÇÕES BÁSICAS
+  ====================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =====================================================
+    SEO
+  ====================================================== -->
+    <title>Ofertas | MigueCaue Recomenda</title>
+
+    <meta
+      name="description"
+      content="Confira ofertas, promoções, descontos e recomendações especiais selecionadas pelo MigueCaue Recomenda para comprar melhor online."
+    />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="MigueCaue Recomenda" />
+    <link rel="canonical" href="https://www.miguecaue.com.br/ofertas.html" />
+    <link rel="icon" type="image/webp" href="../assets/images/favicon.webp" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ofertas | MigueCaue Recomenda" />
+    <meta
+      property="og:description"
+      content="Promoções, descontos e recomendações especiais para comprar melhor online."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.miguecaue.com.br/ofertas.html"
+    />
+    <meta
+      property="og:image"
+      content="https://www.miguecaue.com.br/../assets/images/logo-cabeçalho.webp"
+    />
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+    SCHEMA.ORG
+  ====================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Ofertas",
+        "description": "Página de ofertas, promoções e recomendações especiais do MigueCaue Recomenda.",
+        "url": "https://www.miguecaue.com.br/ofertas.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "MigueCaue Recomenda"
+        }
+      }
+    </script>
+
+    <style>
+      /* =====================================================
+      VARIÁVEIS GLOBAIS
+    ====================================================== */
+
+      :root {
+        --color-primary: #ff6b35;
+        --color-primary-light: #ff8c42;
+        --color-secondary: #ffb703;
+
+        --color-dark: #102a43;
+        --color-dark-strong: #0b1f33;
+
+        --color-text: #1f2937;
+        --color-muted: #64748b;
+        --color-border: #dbe3ef;
+
+        --color-bg: #f6f8fb;
+        --color-white: #ffffff;
+        --color-success: #16a34a;
+        --color-danger: #dc2626;
+
+        --radius-sm: 12px;
+        --radius-md: 18px;
+        --radius-lg: 26px;
+        --radius-xl: 34px;
+        --radius-pill: 999px;
+
+        --shadow-sm: 0 8px 22px rgba(15, 23, 42, 0.05);
+        --shadow-md: 0 16px 36px rgba(15, 23, 42, 0.08);
+        --shadow-lg: 0 26px 56px rgba(15, 23, 42, 0.12);
+
+        --container: 1120px;
+        --transition: 0.2s ease;
+      }
+
+      /* =====================================================
+      RESET E BASE
+    ====================================================== */
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Inter", Arial, sans-serif;
+        background: var(--color-bg);
+        color: var(--color-text);
+        line-height: 1.6;
+        text-rendering: optimizeLegibility;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      :focus-visible {
+        outline: 3px solid rgba(255, 107, 53, 0.45);
+        outline-offset: 3px;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      .container {
+        width: min(var(--container), 92%);
+        margin-inline: auto;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: -100px;
+        left: 16px;
+        z-index: 9999;
+        padding: 10px 14px;
+        border-radius: var(--radius-sm);
+        background: var(--color-dark);
+        color: var(--color-white);
+        font-weight: 800;
+        transition: top var(--transition);
+      }
+
+      .skip-link:focus {
+        top: 16px;
+      }
+
+      /* =====================================================
+      BOTÕES
+    ====================================================== */
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 0;
+        border-radius: var(--radius-pill);
+        font-weight: 900;
+        line-height: 1;
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition),
+          background var(--transition),
+          color var(--transition);
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        padding: 13px 20px;
+        background: linear-gradient(
+          135deg,
+          var(--color-primary),
+          var(--color-primary-light)
+        );
+        color: var(--color-white);
+        box-shadow: 0 14px 28px rgba(255, 107, 53, 0.25);
+      }
+
+      .btn-dark {
+        padding: 12px 18px;
+        background: var(--color-dark);
+        color: var(--color-white);
+      }
+
+      .btn-dark:hover {
+        background: var(--color-primary);
+      }
+
+      .btn-light {
+        padding: 13px 20px;
+        background: var(--color-white);
+        color: var(--color-dark);
+      }
+
+      .btn-outline {
+        padding: 12px 18px;
+        border: 1px solid var(--color-border);
+        background: var(--color-white);
+        color: var(--color-dark);
+      }
+
+      .btn-outline:hover {
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+      }
+
+      /* =====================================================
+      HEADER
+    ====================================================== */
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.94);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+        backdrop-filter: blur(14px);
+      }
+
+      .header-content {
+        min-height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        position: relative;
+      }
+
+      .logo {
+        display: inline-flex;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      .logo img {
+        width: 160px;
+        height: auto;
+      }
+
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+      }
+
+      .nav-menu a {
+        color: #475569;
+        font-size: 0.95rem;
+        font-weight: 800;
+        transition: color var(--transition);
+      }
+
+      .nav-menu a:hover,
+      .nav-menu a[aria-current="page"] {
+        color: var(--color-primary);
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .header-search input {
+        width: 210px;
+        padding: 11px 14px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-pill);
+        background: var(--color-white);
+        color: #334155;
+        outline: none;
+        transition:
+          border var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .header-search input:focus {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.14);
+      }
+
+      .mobile-menu-button {
+        display: none;
+        width: 44px;
+        height: 44px;
+        border: 0;
+        border-radius: var(--radius-sm);
+        background: #eef2f7;
+        color: var(--color-dark);
+        font-size: 1.4rem;
+        font-weight: 900;
+      }
+
+      /* =====================================================
+      HERO
+    ====================================================== */
+
+      .offers-hero {
+        padding: 74px 0 58px;
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(255, 183, 3, 0.3),
+            transparent 32%
+          ),
+          radial-gradient(
+            circle at bottom left,
+            rgba(255, 107, 53, 0.24),
+            transparent 32%
+          ),
+          linear-gradient(135deg, var(--color-dark), var(--color-dark-strong));
+        color: var(--color-white);
+        overflow: hidden;
+      }
+
+      .breadcrumb {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 24px;
+        color: #cbd5e1;
+        font-size: 0.92rem;
+      }
+
+      .breadcrumb a {
+        color: #ffd6c5;
+        font-weight: 800;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.12fr 0.88fr;
+        align-items: center;
+        gap: 42px;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: var(--radius-pill);
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffd6c5;
+        font-size: 0.9rem;
+        font-weight: 900;
+      }
+
+      .offers-hero h1 {
+        max-width: 780px;
+        margin-bottom: 20px;
+        font-size: clamp(2.3rem, 5vw, 4.4rem);
+        line-height: 1.03;
+        letter-spacing: -0.06em;
+      }
+
+      .offers-hero h1 span {
+        color: var(--color-secondary);
+      }
+
+      .offers-hero p {
+        max-width: 650px;
+        margin-bottom: 30px;
+        color: #dbeafe;
+        font-size: 1.06rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .deal-panel {
+        padding: 26px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: var(--radius-xl);
+        background: rgba(255, 255, 255, 0.09);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .deal-panel h2 {
+        margin-bottom: 10px;
+        font-size: 1.35rem;
+        letter-spacing: -0.03em;
+      }
+
+      .deal-panel p {
+        margin-bottom: 20px;
+        color: #cbd5e1;
+        font-size: 0.95rem;
+      }
+
+      .countdown {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+      }
+
+      .countdown-item {
+        padding: 16px 10px;
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.1);
+        text-align: center;
+      }
+
+      .countdown-item strong {
+        display: block;
+        color: var(--color-white);
+        font-size: 1.45rem;
+        line-height: 1;
+      }
+
+      .countdown-item span {
+        color: #cbd5e1;
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+
+      /* =====================================================
+      SEÇÕES
+    ====================================================== */
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 30px;
+      }
+
+      .section-kicker {
+        margin-bottom: 8px;
+        color: var(--color-primary);
+        font-size: 0.78rem;
+        font-weight: 900;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .section-title {
+        color: var(--color-dark);
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        line-height: 1.1;
+        letter-spacing: -0.05em;
+      }
+
+      .section-description {
+        max-width: 670px;
+        margin-top: 10px;
+        color: var(--color-muted);
+      }
+
+      /* =====================================================
+      BANNERS DE OFERTAS
+    ====================================================== */
+
+      .banner-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 22px;
+      }
+
+      .promo-banner {
+        position: relative;
+        overflow: hidden;
+        min-height: 320px;
+        display: flex;
+        align-items: flex-end;
+        border-radius: var(--radius-xl);
+        background:
+          linear-gradient(
+            180deg,
+            rgba(16, 42, 67, 0.1),
+            rgba(16, 42, 67, 0.86)
+          ),
+          url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80")
+            center/cover;
+        color: var(--color-white);
+        box-shadow: var(--shadow-md);
+      }
+
+      .promo-banner.secondary {
+        background:
+          linear-gradient(
+            180deg,
+            rgba(16, 42, 67, 0.1),
+            rgba(16, 42, 67, 0.86)
+          ),
+          url("https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=900&q=80")
+            center/cover;
+      }
+
+      .promo-content {
+        padding: 30px;
+      }
+
+      .promo-label {
+        display: inline-flex;
+        margin-bottom: 12px;
+        padding: 7px 11px;
+        border-radius: var(--radius-pill);
+        background: var(--color-secondary);
+        color: var(--color-dark);
+        font-size: 0.78rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .promo-content h2,
+      .promo-content h3 {
+        margin-bottom: 10px;
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+      }
+
+      .promo-content h2 {
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+      }
+
+      .promo-content h3 {
+        font-size: 1.55rem;
+      }
+
+      .promo-content p {
+        max-width: 620px;
+        margin-bottom: 18px;
+        color: #e2e8f0;
+      }
+
+      /* =====================================================
+      FILTROS E BUSCA
+    ====================================================== */
+
+      .content-toolbar {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        gap: 16px;
+        margin-bottom: 20px;
+        align-items: center;
+      }
+
+      .search-box input,
+      .filter-select,
+      .sort-box select {
+        width: 100%;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-white);
+        color: #334155;
+        outline: none;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .search-box input {
+        padding: 15px 18px;
+      }
+
+      .filter-select,
+      .sort-box select {
+        min-width: 190px;
+        padding: 15px 16px;
+      }
+
+      .search-box input:focus,
+      .filter-select:focus,
+      .sort-box select:focus {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.12);
+      }
+
+      .filter-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 28px;
+      }
+
+      .filter-btn {
+        padding: 10px 14px;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-pill);
+        background: var(--color-white);
+        color: #475569;
+        font-weight: 900;
+        transition:
+          background var(--transition),
+          color var(--transition),
+          border-color var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .filter-btn:hover,
+      .filter-btn.is-active {
+        border-color: var(--color-primary);
+        background: var(--color-primary);
+        color: var(--color-white);
+        box-shadow: 0 10px 20px rgba(255, 107, 53, 0.2);
+      }
+
+      /* =====================================================
+      CARDS DE OFERTAS
+    ====================================================== */
+
+      .offers-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+      }
+
+      .offer-card {
+        overflow: hidden;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: var(--radius-lg);
+        background: var(--color-white);
+        box-shadow: var(--shadow-sm);
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .offer-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .offer-image {
+        position: relative;
+        aspect-ratio: 16 / 10;
+        overflow: hidden;
+        background: #e2e8f0;
+      }
+
+      .offer-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .offer-card:hover .offer-image img {
+        transform: scale(1.04);
+      }
+
+      .discount-badge {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        padding: 7px 11px;
+        border-radius: var(--radius-pill);
+        background: var(--color-danger);
+        color: var(--color-white);
+        font-size: 0.78rem;
+        font-weight: 900;
+      }
+
+      .category-badge {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        padding: 7px 11px;
+        border-radius: var(--radius-pill);
+        background: rgba(255, 255, 255, 0.94);
+        color: var(--color-primary);
+        font-size: 0.78rem;
+        font-weight: 900;
+      }
+
+      .offer-body {
+        padding: 22px;
+      }
+
+      .offer-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 10px;
+        color: var(--color-muted);
+        font-size: 0.86rem;
+        font-weight: 800;
+      }
+
+      .stars {
+        color: var(--color-secondary);
+        letter-spacing: -1px;
+      }
+
+      .offer-card h3 {
+        margin-bottom: 10px;
+        color: var(--color-dark);
+        font-size: 1.16rem;
+        line-height: 1.28;
+        letter-spacing: -0.03em;
+      }
+
+      .offer-card p {
+        margin-bottom: 16px;
+        color: var(--color-muted);
+        font-size: 0.95rem;
+      }
+
+      .price-box {
+        display: grid;
+        gap: 2px;
+        margin-bottom: 16px;
+      }
+
+      .old-price {
+        color: var(--color-muted);
+        font-size: 0.9rem;
+        text-decoration: line-through;
+      }
+
+      .new-price {
+        color: var(--color-dark);
+        font-size: 1.35rem;
+        font-weight: 900;
+        letter-spacing: -0.03em;
+      }
+
+      .installment {
+        color: var(--color-success);
+        font-size: 0.9rem;
+        font-weight: 800;
+      }
+
+      .coupon-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 10px 12px;
+        margin-bottom: 16px;
+        border: 1px dashed rgba(255, 107, 53, 0.45);
+        border-radius: var(--radius-md);
+        background: #fff7ed;
+      }
+
+      .coupon-code {
+        color: var(--color-dark);
+        font-size: 0.9rem;
+        font-weight: 900;
+      }
+
+      .copy-coupon {
+        border: 0;
+        background: transparent;
+        color: var(--color-primary);
+        font-size: 0.86rem;
+        font-weight: 900;
+      }
+
+      .offer-footer {
+        display: flex;
+        gap: 10px;
+      }
+
+      .offer-footer .btn {
+        flex: 1;
+      }
+
+      .empty-state {
+        padding: 38px 20px;
+        margin-top: 22px;
+        border: 1px dashed #cbd5e1;
+        border-radius: var(--radius-lg);
+        background: var(--color-white);
+        color: var(--color-muted);
+        text-align: center;
+      }
+
+      /* =====================================================
+      CATEGORIAS RELACIONADAS
+    ====================================================== */
+
+      .related-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+      }
+
+      .related-card {
+        display: grid;
+        gap: 10px;
+        padding: 22px;
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: var(--radius-lg);
+        background: var(--color-white);
+        box-shadow: var(--shadow-sm);
+        transition:
+          transform var(--transition),
+          box-shadow var(--transition);
+      }
+
+      .related-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .related-icon {
+        width: 46px;
+        height: 46px;
+        display: grid;
+        place-items: center;
+        border-radius: 16px;
+        background: #fff3ec;
+        color: var(--color-primary);
+        font-size: 1.35rem;
+      }
+
+      .related-card h3 {
+        color: var(--color-dark);
+        font-size: 1.05rem;
+      }
+
+      .related-card p {
+        color: var(--color-muted);
+        font-size: 0.92rem;
+      }
+
+      /* =====================================================
+      CONDIÇÕES DAS OFERTAS
+    ====================================================== */
+
+      .info-box {
+        padding: 34px;
+        border-radius: var(--radius-xl);
+        background: var(--color-white);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .info-box h2 {
+        margin-bottom: 14px;
+        color: var(--color-dark);
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        letter-spacing: -0.04em;
+      }
+
+      .info-box p {
+        color: var(--color-muted);
+      }
+
+      .info-list {
+        display: grid;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .info-list li {
+        position: relative;
+        padding-left: 28px;
+        color: var(--color-muted);
+      }
+
+      .info-list li::before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: var(--color-success);
+        font-weight: 900;
+      }
+
+      /* =====================================================
+      NEWSLETTER
+    ====================================================== */
+
+      .newsletter-section {
+        padding: 24px 0 76px;
+      }
+
+      .newsletter-box {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 28px;
+        align-items: center;
+        padding: 42px;
+        border-radius: var(--radius-xl);
+        background:
+          radial-gradient(
+            circle at bottom left,
+            rgba(255, 183, 3, 0.28),
+            transparent 28%
+          ),
+          linear-gradient(
+            135deg,
+            var(--color-primary),
+            var(--color-primary-light)
+          );
+        color: var(--color-white);
+        box-shadow: 0 24px 50px rgba(255, 107, 53, 0.28);
+      }
+
+      .newsletter-box h2 {
+        margin-bottom: 12px;
+        font-size: clamp(1.7rem, 3vw, 2.4rem);
+        line-height: 1.1;
+        letter-spacing: -0.05em;
+      }
+
+      .newsletter-box p {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .newsletter-form {
+        display: flex;
+        gap: 10px;
+        padding: 8px;
+        border-radius: var(--radius-pill);
+        background: rgba(255, 255, 255, 0.16);
+      }
+
+      .newsletter-form input {
+        flex: 1;
+        min-width: 0;
+        padding: 13px 16px;
+        border: 0;
+        border-radius: var(--radius-pill);
+        outline: none;
+      }
+
+      .newsletter-status {
+        margin-top: 10px;
+        color: #fff8e7;
+        font-size: 0.92rem;
+        font-weight: 800;
+      }
+
+      /* =====================================================
+      FOOTER
+    ====================================================== */
+
+      .site-footer {
+        padding: 64px 0 28px;
+        background: var(--color-dark-strong);
+        color: #cbd5e1;
+      }
+
+      .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 44px;
+        text-align: center;
+      }
+
+      .footer-logo-img {
+        width: 170px;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .footer-description {
+        max-width: 720px;
+        margin-top: 22px;
+        color: #94a3b8;
+        font-size: 0.98rem;
+        line-height: 1.7;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 28px;
+        padding-bottom: 34px;
+        margin-bottom: 32px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .footer-column h3 {
+        margin-bottom: 14px;
+        color: var(--color-white);
+        font-size: 1rem;
+      }
+
+      .footer-links {
+        display: grid;
+        gap: 9px;
+      }
+
+      .footer-links a {
+        color: #94a3b8;
+        font-size: 0.95rem;
+        transition:
+          color var(--transition),
+          transform var(--transition);
+      }
+
+      .footer-links a:hover {
+        color: var(--color-secondary);
+        transform: translateX(3px);
+      }
+
+      .footer-affiliate-notice {
+        max-width: 920px;
+        padding: 18px 22px;
+        margin: 0 auto 28px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-md);
+        background: rgba(255, 255, 255, 0.06);
+        text-align: center;
+      }
+
+      .footer-affiliate-notice p {
+        color: #94a3b8;
+        font-size: 0.92rem;
+        line-height: 1.6;
+      }
+
+      .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        flex-wrap: wrap;
+        color: #94a3b8;
+        font-size: 0.9rem;
+      }
+
+      /* =====================================================
+      RESPONSIVIDADE
+    ====================================================== */
+
+      @media (max-width: 980px) {
+        .header-search,
+        .header-actions .btn-primary {
+          display: none;
+        }
+
+        .mobile-menu-button {
+          display: inline-grid;
+          place-items: center;
+        }
+
+        .nav-menu {
+          position: absolute;
+          top: 76px;
+          left: 0;
+          right: 0;
+          display: none;
+          padding: 6px 0;
+          background: var(--color-white);
+          border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+          box-shadow: var(--shadow-md);
+        }
+
+        .nav-menu.is-open {
+          display: grid;
+          gap: 0;
+        }
+
+        .nav-menu a {
+          padding: 16px 24px;
+          border-top: 1px solid #eef2f7;
+        }
+
+        .hero-grid,
+        .banner-grid,
+        .newsletter-box {
+          grid-template-columns: 1fr;
+        }
+
+        .offers-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .related-grid,
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .content-toolbar {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .search-box {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 680px) {
+        .header-content {
+          min-height: 68px;
+        }
+
+        .logo img {
+          width: 142px;
+        }
+
+        .nav-menu {
+          top: 68px;
+        }
+
+        .offers-hero {
+          padding: 48px 0;
+        }
+
+        .hero-actions {
+          flex-direction: column;
+        }
+
+        .hero-actions .btn {
+          width: 100%;
+        }
+
+        .countdown,
+        .offers-grid,
+        .related-grid,
+        .footer-grid,
+        .content-toolbar {
+          grid-template-columns: 1fr;
+        }
+
+        .section {
+          padding: 56px 0;
+        }
+
+        .section-header {
+          display: block;
+        }
+
+        .promo-banner {
+          min-height: 360px;
+        }
+
+        .offer-footer {
+          flex-direction: column;
+        }
+
+        .newsletter-box {
+          padding: 30px 22px;
+          border-radius: var(--radius-lg);
+        }
+
+        .newsletter-form {
+          flex-direction: column;
+          border-radius: 22px;
+        }
+
+        .newsletter-form .btn {
+          width: 100%;
+        }
+
+        .footer-grid {
+          text-align: center;
+        }
+
+        .footer-links a:hover {
+          transform: none;
+        }
+
+        .footer-bottom {
+          display: grid;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#conteudo-principal" class="skip-link"
+      >Pular para o conteúdo principal</a
+    >
+
+    <!-- =====================================================
+    CABEÇALHO
+  ====================================================== -->
+    <header class="site-header">
+      <div class="container header-content">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Página inicial do MigueCaue Recomenda"
+        >
+          <img
+            src="../assets/images/logo-cabeçalho.webp"
+            alt="MigueCaue Recomenda"
+            width="160"
+            height="90"
+            loading="eager"
+          />
+        </a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="blog.html">Blog</a>
+          <a href="../pages/categorias/categoria-tecnologia.html">Tecnologia</a>
+          <a href="../pages/categorias/categoria-casa-inteligente.html"
+            >Casa Inteligente</a
+          >
+          <a href="ofertas.html" aria-current="page">Ofertas</a>
+          <a href="#newsletter">Newsletter</a>
+        </nav>
+
+        <div class="header-actions">
+          <form class="header-search" role="search" id="headerSearchForm">
+            <label class="sr-only" for="headerSearchInput"
+              >Buscar ofertas</label
+            >
+            <input
+              type="search"
+              id="headerSearchInput"
+              placeholder="Buscar ofertas..."
+              aria-label="Buscar ofertas"
+            />
+          </form>
+
+          <a href="#ofertas" class="btn btn-primary"> Ver promoções </a>
+
+          <button
+            type="button"
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <!-- =====================================================
+      HERO
+    ====================================================== -->
+      <section class="offers-hero" aria-labelledby="offers-title">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Você está em">
+            <a href="index.html">Início</a>
+            <span aria-hidden="true">/</span>
+            <span>Ofertas</span>
+          </nav>
+
+          <div class="hero-grid">
+            <div>
+              <span class="hero-badge">🔥 Ofertas selecionadas</span>
+
+              <h1 id="offers-title">
+                Promoções e recomendações especiais para
+                <span>comprar melhor</span>.
+              </h1>
+
+              <p>
+                Encontre descontos em tecnologia, casa inteligente,
+                eletrodomésticos, acessórios e produtos úteis para o dia a dia.
+                Selecionamos ofertas com foco em custo-benefício, segurança e
+                praticidade.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#ofertas" class="btn btn-primary"
+                  >Ver ofertas de hoje</a
+                >
+                <a href="#condicoes" class="btn btn-light"
+                  >Conferir condições</a
+                >
+              </div>
+            </div>
+
+            <aside class="deal-panel" aria-labelledby="countdown-title">
+              <h2 id="countdown-title">Ofertas relâmpago</h2>
+
+              <p>
+                Algumas promoções podem acabar rapidamente ou mudar de preço sem
+                aviso.
+              </p>
+
+              <div
+                class="countdown"
+                aria-label="Contagem regressiva de ofertas"
+              >
+                <div class="countdown-item">
+                  <strong id="days">00</strong>
+                  <span>Dias</span>
+                </div>
+
+                <div class="countdown-item">
+                  <strong id="hours">00</strong>
+                  <span>Horas</span>
+                </div>
+
+                <div class="countdown-item">
+                  <strong id="minutes">00</strong>
+                  <span>Min</span>
+                </div>
+
+                <div class="countdown-item">
+                  <strong id="seconds">00</strong>
+                  <span>Seg</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      BANNERS PROMOCIONAIS
+    ====================================================== -->
+      <section class="section" aria-labelledby="banners-title">
+        <div class="container">
+          <header class="section-header">
+            <div>
+              <p class="section-kicker">Destaques da semana</p>
+
+              <h2 class="section-title" id="banners-title">
+                Ofertas em destaque
+              </h2>
+
+              <p class="section-description">
+                Banners estratégicos para campanhas, combos, cupons e novidades
+                com maior potencial de conversão.
+              </p>
+            </div>
+          </header>
+
+          <div class="banner-grid">
+            <article class="promo-banner">
+              <div class="promo-content">
+                <span class="promo-label">Combo especial</span>
+
+                <h2>Monte seu setup inteligente com desconto</h2>
+
+                <p>
+                  Produtos de casa inteligente, iluminação, câmeras e
+                  assistentes virtuais com condições selecionadas.
+                </p>
+
+                <a href="#ofertas" class="btn btn-primary">Ver combo</a>
+              </div>
+            </article>
+
+            <article class="promo-banner secondary">
+              <div class="promo-content">
+                <span class="promo-label">Até 45% OFF</span>
+
+                <h3>Tecnologia para trabalho e estudo</h3>
+
+                <p>
+                  Acessórios, notebooks, fones e periféricos para aumentar sua
+                  produtividade.
+                </p>
+
+                <a href="#ofertas" class="btn btn-light">Conferir</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      LISTA DE OFERTAS
+    ====================================================== -->
+      <section class="section" id="ofertas" aria-labelledby="offers-list-title">
+        <div class="container">
+          <header class="section-header">
+            <div>
+              <p class="section-kicker">Promoções selecionadas</p>
+
+              <h2 class="section-title" id="offers-list-title">
+                Ofertas recomendadas
+              </h2>
+
+              <p class="section-description">
+                Use busca, categorias e ordenação para encontrar rapidamente a
+                melhor oportunidade.
+              </p>
+            </div>
+          </header>
+
+          <!-- Barra de busca e filtros -->
+          <div class="content-toolbar">
+            <div class="search-box">
+              <label class="sr-only" for="offerSearch">Buscar oferta</label>
+              <input
+                type="search"
+                id="offerSearch"
+                placeholder="Buscar por produto, marca ou categoria..."
+                aria-label="Buscar ofertas"
+              />
+            </div>
+
+            <div>
+              <label class="sr-only" for="brandFilter">Filtrar por marca</label>
+              <select
+                class="filter-select"
+                id="brandFilter"
+                aria-label="Filtrar por marca"
+              >
+                <option value="todas">Todas as marcas</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Intelbras">Intelbras</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Mondial">Mondial</option>
+                <option value="Acer">Acer</option>
+              </select>
+            </div>
+
+            <div class="sort-box">
+              <label class="sr-only" for="sortOffers">Ordenar ofertas</label>
+              <select id="sortOffers" aria-label="Ordenar ofertas">
+                <option value="desconto">Maior desconto</option>
+                <option value="menor-preco">Menor preço</option>
+                <option value="maior-preco">Maior preço</option>
+                <option value="avaliacao">Melhor avaliação</option>
+                <option value="az">Título A-Z</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Filtros por categoria -->
+          <div
+            class="filter-list"
+            id="filterList"
+            aria-label="Filtros de categoria"
+          >
+            <button
+              type="button"
+              class="filter-btn is-active"
+              data-category="todos"
+              aria-pressed="true"
+            >
+              Todos
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-category="tecnologia"
+              aria-pressed="false"
+            >
+              Tecnologia
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-category="casa-inteligente"
+              aria-pressed="false"
+            >
+              Casa Inteligente
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-category="eletrodomesticos"
+              aria-pressed="false"
+            >
+              Eletrodomésticos
+            </button>
+
+            <button
+              type="button"
+              class="filter-btn"
+              data-category="acessorios"
+              aria-pressed="false"
+            >
+              Acessórios
+            </button>
+          </div>
+
+          <!-- Cards -->
+          <div class="offers-grid" id="offersGrid">
+            <!-- Oferta 1 -->
+            <article
+              class="offer-card"
+              data-category="casa-inteligente"
+              data-brand="Intelbras"
+              data-price="249.90"
+              data-old-price="349.90"
+              data-discount="29"
+              data-rating="4.8"
+              data-title="Câmera Wi-Fi Inteligente Full HD"
+              data-tags="camera seguranca casa inteligente intelbras wifi full hd"
+            >
+              <figure class="offer-image">
+                <img
+                  src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=80"
+                  alt="Câmera de segurança inteligente instalada em ambiente residencial"
+                  width="900"
+                  height="560"
+                  loading="lazy"
+                />
+                <figcaption class="discount-badge">-29%</figcaption>
+                <span class="category-badge">Casa Inteligente</span>
+              </figure>
+
+              <div class="offer-body">
+                <div class="offer-meta">
+                  <span>Intelbras</span>
+                  <span class="stars" aria-label="Avaliação 4.8 de 5"
+                    >★★★★★</span
+                  >
+                </div>
+
+                <h3>Câmera Wi-Fi Inteligente Full HD</h3>
+
+                <p>
+                  Ideal para monitoramento residencial com visão noturna, áudio
+                  bidirecional e acesso pelo celular.
+                </p>
+
+                <div class="price-box">
+                  <span class="old-price">R$ 349,90</span>
+                  <span class="new-price">R$ 249,90</span>
+                  <span class="installment">ou 5x de R$ 49,98 sem juros</span>
+                </div>
+
+                <div class="coupon-box">
+                  <span class="coupon-code">Cupom: CASA10</span>
+                  <button
+                    type="button"
+                    class="copy-coupon"
+                    data-coupon="CASA10"
+                  >
+                    Copiar
+                  </button>
+                </div>
+
+                <div class="offer-footer">
+                  <a
+                    href="#ofertas"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                  >
+                    Ver oferta
+                  </a>
+                  <a
+                    href="../pages/categorias/categoria-casa-inteligente.html"
+                    class="btn btn-outline"
+                  >
+                    Detalhes
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Oferta 2 -->
+            <article
+              class="offer-card"
+              data-category="tecnologia"
+              data-brand="Acer"
+              data-price="2599.00"
+              data-old-price="3199.00"
+              data-discount="19"
+              data-rating="4.7"
+              data-title="Notebook Acer para estudo e trabalho"
+              data-tags="notebook acer tecnologia estudo trabalho produtividade"
+            >
+              <figure class="offer-image">
+                <img
+                  src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
+                  alt="Notebook aberto sobre mesa de trabalho"
+                  width="900"
+                  height="560"
+                  loading="lazy"
+                />
+                <figcaption class="discount-badge">-19%</figcaption>
+                <span class="category-badge">Tecnologia</span>
+              </figure>
+
+              <div class="offer-body">
+                <div class="offer-meta">
+                  <span>Acer</span>
+                  <span class="stars" aria-label="Avaliação 4.7 de 5"
+                    >★★★★★</span
+                  >
+                </div>
+
+                <h3>Notebook Acer para estudo e trabalho</h3>
+
+                <p>
+                  Boa opção para tarefas diárias, estudos, home office,
+                  videochamadas e navegação.
+                </p>
+
+                <div class="price-box">
+                  <span class="old-price">R$ 3.199,00</span>
+                  <span class="new-price">R$ 2.599,00</span>
+                  <span class="installment">ou 10x de R$ 259,90 sem juros</span>
+                </div>
+
+                <div class="coupon-box">
+                  <span class="coupon-code">Cupom: TECH100</span>
+                  <button
+                    type="button"
+                    class="copy-coupon"
+                    data-coupon="TECH100"
+                  >
+                    Copiar
+                  </button>
+                </div>
+
+                <div class="offer-footer">
+                  <a
+                    href="#ofertas"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                  >
+                    Ver oferta
+                  </a>
+                  <a
+                    href="../pages/categorias/categoria-tecnologia.html"
+                    class="btn btn-outline"
+                  >
+                    Detalhes
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Oferta 3 -->
+            <article
+              class="offer-card"
+              data-category="eletrodomesticos"
+              data-brand="Samsung"
+              data-price="3999.00"
+              data-old-price="4999.00"
+              data-discount="20"
+              data-rating="4.9"
+              data-title="Geladeira Samsung Frost Free"
+              data-tags="geladeira samsung eletrodomesticos frost free cozinha"
+            >
+              <figure class="offer-image">
+                <img
+                  src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=900&q=80"
+                  alt="Geladeira moderna em cozinha planejada"
+                  width="900"
+                  height="560"
+                  loading="lazy"
+                />
+                <figcaption class="discount-badge">-20%</figcaption>
+                <span class="category-badge">Eletrodomésticos</span>
+              </figure>
+
+              <div class="offer-body">
+                <div class="offer-meta">
+                  <span>Samsung</span>
+                  <span class="stars" aria-label="Avaliação 4.9 de 5"
+                    >★★★★★</span
+                  >
+                </div>
+
+                <h3>Geladeira Samsung Frost Free</h3>
+
+                <p>
+                  Geladeira espaçosa, econômica e ideal para famílias que buscam
+                  praticidade na cozinha.
+                </p>
+
+                <div class="price-box">
+                  <span class="old-price">R$ 4.999,00</span>
+                  <span class="new-price">R$ 3.999,00</span>
+                  <span class="installment">ou 10x de R$ 399,90 sem juros</span>
+                </div>
+
+                <div class="coupon-box">
+                  <span class="coupon-code">Cupom: COZINHA5</span>
+                  <button
+                    type="button"
+                    class="copy-coupon"
+                    data-coupon="COZINHA5"
+                  >
+                    Copiar
+                  </button>
+                </div>
+
+                <div class="offer-footer">
+                  <a
+                    href="#ofertas"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                  >
+                    Ver oferta
+                  </a>
+                  <a
+                    href="../pages/categorias/categoria-eletrodomesticos.html"
+                    class="btn btn-outline"
+                  >
+                    Detalhes
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Oferta 4 -->
+            <article
+              class="offer-card"
+              data-category="acessorios"
+              data-brand="Xiaomi"
+              data-price="149.90"
+              data-old-price="229.90"
+              data-discount="35"
+              data-rating="4.6"
+              data-title="Fone Bluetooth Xiaomi"
+              data-tags="fone bluetooth xiaomi acessorios audio tecnologia"
+            >
+              <figure class="offer-image">
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80"
+                  alt="Fone de ouvido moderno em fundo laranja"
+                  width="900"
+                  height="560"
+                  loading="lazy"
+                />
+                <figcaption class="discount-badge">-35%</figcaption>
+                <span class="category-badge">Acessórios</span>
+              </figure>
+
+              <div class="offer-body">
+                <div class="offer-meta">
+                  <span>Xiaomi</span>
+                  <span class="stars" aria-label="Avaliação 4.6 de 5"
+                    >★★★★★</span
+                  >
+                </div>
+
+                <h3>Fone Bluetooth Xiaomi</h3>
+
+                <p>
+                  Fone compacto com boa autonomia de bateria, conexão estável e
+                  ótimo custo-benefício.
+                </p>
+
+                <div class="price-box">
+                  <span class="old-price">R$ 229,90</span>
+                  <span class="new-price">R$ 149,90</span>
+                  <span class="installment">ou 3x de R$ 49,97 sem juros</span>
+                </div>
+
+                <div class="coupon-box">
+                  <span class="coupon-code">Cupom: AUDIO15</span>
+                  <button
+                    type="button"
+                    class="copy-coupon"
+                    data-coupon="AUDIO15"
+                  >
+                    Copiar
+                  </button>
+                </div>
+
+                <div class="offer-footer">
+                  <a
+                    href="#ofertas"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                  >
+                    Ver oferta
+                  </a>
+                  <a
+                    href="../pages/categorias/categoria-tecnologia.html"
+                    class="btn btn-outline"
+                  >
+                    Detalhes
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Oferta 5 -->
+            <article
+              class="offer-card"
+              data-category="casa-inteligente"
+              data-brand="Xiaomi"
+              data-price="89.90"
+              data-old-price="139.90"
+              data-discount="36"
+              data-rating="4.8"
+              data-title="Lâmpada Inteligente Wi-Fi"
+              data-tags="lampada inteligente wifi casa inteligente xiaomi iluminacao alexa google"
+            >
+              <figure class="offer-image">
+                <img
+                  src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&w=900&q=80"
+                  alt="Lâmpada inteligente acesa em ambiente moderno"
+                  width="900"
+                  height="560"
+                  loading="lazy"
+                />
+                <figcaption class="discount-badge">-36%</figcaption>
+                <span class="category-badge">Casa Inteligente</span>
+              </figure>
+
+              <div class="offer-body">
+                <div class="offer-meta">
+                  <span>Xiaomi</span>
+                  <span class="stars" aria-label="Avaliação 4.8 de 5"
+                    >★★★★★</span
+                  >
+                </div>
+
+                <h3>Lâmpada Inteligente Wi-Fi</h3>
+
+                <p>
+                  Controle cores, intensidade e rotinas pelo celular ou
+                  assistentes de voz compatíveis.
+                </p>
+
+                <div class="price-box">
+                  <span class="old-price">R$ 139,90</span>
+                  <span class="new-price">R$ 89,90</span>
+                  <span class="installment">ou 2x de R$ 44,95 sem juros</span>
+                </div>
+
+                <div class="coupon-box">
+                  <span class="coupon-code">Cupom: SMART20</span>
+                  <button
+                    type="button"
+                    class="copy-coupon"
+                    data-coupon="SMART20"
+                  >
+                    Copiar
+                  </button>
+                </div>
+
+                <div class="offer-footer">
+                  <a
+                    href="#ofertas"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                  >
+                    Ver oferta
+                  </a>
+                  <a
+                    href="../pages/categorias/categoria-casa-inteligente.html"
+                    class="btn btn-outline"
+                  >
+                    Detalhes
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Oferta 6 -->
+            <article
+              class="offer-card"
+              data-category="eletrodomesticos"
+              data-brand="Mondial"
+              data-price="399.90"
+              data-old-price="549.90"
+              data-discount="27"
+              data-rating="4.5"
+              data-title="Air Fryer Mondial 4L"
+              data-tags="air fryer mondial eletrodomesticos cozinha fritadeira eletrica"
+            >
+              <figure class="offer-image">
+                <img
+                  src="https://images.unsplash.com/photo-1585515320310-259814833e62?auto=format&fit=crop&w=900&q=80"
+                  alt="Eletrodoméstico moderno em bancada de cozinha"
+                  width="900"
+                  height="560"
+                  loading="lazy"
+                />
+                <figcaption class="discount-badge">-27%</figcaption>
+                <span class="category-badge">Eletrodomésticos</span>
+              </figure>
+
+              <div class="offer-body">
+                <div class="offer-meta">
+                  <span>Mondial</span>
+                  <span class="stars" aria-label="Avaliação 4.5 de 5"
+                    >★★★★★</span
+                  >
+                </div>
+
+                <h3>Air Fryer Mondial 4L</h3>
+
+                <p>
+                  Prática para preparar refeições com menos óleo, ideal para o
+                  uso diário.
+                </p>
+
+                <div class="price-box">
+                  <span class="old-price">R$ 549,90</span>
+                  <span class="new-price">R$ 399,90</span>
+                  <span class="installment">ou 8x de R$ 49,99 sem juros</span>
+                </div>
+
+                <div class="coupon-box">
+                  <span class="coupon-code">Cupom: COZINHA10</span>
+                  <button
+                    type="button"
+                    class="copy-coupon"
+                    data-coupon="COZINHA10"
+                  >
+                    Copiar
+                  </button>
+                </div>
+
+                <div class="offer-footer">
+                  <a
+                    href="#ofertas"
+                    class="btn btn-primary"
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                  >
+                    Ver oferta
+                  </a>
+                  <a
+                    href="../pages/categorias/categoria-eletrodomesticos.html"
+                    class="btn btn-outline"
+                  >
+                    Detalhes
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div
+            class="empty-state"
+            id="emptyState"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            Nenhuma oferta encontrada. Tente outro termo, categoria ou marca.
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      CATEGORIAS RELACIONADAS
+    ====================================================== -->
+      <section class="section" aria-labelledby="related-title">
+        <div class="container">
+          <header class="section-header">
+            <div>
+              <p class="section-kicker">Continue explorando</p>
+
+              <h2 class="section-title" id="related-title">
+                Categorias relacionadas
+              </h2>
+
+              <p class="section-description">
+                Encontre recomendações complementares para comparar produtos e
+                tomar decisões melhores.
+              </p>
+            </div>
+          </header>
+
+          <div class="related-grid">
+            <a
+              href="../pages/categorias/categoria-tecnologia.html"
+              class="related-card"
+            >
+              <span class="related-icon" aria-hidden="true">💻</span>
+              <h3>Tecnologia</h3>
+              <p>Notebooks, smartphones, fones, periféricos e acessórios.</p>
+            </a>
+
+            <a
+              href="../pages/categorias/categoria-casa-inteligente.html"
+              class="related-card"
+            >
+              <span class="related-icon" aria-hidden="true">🏠</span>
+              <h3>Casa Inteligente</h3>
+              <p>Lâmpadas, câmeras, tomadas, sensores e automações.</p>
+            </a>
+
+            <a
+              href="../pages/categorias/categoria-eletrodomesticos.html"
+              class="related-card"
+            >
+              <span class="related-icon" aria-hidden="true">🔌</span>
+              <h3>Eletrodomésticos</h3>
+              <p>Geladeiras, fogões, micro-ondas, lavadoras e air fryers.</p>
+            </a>
+
+            <a href="blog.html" class="related-card">
+              <span class="related-icon" aria-hidden="true">📘</span>
+              <h3>Guias de Compra</h3>
+              <p>Comparativos e dicas para comprar com segurança.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      CONDIÇÕES DAS OFERTAS
+    ====================================================== -->
+      <section
+        class="section"
+        id="condicoes"
+        aria-labelledby="conditions-title"
+      >
+        <div class="container">
+          <div class="info-box">
+            <h2 id="conditions-title">Condições das ofertas</h2>
+
+            <p>
+              As ofertas divulgadas no MigueCaue Recomenda são selecionadas com
+              foco em custo-benefício, reputação da loja, utilidade do produto e
+              oportunidade de compra.
+            </p>
+
+            <ul class="info-list">
+              <li>Preços e disponibilidade podem mudar sem aviso prévio.</li>
+              <li>
+                Cupons podem ter limite de uso, prazo de validade ou regras
+                específicas.
+              </li>
+              <li>
+                Confira sempre o valor final, frete e prazo de entrega antes de
+                concluir a compra.
+              </li>
+              <li>
+                Alguns links podem ser de afiliados, sem custo adicional para
+                você.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      NEWSLETTER
+    ====================================================== -->
+      <section
+        class="newsletter-section"
+        id="newsletter"
+        aria-labelledby="newsletter-title"
+      >
+        <div class="container">
+          <div class="newsletter-box">
+            <div>
+              <h2 id="newsletter-title">
+                Receba alertas de ofertas no seu e-mail
+              </h2>
+
+              <p>
+                Cadastre-se para receber promoções, cupons, comparativos e
+                recomendações especiais.
+              </p>
+            </div>
+
+            <form class="newsletter-form" id="newsletterForm" novalidate>
+              <div style="flex: 1">
+                <label class="sr-only" for="newsletterEmail"
+                  >Digite seu e-mail</label
+                >
+
+                <input
+                  type="email"
+                  id="newsletterEmail"
+                  name="email"
+                  placeholder="Seu melhor e-mail"
+                  aria-label="Digite seu e-mail"
+                  autocomplete="email"
+                  required
+                />
+
+                <p
+                  class="newsletter-status"
+                  id="newsletterStatus"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </div>
+
+              <button type="submit" class="btn btn-dark">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+    RODAPÉ
+  ====================================================== -->
+    <footer class="site-footer" aria-label="Rodapé do site">
+      <div class="container">
+        <div class="footer-top">
+          <a
+            href="index.html"
+            aria-label="Página inicial do MigueCaue Recomenda"
+          >
+            <img
+              src="../assets/images/logo-rodape.webp"
+              alt="MigueCaue Recomenda"
+              class="footer-logo-img"
+              width="170"
+              height="90"
+              loading="lazy"
+            />
+          </a>
+
+          <p class="footer-description">
+            Recomendações, guias, comparativos e ofertas para ajudar
+            consumidores brasileiros a comprarem melhor online com mais
+            segurança, economia e praticidade.
+          </p>
+        </div>
+
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Categorias</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a href="../pages/categorias/categoria-tecnologia.html"
+                  >Tecnologia</a
+                >
+              </li>
+              <li>
+                <a href="../pages/categorias/categoria-casa-inteligente.html"
+                  >Casa Inteligente</a
+                >
+              </li>
+              <li>
+                <a href="../pages/categorias/categoria-eletrodomesticos.html"
+                  >Eletrodomésticos</a
+                >
+              </li>
+              <li><a href="ofertas.html">Ofertas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Ofertas</h3>
+
+            <ul class="footer-links">
+              <li><a href="#ofertas">Promoções de hoje</a></li>
+              <li><a href="#ofertas">Cupons</a></li>
+              <li><a href="#ofertas">Combos</a></li>
+              <li><a href="#condicoes">Condições</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Conteúdos</h3>
+
+            <ul class="footer-links">
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="guias-de-compras.html">Guias de compra</a></li>
+              <li><a href="comparativos.html">Comparativos</a></li>
+              <li><a href="blog.html">Reviews</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Legal</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a href="index.html#legal">Política de Privacidade</a>
+              </li>
+              <li><a href="index.html#legal">Termos de Uso</a></li>
+              <li><a href="index.html#legal">Aviso de Afiliados</a></li>
+              <li><a href="index.html#sobre">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-affiliate-notice">
+          <p>
+            Alguns links deste site podem ser links de afiliados. Isso significa
+            que podemos receber uma comissão por compras qualificadas, sem custo
+            adicional para você.
+          </p>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © <span id="currentYear"></span> MigueCaue Recomenda. Todos os
+            direitos reservados.
+          </p>
+
+          <p>Preços e disponibilidade podem mudar sem aviso prévio.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /*
+      =====================================================
+      JAVASCRIPT PRINCIPAL
+      - Menu mobile
+      - Busca
+      - Filtros
+      - Ordenação
+      - Copiar cupom
+      - Countdown
+      - Newsletter
+      - Ano automático
+    ======================================================
+    */
+
+      document.addEventListener("DOMContentLoaded", function () {
+        /*
+        =====================================================
+        MENU MOBILE
+      =====================================================
+      */
+
+        const mobileMenuButton = document.getElementById("mobileMenuButton");
+        const navMenu = document.getElementById("navMenu");
+
+        if (mobileMenuButton && navMenu) {
+          mobileMenuButton.addEventListener("click", function () {
+            const isOpen = navMenu.classList.toggle("is-open");
+
+            mobileMenuButton.setAttribute("aria-expanded", String(isOpen));
+            mobileMenuButton.textContent = isOpen ? "×" : "☰";
+            mobileMenuButton.setAttribute(
+              "aria-label",
+              isOpen ? "Fechar menu" : "Abrir menu",
+            );
+          });
+
+          navMenu.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+              navMenu.classList.remove("is-open");
+              mobileMenuButton.setAttribute("aria-expanded", "false");
+              mobileMenuButton.textContent = "☰";
+              mobileMenuButton.setAttribute("aria-label", "Abrir menu");
+            });
+          });
+
+          document.addEventListener("keydown", function (event) {
+            if (
+              event.key === "Escape" &&
+              navMenu.classList.contains("is-open")
+            ) {
+              navMenu.classList.remove("is-open");
+              mobileMenuButton.setAttribute("aria-expanded", "false");
+              mobileMenuButton.textContent = "☰";
+              mobileMenuButton.focus();
+            }
+          });
+        }
+
+        /*
+        =====================================================
+        UTILITÁRIOS
+      =====================================================
+      */
+
+        function normalizeText(value) {
+          return String(value || "")
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .trim();
+        }
+
+        function getOfferCards() {
+          return Array.from(document.querySelectorAll(".offer-card"));
+        }
+
+        /*
+        =====================================================
+        BUSCA, FILTRO E ORDENAÇÃO
+      =====================================================
+      */
+
+        const offersGrid = document.getElementById("offersGrid");
+        const offerSearch = document.getElementById("offerSearch");
+        const brandFilter = document.getElementById("brandFilter");
+        const sortOffers = document.getElementById("sortOffers");
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const emptyState = document.getElementById("emptyState");
+
+        let activeCategory = "todos";
+
+        function sortCards(cards) {
+          if (!offersGrid || !sortOffers) return;
+
+          const sortValue = sortOffers.value;
+
+          cards.sort(function (a, b) {
+            const titleA = normalizeText(a.dataset.title);
+            const titleB = normalizeText(b.dataset.title);
+
+            const priceA = Number(a.dataset.price || 0);
+            const priceB = Number(b.dataset.price || 0);
+
+            const discountA = Number(a.dataset.discount || 0);
+            const discountB = Number(b.dataset.discount || 0);
+
+            const ratingA = Number(a.dataset.rating || 0);
+            const ratingB = Number(b.dataset.rating || 0);
+
+            if (sortValue === "desconto") return discountB - discountA;
+            if (sortValue === "menor-preco") return priceA - priceB;
+            if (sortValue === "maior-preco") return priceB - priceA;
+            if (sortValue === "avaliacao") return ratingB - ratingA;
+            if (sortValue === "az") return titleA.localeCompare(titleB);
+
+            return 0;
+          });
+
+          cards.forEach(function (card) {
+            offersGrid.appendChild(card);
+          });
+        }
+
+        function filterOffers() {
+          const cards = getOfferCards();
+          const searchTerm = normalizeText(
+            offerSearch ? offerSearch.value : "",
+          );
+          const selectedBrand = brandFilter ? brandFilter.value : "todas";
+
+          let visibleCount = 0;
+
+          cards.forEach(function (card) {
+            const cardCategory = card.dataset.category || "";
+            const cardBrand = card.dataset.brand || "";
+            const cardTitle = normalizeText(card.dataset.title);
+            const cardTags = normalizeText(card.dataset.tags);
+            const cardText = normalizeText(card.textContent);
+
+            const matchesCategory =
+              activeCategory === "todos" || cardCategory === activeCategory;
+
+            const matchesBrand =
+              selectedBrand === "todas" || cardBrand === selectedBrand;
+
+            const matchesSearch =
+              !searchTerm ||
+              cardTitle.includes(searchTerm) ||
+              cardTags.includes(searchTerm) ||
+              cardText.includes(searchTerm);
+
+            const shouldShow = matchesCategory && matchesBrand && matchesSearch;
+
+            card.hidden = !shouldShow;
+
+            if (shouldShow) {
+              visibleCount++;
+            }
+          });
+
+          if (emptyState) {
+            emptyState.hidden = visibleCount > 0;
+          }
+        }
+
+        if (offersGrid) {
+          sortCards(getOfferCards());
+          filterOffers();
+        }
+
+        if (offerSearch) {
+          offerSearch.addEventListener("input", filterOffers);
+        }
+
+        if (brandFilter) {
+          brandFilter.addEventListener("change", filterOffers);
+        }
+
+        if (sortOffers) {
+          sortOffers.addEventListener("change", function () {
+            sortCards(getOfferCards());
+            filterOffers();
+          });
+        }
+
+        filterButtons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            filterButtons.forEach(function (btn) {
+              btn.classList.remove("is-active");
+              btn.setAttribute("aria-pressed", "false");
+            });
+
+            button.classList.add("is-active");
+            button.setAttribute("aria-pressed", "true");
+
+            activeCategory = button.dataset.category || "todos";
+            filterOffers();
+          });
+        });
+
+        /*
+        =====================================================
+        BUSCA DO CABEÇALHO
+      =====================================================
+      */
+
+        const headerSearchForm = document.getElementById("headerSearchForm");
+        const headerSearchInput = document.getElementById("headerSearchInput");
+
+        if (headerSearchForm && headerSearchInput && offerSearch) {
+          headerSearchForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            offerSearch.value = headerSearchInput.value.trim();
+            filterOffers();
+
+            document.getElementById("ofertas")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          });
+        }
+
+        /*
+        =====================================================
+        COPIAR CUPOM
+      =====================================================
+      */
+
+        const couponButtons = document.querySelectorAll(".copy-coupon");
+
+        couponButtons.forEach(function (button) {
+          button.addEventListener("click", async function () {
+            const coupon = button.dataset.coupon || "";
+
+            try {
+              await navigator.clipboard.writeText(coupon);
+              const originalText = button.textContent;
+
+              button.textContent = "Copiado!";
+
+              setTimeout(function () {
+                button.textContent = originalText;
+              }, 1600);
+            } catch (error) {
+              alert("Cupom: " + coupon);
+            }
+          });
+        });
+
+        /*
+        =====================================================
+        COUNTDOWN SIMPLES
+        Exemplo: termina 24 horas após o carregamento da página.
+        Para campanha real, substitua por uma data fixa.
+      =====================================================
+      */
+
+        const daysEl = document.getElementById("days");
+        const hoursEl = document.getElementById("hours");
+        const minutesEl = document.getElementById("minutes");
+        const secondsEl = document.getElementById("seconds");
+
+        const endDate = new Date();
+        endDate.setHours(endDate.getHours() + 24);
+
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const distance = endDate.getTime() - now;
+
+          if (distance <= 0) {
+            if (daysEl) daysEl.textContent = "00";
+            if (hoursEl) hoursEl.textContent = "00";
+            if (minutesEl) minutesEl.textContent = "00";
+            if (secondsEl) secondsEl.textContent = "00";
+            return;
+          }
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((distance / (1000 * 60)) % 60);
+          const seconds = Math.floor((distance / 1000) % 60);
+
+          if (daysEl) daysEl.textContent = String(days).padStart(2, "0");
+          if (hoursEl) hoursEl.textContent = String(hours).padStart(2, "0");
+          if (minutesEl)
+            minutesEl.textContent = String(minutes).padStart(2, "0");
+          if (secondsEl)
+            secondsEl.textContent = String(seconds).padStart(2, "0");
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        /*
+        =====================================================
+        NEWSLETTER
+      =====================================================
+      */
+
+        const newsletterForm = document.getElementById("newsletterForm");
+        const newsletterEmail = document.getElementById("newsletterEmail");
+        const newsletterStatus = document.getElementById("newsletterStatus");
+
+        function isValidEmail(email) {
+          return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        if (newsletterForm && newsletterEmail && newsletterStatus) {
+          newsletterForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const email = newsletterEmail.value.trim();
+
+            if (!isValidEmail(email)) {
+              newsletterStatus.textContent =
+                "Informe um e-mail válido para continuar.";
+              newsletterEmail.focus();
+              return;
+            }
+
+            newsletterStatus.textContent =
+              "Cadastro realizado com sucesso. Você receberá nossas ofertas!";
+            newsletterForm.reset();
+          });
+        }
+
+        /*
+        =====================================================
+        ANO AUTOMÁTICO
+      =====================================================
+      */
+
+        const currentYear = document.getElementById("currentYear");
+
+        if (currentYear) {
+          currentYear.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
+  </body>
+</html>
