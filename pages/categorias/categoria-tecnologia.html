@@ -1,0 +1,1748 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- =====================================================
+    METADADOS BÁSICOS
+  ====================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tecnologia | MigueCaue Recomenda</title>
+
+    <meta
+      name="description"
+      content="Explore recomendações de tecnologia: smartphones, notebooks, casa inteligente, acessórios, eletrônicos, gadgets, comparativos e guias de compra."
+    />
+
+    <meta
+      name="keywords"
+      content="tecnologia, smartphones, notebooks, casa inteligente, gadgets, eletrônicos, acessórios tech, comparativos tecnologia, guias de compra"
+    />
+
+    <meta name="author" content="MigueCaue Recomenda" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tecnologia | MigueCaue Recomenda" />
+    <meta
+      property="og:description"
+      content="Veja recomendações, comparativos e guias para escolher produtos de tecnologia com mais segurança, economia e praticidade."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="MigueCaue Recomenda" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/webp"
+      href="../../assets/images/favicon.webp"
+    />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Tecnologia",
+        "description": "Recomendações, comparativos e guias de compra sobre produtos de tecnologia.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "MigueCaue Recomenda"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": "index.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Categorias",
+            "item": "categorias.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tecnologia",
+            "item": "categoria-tecnologia.html"
+          }
+        ]
+      }
+    </script>
+
+    <!-- =====================================================
+    ESTILOS GERAIS
+  ====================================================== -->
+    <style>
+      :root {
+        --color-navy: #001f33;
+        --color-blue-gray: #7898a8;
+        --color-light-blue: #c4d2d3;
+        --color-orange: #ffa764;
+        --color-coral: #f98261;
+        --color-beige: #e9dac8;
+        --color-off-white: #f6f1ea;
+        --color-white: #ffffff;
+
+        --text-main: #001f33;
+        --text-muted: #4f5b61;
+
+        --border-color: rgba(0, 31, 51, 0.12);
+
+        --shadow-soft: 0 14px 36px rgba(0, 31, 51, 0.12);
+        --shadow-card: 0 8px 24px rgba(0, 31, 51, 0.08);
+
+        --radius-small: 10px;
+        --radius-medium: 18px;
+        --radius-large: 28px;
+
+        --container: 1180px;
+        --header-height: 78px;
+
+        --transition-fast: 0.2s ease;
+        --transition-default: 0.3s ease;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: calc(var(--header-height) + 24px);
+      }
+
+      body {
+        font-family: "Inter", Arial, sans-serif;
+        background: var(--color-off-white);
+        color: var(--text-main);
+        line-height: 1.6;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      button {
+        border: 0;
+        cursor: pointer;
+        font: inherit;
+        background: none;
+      }
+
+      :focus-visible {
+        outline: 3px solid var(--color-orange);
+        outline-offset: 4px;
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--container);
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      .section {
+        padding: 72px 0;
+      }
+
+      .section-title {
+        max-width: 820px;
+        margin-bottom: 32px;
+      }
+
+      .section-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+        color: var(--color-coral);
+        font-size: 0.82rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .section-title h2 {
+        margin-bottom: 14px;
+        color: var(--color-navy);
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+      }
+
+      .section-title p {
+        color: var(--text-muted);
+        font-size: 1.05rem;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 48px;
+        padding: 13px 22px;
+        border-radius: 999px;
+        font-weight: 800;
+        transition:
+          transform var(--transition-fast),
+          box-shadow var(--transition-fast),
+          background var(--transition-fast),
+          color var(--transition-fast);
+      }
+
+      .btn-primary {
+        background: var(--color-coral);
+        color: var(--color-white);
+        box-shadow: 0 12px 26px rgba(249, 130, 97, 0.28);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        background: var(--color-orange);
+        box-shadow: 0 16px 34px rgba(249, 130, 97, 0.38);
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.9);
+        color: var(--color-navy);
+        border: 1px solid var(--border-color);
+      }
+
+      .btn-secondary:hover {
+        transform: translateY(-2px);
+        border-color: rgba(249, 130, 97, 0.45);
+        box-shadow: var(--shadow-card);
+      }
+
+      /* =====================================================
+      ACESSIBILIDADE
+    ====================================================== */
+      .skip-link {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        z-index: 9999;
+        transform: translateY(-160%);
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: var(--color-navy);
+        color: var(--color-white);
+        font-weight: 800;
+        transition: transform var(--transition-fast);
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      /* =====================================================
+      HEADER
+    ====================================================== */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        min-height: var(--header-height);
+        background: rgba(246, 241, 234, 0.9);
+        border-bottom: 1px solid var(--border-color);
+        backdrop-filter: blur(18px);
+      }
+
+      .header-inner {
+        min-height: var(--header-height);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+        font-weight: 900;
+      }
+
+      .brand img {
+        width: 176px;
+        height: auto;
+      }
+
+      .brand-title {
+        display: none;
+      }
+
+      .nav-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .main-nav ul {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .main-nav a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 42px;
+        padding: 8px 12px;
+        border-radius: 999px;
+        color: var(--text-main);
+        font-size: 0.94rem;
+        font-weight: 800;
+        transition:
+          background var(--transition-fast),
+          color var(--transition-fast);
+      }
+
+      .main-nav a:hover,
+      .main-nav a[aria-current="page"],
+      .main-nav a.is-active {
+        background: rgba(249, 130, 97, 0.14);
+        color: var(--color-coral);
+      }
+
+      .header-cta {
+        white-space: nowrap;
+        min-height: 42px;
+        padding: 10px 16px;
+        font-size: 0.9rem;
+      }
+
+      .menu-toggle {
+        display: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 14px;
+        background: var(--color-white);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-card);
+      }
+
+      .menu-toggle span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin: 5px auto;
+        border-radius: 999px;
+        background: var(--color-navy);
+        transition:
+          transform var(--transition-fast),
+          opacity var(--transition-fast);
+      }
+
+      .menu-toggle[aria-expanded="true"] span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      .menu-toggle[aria-expanded="true"] span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .menu-toggle[aria-expanded="true"] span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+
+      /* =====================================================
+      HERO
+    ====================================================== */
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 84px 0 72px;
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(255, 167, 100, 0.36),
+            transparent 32%
+          ),
+          linear-gradient(135deg, #001f33 0%, #173f54 48%, #7898a8 100%);
+        color: var(--color-white);
+      }
+
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: auto -10% -38% 44%;
+        width: 560px;
+        height: 560px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        pointer-events: none;
+      }
+
+      .hero-grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+        gap: 42px;
+        align-items: center;
+      }
+
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 18px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        font-size: 0.84rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .hero h1 {
+        max-width: 780px;
+        margin-bottom: 18px;
+        font-size: clamp(2.4rem, 6vw, 4.8rem);
+        line-height: 1;
+        letter-spacing: -0.05em;
+      }
+
+      .hero p {
+        max-width: 660px;
+        margin-bottom: 28px;
+        color: rgba(255, 255, 255, 0.84);
+        font-size: 1.12rem;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .hero-panel {
+        padding: 24px;
+        border-radius: var(--radius-large);
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 24px 60px rgba(0, 31, 51, 0.28);
+        backdrop-filter: blur(20px);
+      }
+
+      .trend-list {
+        display: grid;
+        gap: 14px;
+      }
+
+      .trend-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.92);
+        color: var(--color-navy);
+      }
+
+      .trend-icon {
+        display: grid;
+        place-items: center;
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: var(--color-light-blue);
+        font-size: 1.35rem;
+      }
+
+      .trend-item strong {
+        display: block;
+        line-height: 1.2;
+      }
+
+      .trend-item span {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+      }
+
+      /* =====================================================
+      NAVEGAÇÃO INTERNA
+    ====================================================== */
+      .section-nav {
+        position: sticky;
+        top: var(--header-height);
+        z-index: 900;
+        background: rgba(246, 241, 234, 0.94);
+        border-bottom: 1px solid var(--border-color);
+        backdrop-filter: blur(16px);
+      }
+
+      .section-nav-list {
+        display: flex;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 12px 0;
+        scrollbar-width: thin;
+        scroll-snap-type: x proximity;
+      }
+
+      .section-nav-list li {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+      }
+
+      .section-nav a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 38px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--color-white);
+        border: 1px solid var(--border-color);
+        color: var(--text-main);
+        font-size: 0.9rem;
+        font-weight: 800;
+        white-space: nowrap;
+        transition:
+          background var(--transition-fast),
+          color var(--transition-fast),
+          border-color var(--transition-fast);
+      }
+
+      .section-nav a:hover,
+      .section-nav a.is-active {
+        background: var(--color-coral);
+        border-color: var(--color-coral);
+        color: var(--color-white);
+      }
+
+      /* =====================================================
+      CARDS
+    ====================================================== */
+      .category-grid,
+      .articles-grid,
+      .products-grid,
+      .guides-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        height: 100%;
+        padding: 24px;
+        border-radius: var(--radius-large);
+        background: var(--color-white);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-card);
+        transition:
+          transform var(--transition-fast),
+          box-shadow var(--transition-fast),
+          border-color var(--transition-fast);
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(249, 130, 97, 0.42);
+        box-shadow: var(--shadow-soft);
+      }
+
+      .card-icon {
+        display: grid;
+        place-items: center;
+        width: 56px;
+        height: 56px;
+        margin-bottom: 16px;
+        border-radius: 18px;
+        background: var(--color-light-blue);
+        font-size: 1.5rem;
+      }
+
+      .card h3 {
+        margin-bottom: 8px;
+        color: var(--color-navy);
+        font-size: 1.16rem;
+        line-height: 1.3;
+      }
+
+      .card p {
+        color: var(--text-muted);
+        font-size: 0.96rem;
+      }
+
+      .card-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 16px;
+        color: var(--color-coral);
+        font-weight: 900;
+      }
+
+      .article-card {
+        overflow: hidden;
+        padding: 0;
+      }
+
+      .article-media {
+        display: grid;
+        place-items: center;
+        min-height: 160px;
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(255, 167, 100, 0.38),
+            transparent 34%
+          ),
+          linear-gradient(
+            135deg,
+            var(--color-light-blue),
+            var(--color-blue-gray)
+          );
+        font-size: 4rem;
+      }
+
+      .article-content {
+        padding: 22px;
+      }
+
+      .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 10px;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        min-height: 28px;
+        padding: 5px 10px;
+        border-radius: 999px;
+        background: rgba(249, 130, 97, 0.12);
+        color: var(--color-coral);
+        font-size: 0.78rem;
+        font-weight: 900;
+      }
+
+      /* =====================================================
+      FILTROS
+    ====================================================== */
+      .filters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 28px;
+      }
+
+      .filter-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--color-white);
+        border: 1px solid var(--border-color);
+        color: var(--text-main);
+        font-weight: 800;
+        transition:
+          background var(--transition-fast),
+          color var(--transition-fast),
+          border-color var(--transition-fast);
+      }
+
+      .filter-btn:hover,
+      .filter-btn.is-active {
+        background: var(--color-coral);
+        border-color: var(--color-coral);
+        color: var(--color-white);
+      }
+
+      /* =====================================================
+      FEATURE BLOCK
+    ====================================================== */
+      .feature-block {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+        gap: 32px;
+        align-items: center;
+        padding: 34px;
+        border-radius: var(--radius-large);
+        background: var(--color-white);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-card);
+      }
+
+      .feature-media {
+        min-height: 340px;
+        display: grid;
+        place-items: center;
+        border-radius: 24px;
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(255, 167, 100, 0.42),
+            transparent 34%
+          ),
+          linear-gradient(
+            135deg,
+            var(--color-light-blue),
+            var(--color-blue-gray)
+          );
+        font-size: clamp(5rem, 14vw, 9rem);
+      }
+
+      .feature-content h2 {
+        margin-bottom: 14px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.1;
+        letter-spacing: -0.04em;
+      }
+
+      .feature-content p {
+        margin-bottom: 18px;
+        color: var(--text-muted);
+      }
+
+      .check-list {
+        display: grid;
+        gap: 10px;
+        margin: 22px 0;
+      }
+
+      .check-list li {
+        display: flex;
+        gap: 10px;
+        color: var(--text-muted);
+      }
+
+      .check-list li::before {
+        content: "✓";
+        display: grid;
+        place-items: center;
+        width: 22px;
+        height: 22px;
+        flex-shrink: 0;
+        border-radius: 999px;
+        background: rgba(249, 130, 97, 0.16);
+        color: var(--color-coral);
+        font-weight: 900;
+      }
+
+      /* =====================================================
+      CTA
+    ====================================================== */
+      .cta-section {
+        padding: 52px;
+        border-radius: var(--radius-large);
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(255, 167, 100, 0.32),
+            transparent 32%
+          ),
+          var(--color-navy);
+        color: var(--color-white);
+        text-align: center;
+      }
+
+      .cta-section h2 {
+        max-width: 760px;
+        margin: 0 auto 14px;
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        line-height: 1.1;
+      }
+
+      .cta-section p {
+        max-width: 680px;
+        margin: 0 auto 24px;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .cta-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      /* =====================================================
+      FOOTER
+    ====================================================== */
+      .site-footer {
+        margin-top: 72px;
+        padding: 56px 0 24px;
+        background: var(--color-navy);
+        color: rgba(255, 255, 255, 0.74);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.4fr 0.8fr 0.8fr 1fr;
+        gap: 32px;
+        padding-bottom: 36px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .footer-brand img {
+        width: 164px;
+        margin-bottom: 16px;
+      }
+
+      .footer-brand p {
+        max-width: 360px;
+      }
+
+      .site-footer h3 {
+        margin-bottom: 14px;
+        color: var(--color-white);
+        font-size: 1rem;
+      }
+
+      .footer-links {
+        display: grid;
+        gap: 9px;
+      }
+
+      .footer-links a {
+        transition: color var(--transition-fast);
+      }
+
+      .footer-links a:hover {
+        color: var(--color-orange);
+      }
+
+      .footer-contact {
+        display: grid;
+        gap: 9px;
+        font-style: normal;
+      }
+
+      .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        padding-top: 24px;
+        font-size: 0.9rem;
+      }
+
+      .footer-bottom a {
+        color: var(--color-orange);
+        font-weight: 800;
+      }
+
+      /* =====================================================
+      ANIMAÇÕES
+    ====================================================== */
+      .reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition:
+          opacity 0.5s ease,
+          transform 0.5s ease;
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* =====================================================
+      RESPONSIVIDADE
+    ====================================================== */
+      @media (max-width: 980px) {
+        .menu-toggle {
+          display: inline-block;
+        }
+
+        .nav-wrapper {
+          position: fixed;
+          top: var(--header-height);
+          right: 16px;
+          left: 16px;
+          display: grid;
+          gap: 16px;
+          padding: 18px;
+          border-radius: 24px;
+          background: rgba(255, 255, 255, 0.96);
+          border: 1px solid var(--border-color);
+          box-shadow: var(--shadow-soft);
+          transform: translateY(-12px);
+          opacity: 0;
+          visibility: hidden;
+          pointer-events: none;
+          transition:
+            opacity var(--transition-default),
+            transform var(--transition-default),
+            visibility var(--transition-default);
+        }
+
+        .nav-wrapper.is-open {
+          transform: translateY(0);
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+
+        .main-nav ul {
+          display: grid;
+          gap: 8px;
+        }
+
+        .main-nav a {
+          width: 100%;
+          justify-content: center;
+          background: rgba(0, 31, 51, 0.04);
+        }
+
+        .header-cta {
+          width: 100%;
+        }
+
+        .hero-grid,
+        .feature-block {
+          grid-template-columns: 1fr;
+        }
+
+        .category-grid,
+        .articles-grid,
+        .products-grid,
+        .guides-grid,
+        .footer-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 640px) {
+        :root {
+          --header-height: 72px;
+        }
+
+        .brand img {
+          width: 148px;
+        }
+
+        .hero {
+          padding: 64px 0 52px;
+        }
+
+        .section {
+          padding: 52px 0;
+        }
+
+        .hero-actions,
+        .cta-actions {
+          display: grid;
+        }
+
+        .btn {
+          width: 100%;
+        }
+
+        .category-grid,
+        .articles-grid,
+        .products-grid,
+        .guides-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .feature-block {
+          padding: 22px;
+        }
+
+        .feature-media {
+          min-height: 240px;
+        }
+
+        .cta-section {
+          padding: 34px 22px;
+        }
+
+        .footer-bottom {
+          flex-direction: column;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo</a>
+
+    <!-- =====================================================
+    HEADER
+  ====================================================== -->
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
+        <a
+          href="../../public/index.html"
+          class="brand"
+          aria-label="Página inicial do MigueCaue Recomenda"
+        >
+          <img
+            src="../../assets/images/logo-cabeçalho.webp"
+            alt="MigueCaue Recomenda"
+            width="176"
+            height="48"
+          />
+          <span class="brand-title">MigueCaue Recomenda</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu de navegação"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-wrapper" id="menu-principal">
+          <nav class="main-nav" aria-label="Navegação principal">
+            <ul>
+              <li><a href="../../public/index.html">Início</a></li>
+              <li>
+                <a href="../../public/categorias.html" aria-current="page"
+                  >Categorias</a
+                >
+              </li>
+              <li><a href="../../public/blog.html">Blog</a></li>
+              <li><a href="../../public/ofertas.html">Ofertas</a></li>
+              <li><a href="../../public/comparativos.html">Comparativos</a></li>
+            </ul>
+          </nav>
+
+          <a
+            href="../../public/ofertas.html"
+            class="btn btn-primary header-cta"
+          >
+            Ver ofertas
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <!-- =====================================================
+      HERO
+    ====================================================== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <span class="hero-badge">💻 Tecnologia</span>
+
+            <h1 id="hero-title">
+              Recomendações inteligentes para escolher tecnologia melhor
+            </h1>
+
+            <p>
+              Encontre guias, comparativos, ofertas e sugestões de smartphones,
+              notebooks, gadgets, acessórios, dispositivos smart e eletrônicos
+              para comprar com mais segurança.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#subcategorias" class="btn btn-primary">
+                Explorar categorias
+              </a>
+
+              <a href="#guias" class="btn btn-secondary">
+                Ver guias de compra
+              </a>
+            </div>
+          </div>
+
+          <aside
+            class="hero-panel reveal"
+            aria-label="Tendências em tecnologia"
+          >
+            <div class="trend-list">
+              <div class="trend-item">
+                <div class="trend-icon">📱</div>
+                <div>
+                  <strong>Smartphones</strong>
+                  <span>Modelos custo-benefício, premium e intermediários</span>
+                </div>
+              </div>
+
+              <div class="trend-item">
+                <div class="trend-icon">💻</div>
+                <div>
+                  <strong>Notebooks</strong>
+                  <span>Opções para estudo, trabalho, edição e jogos</span>
+                </div>
+              </div>
+
+              <div class="trend-item">
+                <div class="trend-icon">🏠</div>
+                <div>
+                  <strong>Casa Inteligente</strong>
+                  <span>Automação, segurança, iluminação e assistentes</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      NAVEGAÇÃO INTERNA
+    ====================================================== -->
+      <nav class="section-nav" aria-label="Navegação da categoria tecnologia">
+        <div class="container">
+          <ul class="section-nav-list">
+            <li>
+              <a href="#subcategorias" class="section-link">Subcategorias</a>
+            </li>
+            <li><a href="#destaques" class="section-link">Destaques</a></li>
+            <li><a href="#produtos" class="section-link">Produtos</a></li>
+            <li><a href="#guias" class="section-link">Guias</a></li>
+            <li><a href="#ofertas" class="section-link">Ofertas</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- =====================================================
+      SUBCATEGORIAS
+    ====================================================== -->
+      <section
+        class="section"
+        id="subcategorias"
+        aria-labelledby="subcategorias-title"
+      >
+        <div class="container">
+          <div class="section-title reveal">
+            <span class="section-eyebrow">Explore por tema</span>
+
+            <h2 id="subcategorias-title">Subcategorias de tecnologia</h2>
+
+            <p>
+              Navegue pelas áreas mais procuradas para encontrar produtos,
+              recomendações e conteúdos específicos para cada necessidade.
+            </p>
+          </div>
+
+          <div class="category-grid">
+            <article class="card reveal">
+              <div class="card-icon">📱</div>
+              <h3>Smartphones</h3>
+              <p>
+                Celulares para fotos, jogos, produtividade, bateria duradoura e
+                melhor custo-benefício.
+              </p>
+              <a href="#produtos" class="card-link"> Ver smartphones → </a>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon">💻</div>
+              <h3>Notebooks</h3>
+              <p>
+                Modelos para estudar, trabalhar, programar, editar vídeos ou
+                jogar com desempenho.
+              </p>
+              <a href="../../public/blog.html" class="card-link">
+                Ver notebooks →
+              </a>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon">🏠</div>
+              <h3>Casa inteligente</h3>
+              <p>
+                Dispositivos smart, automação residencial, assistentes virtuais,
+                câmeras e sensores.
+              </p>
+              <a href="categoria-casa-inteligente.html" class="card-link">
+                Ver casa inteligente →
+              </a>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon">🎧</div>
+              <h3>Áudio e fones</h3>
+              <p>
+                Fones Bluetooth, caixas de som, soundbars e acessórios para uma
+                melhor experiência sonora.
+              </p>
+              <a href="#produtos" class="card-link"> Ver áudio → </a>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon">⌚</div>
+              <h3>Wearables</h3>
+              <p>
+                Smartwatches, pulseiras inteligentes e dispositivos para saúde,
+                treino e notificações.
+              </p>
+              <a href="#produtos" class="card-link"> Ver wearables → </a>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon">🎮</div>
+              <h3>Games e acessórios</h3>
+              <p>
+                Controles, headsets, teclados, mouses, monitores e acessórios
+                para jogadores.
+              </p>
+              <a href="#produtos" class="card-link"> Ver games → </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      DESTAQUES / ARTIGOS
+    ====================================================== -->
+      <section class="section" id="destaques" aria-labelledby="destaques-title">
+        <div class="container">
+          <div class="section-title reveal">
+            <span class="section-eyebrow">Conteúdos recomendados</span>
+
+            <h2 id="destaques-title">Artigos e comparativos em destaque</h2>
+
+            <p>
+              Conteúdos pensados para ajudar você a comparar produtos, entender
+              especificações e escolher melhor antes de comprar.
+            </p>
+          </div>
+
+          <div class="filters reveal" aria-label="Filtros de conteúdo">
+            <button class="filter-btn is-active" type="button">Todos</button>
+            <button class="filter-btn" type="button">Celulares</button>
+            <button class="filter-btn" type="button">Notebooks</button>
+            <button class="filter-btn" type="button">Casa smart</button>
+            <button class="filter-btn" type="button">Acessórios</button>
+          </div>
+
+          <div class="articles-grid">
+            <article class="card article-card reveal">
+              <div class="article-media" aria-hidden="true">📱</div>
+
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="tag">Smartphones</span>
+                  <span class="tag">Comparativo</span>
+                </div>
+
+                <h3>Como escolher um smartphone custo-benefício</h3>
+
+                <p>
+                  Veja o que analisar em câmera, bateria, tela, processador,
+                  armazenamento e atualizações.
+                </p>
+
+                <a href="../../public/comparativos.html" class="card-link">
+                  Ler comparativo →
+                </a>
+              </div>
+            </article>
+
+            <article class="card article-card reveal">
+              <div class="article-media" aria-hidden="true">💻</div>
+
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="tag">Notebooks</span>
+                  <span class="tag">Guia</span>
+                </div>
+
+                <h3>Notebook para trabalho: o que realmente importa?</h3>
+
+                <p>
+                  Entenda memória RAM, SSD, processador, tela, autonomia e
+                  portabilidade antes de comprar.
+                </p>
+
+                <a href="../../public/guias-de-compras.html" class="card-link">
+                  Ler guia →
+                </a>
+              </div>
+            </article>
+
+            <article class="card article-card reveal">
+              <div class="article-media" aria-hidden="true">🏠</div>
+
+              <div class="article-content">
+                <div class="article-meta">
+                  <span class="tag">Casa smart</span>
+                  <span class="tag">Iniciantes</span>
+                </div>
+
+                <h3>Como começar uma casa inteligente gastando pouco</h3>
+
+                <p>
+                  Conheça os primeiros dispositivos para automatizar sua casa
+                  sem complicação.
+                </p>
+
+                <a href="categoria-casa-inteligente.html" class="card-link">
+                  Ver recomendações →
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      PRODUTOS RELACIONADOS
+    ====================================================== -->
+      <section class="section" id="produtos" aria-labelledby="produtos-title">
+        <div class="container">
+          <div class="section-title reveal">
+            <span class="section-eyebrow">Produtos populares</span>
+
+            <h2 id="produtos-title">Produtos de tecnologia mais procurados</h2>
+
+            <p>
+              Separamos categorias de produtos com alta procura para facilitar
+              sua decisão e acelerar sua jornada de compra.
+            </p>
+          </div>
+
+          <div class="products-grid">
+            <article class="card reveal">
+              <div class="card-icon">🔋</div>
+              <h3>Power banks</h3>
+              <p>
+                Baterias portáteis para viagens, trabalho, estudos e uso intenso
+                no dia a dia.
+              </p>
+              <a href="../../public/ofertas.html" class="card-link"
+                >Ver ofertas →</a
+              >
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon">🖱️</div>
+              <h3>Mouses e teclados</h3>
+              <p>
+                Acessórios para produtividade, conforto, home office, setup
+                gamer e estudos.
+              </p>
+              <a href="../../public/ofertas.html" class="card-link"
+                >Ver ofertas →</a
+              >
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon">🖥️</div>
+              <h3>Monitores</h3>
+              <p>
+                Telas para trabalho, edição, jogos, estudos e maior conforto
+                visual.
+              </p>
+              <a href="../../public/comparativos.html" class="card-link"
+                >Comparar →</a
+              >
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon">📷</div>
+              <h3>Câmeras e webcams</h3>
+              <p>
+                Soluções para reuniões, gravações, aulas online, streaming e
+                segurança.
+              </p>
+              <a href="../../public/ofertas.html" class="card-link"
+                >Ver ofertas →</a
+              >
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon">🔌</div>
+              <h3>Carregadores e cabos</h3>
+              <p>
+                Acessórios essenciais para manter seus dispositivos sempre
+                carregados.
+              </p>
+              <a href="../../public/ofertas.html" class="card-link"
+                >Ver ofertas →</a
+              >
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon">📡</div>
+              <h3>Roteadores e rede Wi-Fi</h3>
+              <p>
+                Equipamentos para melhorar sinal, estabilidade e velocidade da
+                internet.
+              </p>
+              <a href="../../public/guias-de-compras.html" class="card-link">
+                Ver guia →
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      GUIA ESTRATÉGICO
+    ====================================================== -->
+      <section class="section" id="guias" aria-labelledby="guias-title">
+        <div class="container">
+          <div class="feature-block reveal">
+            <div class="feature-media" aria-hidden="true">🧠</div>
+
+            <div class="feature-content">
+              <span class="section-eyebrow">Compra inteligente</span>
+
+              <h2 id="guias-title">
+                Antes de comprar tecnologia, compare além do preço
+              </h2>
+
+              <p>
+                Um bom produto de tecnologia deve equilibrar desempenho,
+                durabilidade, suporte, compatibilidade, avaliações reais e custo
+                total de uso.
+              </p>
+
+              <ul class="check-list">
+                <li>Compare especificações com o seu tipo de uso.</li>
+                <li>Verifique garantia, assistência e reputação da marca.</li>
+                <li>Leia avaliações de usuários e comparativos técnicos.</li>
+                <li>
+                  Analise se o produto terá atualizações e suporte futuro.
+                </li>
+                <li>Evite comprar apenas pelo menor preço anunciado.</li>
+              </ul>
+
+              <a
+                href="../../public/guias-de-compras.html"
+                class="btn btn-primary"
+              >
+                Acessar guias de compra
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+      CTA / OFERTAS
+    ====================================================== -->
+      <section class="section" id="ofertas" aria-labelledby="ofertas-title">
+        <div class="container">
+          <div class="cta-section reveal">
+            <h2 id="ofertas-title">
+              Encontre ofertas de tecnologia com mais confiança
+            </h2>
+
+            <p>
+              Veja recomendações, promoções, comparativos e oportunidades para
+              comprar produtos de tecnologia com melhor custo-benefício.
+            </p>
+
+            <div class="cta-actions">
+              <a href="../../public/ofertas.html" class="btn btn-primary">
+                Ver ofertas de tecnologia
+              </a>
+
+              <a
+                href="../../public/comparativos.html"
+                class="btn btn-secondary"
+              >
+                Comparar produtos
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+    FOOTER
+  ====================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a
+              href="../../public/index.html"
+              aria-label="Página inicial do MigueCaue Recomenda"
+            >
+              <img
+                src="../../assets/images/logo-rodape.webp"
+                alt="MigueCaue Recomenda"
+                width="164"
+                height="48"
+              />
+            </a>
+
+            <p>
+              Recomendações, guias e comparativos para ajudar você a escolher
+              produtos com mais segurança, economia e praticidade.
+            </p>
+          </div>
+
+          <div>
+            <h3>Navegação</h3>
+
+            <ul class="footer-links">
+              <li><a href="../../public/index.html">Início</a></li>
+              <li><a href="../../public/categorias.html">Categorias</a></li>
+              <li><a href="../../public/blog.html">Blog</a></li>
+              <li><a href="../../public/ofertas.html">Ofertas</a></li>
+              <li><a href="../../public/comparativos.html">Comparativos</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Links úteis</h3>
+
+            <ul class="footer-links">
+              <li>
+                <a href="../../public/guias-de-compras.html">Guias de compra</a>
+              </li>
+              <li><a href="categoria-tecnologia.html">Tecnologia</a></li>
+              <li>
+                <a href="categoria-eletrodomesticos.html">Eletrodomésticos</a>
+              </li>
+              <li><a href="#topo">Voltar ao topo</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Contato</h3>
+
+            <address class="footer-contact">
+              <span>E-mail: contato@miguecauerecomenda.com.br</span>
+              <span>São Paulo, Brasil</span>
+              <span>Atendimento online</span>
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="current-year"></span> MigueCaue Recomenda. Todos os
+            direitos reservados.
+          </p>
+
+          <p>Feito para recomendações inteligentes.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+    JAVASCRIPT
+  ====================================================== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navWrapper = document.querySelector(".nav-wrapper");
+        const navLinks = document.querySelectorAll(
+          ".main-nav a, .section-link, .footer-links a",
+        );
+        const sectionLinks = document.querySelectorAll(".section-link");
+        const sections = document.querySelectorAll("main section[id]");
+        const revealElements = document.querySelectorAll(".reveal");
+        const currentYear = document.querySelector("#current-year");
+        const filterButtons = document.querySelectorAll(".filter-btn");
+
+        if (currentYear) {
+          currentYear.textContent = new Date().getFullYear();
+        }
+
+        function closeMenu() {
+          if (!menuToggle || !navWrapper) return;
+
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Abrir menu de navegação");
+          navWrapper.classList.remove("is-open");
+        }
+
+        function toggleMenu() {
+          if (!menuToggle || !navWrapper) return;
+
+          const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+
+          menuToggle.setAttribute("aria-expanded", String(!isOpen));
+          menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Abrir menu de navegação" : "Fechar menu de navegação",
+          );
+
+          navWrapper.classList.toggle("is-open", !isOpen);
+        }
+
+        if (menuToggle) {
+          menuToggle.addEventListener("click", toggleMenu);
+        }
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            closeMenu();
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            closeMenu();
+          });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", (event) => {
+            const targetId = anchor.getAttribute("href");
+
+            if (!targetId || targetId === "#") return;
+
+            const targetElement = document.querySelector(targetId);
+
+            if (!targetElement) return;
+
+            event.preventDefault();
+
+            targetElement.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+
+            history.pushState(null, "", targetId);
+          });
+        });
+
+        if ("IntersectionObserver" in window && sections.length > 0) {
+          const sectionObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+
+                const activeId = entry.target.getAttribute("id");
+
+                sectionLinks.forEach((link) => {
+                  const isActive = link.getAttribute("href") === `#${activeId}`;
+                  link.classList.toggle("is-active", isActive);
+                });
+              });
+            },
+            {
+              rootMargin: "-45% 0px -45% 0px",
+              threshold: 0,
+            },
+          );
+
+          sections.forEach((section) => {
+            sectionObserver.observe(section);
+          });
+        }
+
+        if ("IntersectionObserver" in window && revealElements.length > 0) {
+          const revealObserver = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+
+                entry.target.classList.add("is-visible");
+                observer.unobserve(entry.target);
+              });
+            },
+            {
+              threshold: 0.12,
+            },
+          );
+
+          revealElements.forEach((element) => {
+            revealObserver.observe(element);
+          });
+        } else {
+          revealElements.forEach((element) => {
+            element.classList.add("is-visible");
+          });
+        }
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            filterButtons.forEach((item) => item.classList.remove("is-active"));
+            button.classList.add("is-active");
+          });
+        });
+
+        document.querySelectorAll("a[href$='.html']").forEach((link) => {
+          link.addEventListener("click", (event) => {
+            const url = link.getAttribute("href");
+
+            if (
+              !url ||
+              link.target === "_blank" ||
+              event.metaKey ||
+              event.ctrlKey
+            ) {
+              return;
+            }
+
+            if (!document.startViewTransition) {
+              return;
+            }
+
+            event.preventDefault();
+
+            document.startViewTransition(() => {
+              window.location.href = url;
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
