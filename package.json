@@ -1,0 +1,19 @@
+{
+  "name": "site-miguecaue-recomenda",
+  "version": "1.0.0",
+  "description": "Site MigueCaue Recomenda - recomendações, conteúdos e informações selecionadas.",
+  "private": true,
+  "scripts": {
+    "start": "live-server .",
+    "format": "prettier --write \"**/*.{html,css,js,json,md}\""
+  },
+  "keywords": [
+    "miguecaue",
+    "recomenda",
+    "site",
+    "web"
+  ],
+  "author": "Miguel Ângelo",
+  "license": "MIT",
+  "devDependencies": {}
+}
