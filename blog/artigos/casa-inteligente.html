@@ -1,0 +1,1833 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- =========================================================
+      CONFIGURAÇÕES BÁSICAS DO DOCUMENTO
+    ========================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Como começar uma casa inteligente gastando pouco | MigueCaue Recomenda
+    </title>
+
+    <meta
+      name="description"
+      content="Veja como começar uma casa inteligente gastando pouco com dispositivos acessíveis, automações simples, dicas de economia e um passo a passo para evoluir aos poucos."
+    />
+
+    <meta name="robots" content="index, follow" />
+
+    <link
+      rel="canonical"
+      href="https://www.miguecaue.com.br/artigos-blog.html/blog/casa-inteligente-gastando-pouco.html"
+    />
+
+    <link
+      rel="icon"
+      type="image/webp"
+      href="../../assets/images/favicon.webp"
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Como começar uma casa inteligente gastando pouco"
+    />
+    <meta
+      property="og:description"
+      content="Guia prático para montar uma casa inteligente econômica com dispositivos acessíveis, automações simples e boas decisões de compra."
+    />
+    <meta
+      property="og:image"
+      content="https://www.miguecaue.com.br/assets/images/hero-casa-inteligente-economica.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://www.miguecaue.com.br/artigos-blog.html/blog/casa-inteligente-gastando-pouco.html"
+    />
+    <meta property="og:type" content="article" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Como começar uma casa inteligente gastando pouco"
+    />
+    <meta
+      name="twitter:description"
+      content="Veja quais dispositivos comprar primeiro para iniciar sua casa inteligente gastando pouco."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.miguecaue.com.br/assets/images/hero-casa-inteligente-economica.webp"
+    />
+
+    <!-- =========================================================
+      ESTILOS GERAIS, HEADER, FOOTER, ARTIGO E RESPONSIVIDADE
+    ========================================================== -->
+    <style>
+      :root {
+        --mc-primary: #0f4c81;
+        --mc-primary-dark: #083456;
+        --mc-secondary: #ff6b35;
+        --mc-accent: #f4a261;
+        --mc-bg: #f7f8fa;
+        --mc-card: #ffffff;
+        --mc-text: #1f2937;
+        --mc-muted: #6b7280;
+        --mc-border: #e5e7eb;
+        --mc-success: #16803c;
+        --mc-warning: #b7791f;
+        --mc-radius: 18px;
+        --mc-shadow: 0 12px 35px rgba(15, 76, 129, 0.12);
+        --mc-font:
+          system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--mc-bg);
+        color: var(--mc-text);
+        font-family: var(--mc-font);
+        line-height: 1.75;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      a {
+        color: var(--mc-primary);
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: var(--mc-secondary);
+      }
+
+      :focus-visible {
+        outline: 3px solid var(--mc-secondary);
+        outline-offset: 4px;
+      }
+
+      /* =========================================================
+        BARRA DE PROGRESSO DE LEITURA
+      ========================================================== */
+      .mc-reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, var(--mc-primary), var(--mc-accent));
+        transition: width 0.15s ease;
+      }
+
+      /* =========================================================
+        HEADER PRINCIPAL
+      ========================================================== */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #ffffff;
+        border-bottom: 1px solid var(--mc-border);
+        box-shadow: 0 4px 18px rgba(15, 76, 129, 0.08);
+      }
+
+      .site-header-inner,
+      .site-footer-inner {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .site-header-inner {
+        min-height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .site-logo,
+      .site-footer-logo {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .site-logo img,
+      .site-footer-logo img {
+        width: 170px;
+        height: auto;
+      }
+
+      .site-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 6px 18px;
+        font-size: 0.92rem;
+        font-weight: 700;
+      }
+
+      .site-nav a {
+        color: var(--mc-primary-dark);
+        text-decoration: none;
+      }
+
+      .site-nav a:hover,
+      .site-nav a:focus-visible {
+        color: var(--mc-secondary);
+      }
+
+      /* =========================================================
+        CONTAINER DO ARTIGO
+      ========================================================== */
+      .article-content {
+        width: min(1120px, calc(100% - 32px));
+        margin: 40px auto;
+        background: var(--mc-card);
+        border-radius: 24px;
+        box-shadow: var(--mc-shadow);
+        overflow: hidden;
+      }
+
+      .article-inner {
+        width: min(880px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 42px 0;
+      }
+
+      /* =========================================================
+        CABEÇALHO DO ARTIGO
+      ========================================================== */
+      .article-header {
+        background:
+          linear-gradient(
+            135deg,
+            rgba(15, 76, 129, 0.94),
+            rgba(8, 52, 86, 0.92)
+          ),
+          url("../../assets/images/hero-casa-inteligente-economica.webp")
+            center/cover no-repeat;
+        color: #ffffff;
+        padding: 42px 24px 34px;
+      }
+
+      .article-header-inner {
+        width: min(960px, 100%);
+        margin: 0 auto;
+      }
+
+      .breadcrumb {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 24px;
+        padding: 9px 13px;
+        background: rgba(3, 32, 57, 0.38);
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: 10px;
+        font-size: 0.86rem;
+        line-height: 1.4;
+        backdrop-filter: blur(8px);
+      }
+
+      .breadcrumb ol {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px 0;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .breadcrumb li {
+        display: inline-flex;
+        align-items: center;
+        color: #ffffff;
+      }
+
+      .breadcrumb li:not(:last-child)::after {
+        content: "›";
+        margin: 0 9px;
+        color: #ffffff;
+      }
+
+      .breadcrumb a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .breadcrumb a:hover,
+      .breadcrumb a:focus-visible {
+        color: var(--mc-accent);
+      }
+
+      .article-category {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        background: rgba(255, 255, 255, 0.16);
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 999px;
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .article-category:hover,
+      .article-category:focus-visible {
+        color: var(--mc-accent);
+        background: rgba(255, 255, 255, 0.24);
+      }
+
+      .article-header h1 {
+        max-width: 900px;
+        margin: 0 0 18px;
+        font-size: clamp(2rem, 5vw, 4rem);
+        line-height: 1.08;
+        letter-spacing: -0.045em;
+      }
+
+      .article-excerpt {
+        max-width: 820px;
+        margin: 0 0 22px;
+        color: rgba(255, 255, 255, 0.92);
+        font-size: clamp(1.05rem, 2vw, 1.25rem);
+      }
+
+      .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 0.95rem;
+      }
+
+      .article-cover {
+        margin: 28px 0 0;
+        border-radius: var(--mc-radius);
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .article-cover img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+
+      .article-cover figcaption {
+        padding: 12px 16px;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.9rem;
+      }
+
+      /* =========================================================
+        ELEMENTOS DO CONTEÚDO
+      ========================================================== */
+      .affiliate-notice,
+      .important-box,
+      .article-cta,
+      .final-cta,
+      .card {
+        border-radius: var(--mc-radius);
+      }
+
+      .affiliate-notice {
+        margin: 0 0 32px;
+        padding: 18px 20px;
+        background: #fff7ed;
+        border: 1px solid #fed7aa;
+        color: #7c2d12;
+      }
+
+      .article-content h2,
+      .article-content h3 {
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+      }
+
+      .article-content h2 {
+        margin-top: 46px;
+        margin-bottom: 16px;
+        color: var(--mc-primary-dark);
+        font-size: clamp(1.65rem, 3vw, 2.35rem);
+      }
+
+      .article-content h3 {
+        margin-top: 28px;
+        margin-bottom: 12px;
+        color: var(--mc-primary);
+        font-size: 1.35rem;
+      }
+
+      .article-content p {
+        margin: 0 0 18px;
+      }
+
+      .article-content ul,
+      .article-content ol {
+        padding-left: 1.4rem;
+        margin-top: 10px;
+        margin-bottom: 22px;
+      }
+
+      .article-content li {
+        margin-bottom: 8px;
+      }
+
+      .important-box {
+        padding: 20px;
+        margin: 26px 0;
+        background: #f0fdf4;
+        border: 1px solid #bbf7d0;
+        color: #14532d;
+        font-weight: 700;
+      }
+
+      .article-toc {
+        margin: 34px 0;
+        padding: 24px;
+        background: #eef6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: var(--mc-radius);
+      }
+
+      .article-toc h2 {
+        margin-top: 0;
+        font-size: 1.35rem;
+      }
+
+      .article-toc ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 18px;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+      }
+
+      .article-toc a {
+        display: block;
+        padding: 10px 12px;
+        background: #ffffff;
+        border: 1px solid #dbeafe;
+        border-radius: 12px;
+        color: var(--mc-primary-dark);
+        text-decoration: none;
+        font-weight: 700;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .article-toc a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(15, 76, 129, 0.12);
+      }
+
+      .grid,
+      .steps-grid,
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        margin: 24px 0;
+      }
+
+      .card {
+        padding: 22px;
+        background: #ffffff;
+        border: 1px solid var(--mc-border);
+        box-shadow: 0 8px 22px rgba(17, 24, 39, 0.06);
+      }
+
+      .card h3 {
+        margin-top: 0;
+      }
+
+      .product-icon {
+        display: inline-flex;
+        width: 52px;
+        height: 52px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        background: #eef6ff;
+        border-radius: 16px;
+        font-size: 1.7rem;
+      }
+
+      .article-cta {
+        margin: 24px 0;
+        padding: 22px;
+        background: linear-gradient(135deg, #eef6ff, #fff7ed);
+        border: 1px solid #dbeafe;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 46px;
+        padding: 12px 18px;
+        border-radius: 999px;
+        border: 0;
+        font-weight: 800;
+        text-decoration: none;
+        cursor: pointer;
+        transition:
+          transform 0.18s ease,
+          box-shadow 0.18s ease,
+          background 0.18s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        background: linear-gradient(
+          135deg,
+          var(--mc-primary),
+          var(--mc-primary-dark)
+        );
+        color: #ffffff !important;
+        box-shadow: 0 12px 22px rgba(15, 76, 129, 0.22);
+      }
+
+      .btn-outline {
+        border: 1px solid var(--mc-primary);
+        background: #ffffff;
+        color: var(--mc-primary) !important;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        margin: 24px 0;
+      }
+
+      table {
+        width: 100%;
+        min-width: 680px;
+        border-collapse: collapse;
+        border: 1px solid var(--mc-border);
+        font-size: 0.94rem;
+      }
+
+      th,
+      td {
+        padding: 14px;
+        border: 1px solid var(--mc-border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: #eef6ff;
+        color: var(--mc-primary-dark);
+      }
+
+      .checklist-box {
+        padding: 22px;
+        background: #f9fafb;
+        border: 1px solid var(--mc-border);
+        border-radius: var(--mc-radius);
+      }
+
+      .checklist-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+
+      .checklist {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 14px;
+        padding-left: 0 !important;
+        list-style: none;
+      }
+
+      .checklist label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+        background: #ffffff;
+        border: 1px solid var(--mc-border);
+        border-radius: 12px;
+        cursor: pointer;
+      }
+
+      .checklist input {
+        width: 18px;
+        height: 18px;
+        accent-color: var(--mc-success);
+      }
+
+      .checklist label:has(input:checked) {
+        background: #f0fdf4;
+        border-color: #86efac;
+        color: #14532d;
+        text-decoration: line-through;
+      }
+
+      .article-faq details {
+        margin-bottom: 12px;
+        background: #ffffff;
+        border: 1px solid var(--mc-border);
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .article-faq summary {
+        padding: 16px 18px;
+        font-weight: 800;
+        cursor: pointer;
+        color: var(--mc-primary-dark);
+      }
+
+      .article-faq details p {
+        padding: 0 18px 18px;
+        margin: 0;
+      }
+
+      .final-cta {
+        margin-top: 36px;
+        padding: 28px;
+        background: linear-gradient(
+          135deg,
+          var(--mc-primary),
+          var(--mc-primary-dark)
+        );
+        color: #ffffff;
+      }
+
+      .final-cta h2 {
+        margin-top: 0;
+        color: #ffffff;
+      }
+
+      .final-cta p {
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      .final-cta .btn-primary {
+        background: #ffffff;
+        color: var(--mc-primary-dark) !important;
+      }
+
+      .article-footer {
+        margin-top: 42px;
+        padding-top: 24px;
+        border-top: 1px solid var(--mc-border);
+      }
+
+      .article-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .article-tags span {
+        font-weight: 800;
+        color: var(--mc-primary-dark);
+      }
+
+      .article-tags a {
+        padding: 8px 12px;
+        background: #eef6ff;
+        border-radius: 999px;
+        color: var(--mc-primary-dark);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+
+      /* =========================================================
+        FOOTER DO SITE
+      ========================================================== */
+      .site-footer {
+        margin-top: 40px;
+        padding: 48px 0 24px;
+        background: var(--mc-primary-dark);
+        color: #ffffff;
+      }
+
+      .site-footer-inner {
+        display: grid;
+        gap: 28px;
+      }
+
+      .site-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .site-footer h2 {
+        margin: 0 0 10px;
+        font-size: 1rem;
+      }
+
+      .site-footer p,
+      .site-footer a {
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 0.92rem;
+      }
+
+      .site-footer a:hover,
+      .site-footer a:focus-visible {
+        color: #ffffff;
+      }
+
+      .site-footer-links {
+        display: grid;
+        gap: 7px;
+      }
+
+      .site-footer-bottom {
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.16);
+      }
+
+      /* =========================================================
+        BOTÃO VOLTAR AO TOPO
+      ========================================================== */
+      .back-to-top {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 999;
+        display: none;
+        width: 46px;
+        height: 46px;
+        border-radius: 999px;
+        border: 0;
+        background: var(--mc-primary);
+        color: #ffffff;
+        font-size: 1.15rem;
+        cursor: pointer;
+        box-shadow: 0 10px 24px rgba(15, 76, 129, 0.28);
+      }
+
+      .back-to-top.is-visible {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* =========================================================
+        RESPONSIVIDADE
+      ========================================================== */
+      @media (max-width: 900px) {
+        .grid,
+        .steps-grid,
+        .product-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .article-toc ul,
+        .checklist {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .site-header-inner {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 12px;
+          padding: 14px 0;
+        }
+
+        .site-nav {
+          justify-content: flex-start;
+        }
+
+        .site-footer-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .article-content {
+          width: min(100% - 18px, 1120px);
+          margin: 18px auto;
+          border-radius: 18px;
+        }
+
+        .article-header {
+          padding: 30px 18px;
+        }
+
+        .article-inner {
+          width: min(100% - 28px, 880px);
+          padding: 30px 0;
+        }
+
+        .grid,
+        .steps-grid,
+        .product-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .btn {
+          width: 100%;
+        }
+
+        .breadcrumb {
+          display: block;
+          width: 100%;
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =========================================================
+      HEADER DO SITE
+    ========================================================== -->
+    <header class="site-header" aria-label="Cabeçalho do site">
+      <div class="site-header-inner">
+        <a
+          class="site-logo"
+          href="../../public/index.html"
+          aria-label="Página inicial do MigueCaue Recomenda"
+        >
+          <img
+            src="../../assets/images/logo-cabeçalho.webp"
+            alt="Logo MigueCaue Recomenda"
+            width="170"
+            height="78"
+          />
+        </a>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="../../public/index.html">Início</a>
+          <a href="../../public/blog.html" aria-current="page">Blog</a>
+          <a href="../../pages/categorias/categoria-tecnologia.html"
+            >Tecnologia</a
+          >
+          <a href="../../pages/categorias/categoria-casa-inteligente.html">
+            Casa Inteligente
+          </a>
+          <a href="../../public/guias-de-compras.html">Guias</a>
+          <a href="../../public/comparativos.html">Comparativos</a>
+          <a href="../../public/ofertas.html">Ofertas</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Barra de progresso de leitura -->
+    <div class="mc-reading-progress" id="mcReadingProgress"></div>
+
+    <!-- =========================================================
+      ARTIGO PRINCIPAL
+    ========================================================== -->
+    <article
+      class="article-content"
+      itemscope
+      itemtype="https://schema.org/Article"
+    >
+      <!-- Cabeçalho do artigo -->
+      <header class="article-header">
+        <div class="article-header-inner">
+          <nav class="breadcrumb" aria-label="Caminho de navegação">
+            <ol>
+              <li><a href="../../public/index.html">Início</a></li>
+              <li><a href="../../public/blog.html">Blog</a></li>
+              <li>
+                <a
+                  href="../../pages/categorias/categoria-casa-inteligente.html"
+                >
+                  Casa Inteligente
+                </a>
+              </li>
+              <li aria-current="page">
+                Como começar uma casa inteligente gastando pouco
+              </li>
+            </ol>
+          </nav>
+
+          <a
+            class="article-category"
+            href="../../pages/categorias/categoria-casa-inteligente.html"
+          >
+            Casa Inteligente
+          </a>
+
+          <h1 itemprop="headline">
+            Como começar uma casa inteligente gastando pouco
+          </h1>
+
+          <p class="article-excerpt" itemprop="description">
+            Veja como iniciar sua automação residencial sem gastar muito, quais
+            dispositivos acessíveis comprar primeiro, como evitar escolhas ruins
+            e como expandir sua casa inteligente aos poucos.
+          </p>
+
+          <div class="article-meta">
+            <span>
+              Por
+              <strong
+                itemprop="author"
+                itemscope
+                itemtype="https://schema.org/Organization"
+              >
+                <span itemprop="name">MigueCaue Recomenda</span>
+              </strong>
+            </span>
+
+            <span>
+              Atualizado em
+              <time datetime="2026-08-23" itemprop="dateModified">
+                23 de agosto de 2026
+              </time>
+            </span>
+
+            <span>Leitura estimada: 11 minutos</span>
+          </div>
+
+          <figure class="article-cover">
+            <img
+              src="../../assets/images/hero-casa-inteligente-comum.webp"
+              alt="Casa inteligente econômica com dispositivos e automações"
+              width="1200"
+              height="675"
+              loading="eager"
+              decoding="async"
+              itemprop="image"
+            />
+            <figcaption>
+              Começar uma casa inteligente não exige grandes reformas: com
+              escolhas simples e bem planejadas, é possível automatizar a rotina
+              gastando pouco.
+            </figcaption>
+          </figure>
+        </div>
+      </header>
+
+      <div class="article-inner">
+        <!-- Aviso de transparência -->
+        <aside class="affiliate-notice" aria-label="Aviso de transparência">
+          <strong>Transparência:</strong>
+          alguns links deste artigo podem ser links de afiliados. Isso significa
+          que o <strong>MigueCaue Recomenda</strong> pode receber uma comissão
+          caso você compre por meio deles, sem custo adicional para você. As
+          recomendações consideram utilidade, compatibilidade, segurança,
+          facilidade de uso e custo-benefício.
+        </aside>
+
+        <!-- Introdução -->
+        <section id="introducao">
+          <p>
+            Ter uma <strong>casa inteligente</strong> deixou de ser algo caro ou
+            distante. Com dispositivos simples como lâmpadas, tomadas, sensores
+            e assistentes virtuais, já é possível automatizar tarefas sem
+            reformas e sem grandes investimentos.
+          </p>
+
+          <p>
+            O segredo está em começar pelo que realmente melhora o seu dia a
+            dia, escolhendo dispositivos acessíveis, compatíveis e úteis.
+          </p>
+
+          <p>
+            Neste guia, você verá como começar gastando pouco, quais produtos
+            priorizar e como expandir sua automação residencial aos poucos.
+          </p>
+
+          <div class="important-box">
+            Resumo rápido: priorize uma lâmpada smart, uma tomada inteligente,
+            um controle infravermelho e, se fizer sentido, um assistente virtual
+            ou sensor de presença.
+          </div>
+        </section>
+
+        <!-- Sumário -->
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <h2>Neste guia você verá:</h2>
+          <ul>
+            <li><a href="#o-que-e">O que é uma casa inteligente?</a></li>
+            <li><a href="#vale-a-pena">Vale a pena gastar pouco?</a></li>
+            <li>
+              <a href="#dispositivos-acessiveis">Dispositivos acessíveis</a>
+            </li>
+            <li><a href="#passo-a-passo">Passo a passo</a></li>
+            <li><a href="#como-economizar">Como economizar na compra</a></li>
+            <li><a href="#comparativo">Prioridades de compra</a></li>
+            <li><a href="#checklist">Checklist de início</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+            <li><a href="#conclusao">Conclusão</a></li>
+          </ul>
+        </nav>
+
+        <!-- O que é -->
+        <section id="o-que-e">
+          <h2>O que é uma casa inteligente?</h2>
+
+          <p>
+            Uma casa inteligente usa dispositivos conectados para facilitar
+            tarefas, melhorar o conforto, aumentar a segurança ou reduzir
+            desperdícios. Isso pode incluir acender luzes pelo celular,
+            programar tomadas, controlar aparelhos por voz, monitorar ambientes
+            com câmeras Wi-Fi ou criar rotinas automáticas.
+          </p>
+
+          <p>
+            O ponto mais importante é entender que você não precisa automatizar
+            tudo de uma vez. Começar com um único dispositivo bem escolhido já
+            pode trazer benefícios reais para a rotina.
+          </p>
+        </section>
+
+        <!-- Vale a pena -->
+        <section id="vale-a-pena">
+          <h2>Vale a pena começar gastando pouco?</h2>
+
+          <p>
+            Sim, desde que você escolha produtos que resolvam necessidades
+            reais. A automação residencial econômica funciona melhor quando
+            começa com itens simples, fáceis de instalar e compatíveis com
+            aplicativos populares.
+          </p>
+
+          <p>
+            Vale mais a pena para quem busca praticidade, controle via celular,
+            rotinas automáticas, conforto sem reformas e uma forma simples de
+            testar a automação residencial antes de investir mais.
+          </p>
+
+          <div class="important-box">
+            Atenção: nem todo dispositivo barato gera economia de energia
+            imediata. Muitos oferecem mais conforto, controle e praticidade no
+            dia a dia.
+          </div>
+        </section>
+
+        <!-- Dispositivos acessíveis -->
+        <section id="dispositivos-acessiveis">
+          <h2>Dispositivos acessíveis para começar</h2>
+
+          <p>
+            Para iniciar gastando pouco, o ideal é escolher dispositivos
+            simples, úteis e fáceis de instalar, sem reformas elétricas
+            complexas.
+          </p>
+
+          <div class="product-grid">
+            <article class="card">
+              <span class="product-icon" aria-hidden="true">💡</span>
+              <h3>Lâmpada inteligente</h3>
+              <p>
+                Permite ligar, desligar, ajustar brilho, mudar cor e programar
+                horários pelo aplicativo ou comando de voz.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="product-icon" aria-hidden="true">🔌</span>
+              <h3>Tomada inteligente</h3>
+              <p>
+                Controla aparelhos conectados, cria horários e pode desligar
+                automaticamente luminárias, ventiladores e outros itens.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="product-icon" aria-hidden="true">📱</span>
+              <h3>Controle infravermelho</h3>
+              <p>
+                Reúne controles de TV, ar-condicionado e outros aparelhos em um
+                único app, aproveitando equipamentos que você já possui.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="product-icon" aria-hidden="true">🗣️</span>
+              <h3>Assistente virtual</h3>
+              <p>
+                Facilita comandos por voz, criação de rotinas, lembretes,
+                músicas e integração entre dispositivos inteligentes.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="product-icon" aria-hidden="true">🚶</span>
+              <h3>Sensor de presença</h3>
+              <p>
+                Aciona luzes automaticamente ao detectar movimento. É útil em
+                corredores, banheiros, áreas de passagem e garagem.
+              </p>
+            </article>
+
+            <article class="card">
+              <span class="product-icon" aria-hidden="true">🎥</span>
+              <h3>Câmera Wi-Fi</h3>
+              <p>
+                Ajuda no monitoramento interno ou externo, com instalação
+                simples e acesso remoto pelo celular.
+              </p>
+            </article>
+          </div>
+
+          <div class="article-cta">
+            <p>
+              <strong>Dica de compra:</strong> antes de escolher, compare
+              avaliações, compatibilidade com assistentes e qualidade do app.
+            </p>
+            <a
+              href="../../public/ofertas.html"
+              class="btn btn-primary"
+              rel="nofollow sponsored"
+            >
+              Ver ofertas de produtos inteligentes
+            </a>
+          </div>
+        </section>
+
+        <!-- Passo a passo -->
+        <section id="passo-a-passo">
+          <h2>Passo a passo para começar</h2>
+
+          <p>
+            A melhor forma de iniciar uma casa inteligente gastando pouco é
+            seguir etapas simples, validando cada compra antes de expandir.
+          </p>
+
+          <div class="steps-grid">
+            <article class="card">
+              <h3>1. Escolha um problema real</h3>
+              <p>
+                Pense no que você quer facilitar: iluminação, segurança,
+                controle de aparelhos ou economia de energia.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>2. Comece por um ambiente</h3>
+              <p>
+                Escolha um cômodo de uso frequente, como quarto, sala ou
+                escritório.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>3. Compre um dispositivo básico</h3>
+              <p>
+                Lâmpada inteligente ou tomada smart são boas escolhas para
+                começar.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>4. Teste o aplicativo</h3>
+              <p>
+                Verifique se o app é fácil de usar e se a conexão Wi-Fi funciona
+                bem.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>5. Crie uma rotina simples</h3>
+              <p>
+                Exemplo: acender a luz às 18h ou desligar uma luminária após
+                determinado horário.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>6. Expanda aos poucos</h3>
+              <p>
+                Adicione novos dispositivos apenas quando fizer sentido para sua
+                rotina e orçamento.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Economia -->
+        <section id="como-economizar">
+          <h2>Como economizar na compra</h2>
+
+          <p>
+            Para economizar, não compre tudo de uma vez. Compare avaliações,
+            prefira dispositivos compatíveis entre si e escolha marcas com boa
+            reputação.
+          </p>
+
+          <ul>
+            <li>
+              Verifique compatibilidade com Alexa, Google Assistente ou Siri.
+            </li>
+            <li>Confira avaliações recentes de outros compradores.</li>
+            <li>Prefira lojas confiáveis e produtos com garantia.</li>
+            <li>Evite produtos muito baratos sem informações claras.</li>
+            <li>Comece com um dispositivo e teste antes de comprar vários.</li>
+          </ul>
+        </section>
+
+        <!-- Comparativo -->
+        <section id="comparativo">
+          <h2>O que comprar primeiro? Prioridades</h2>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Produto</th>
+                  <th>Prioridade</th>
+                  <th>Benefício</th>
+                  <th>Recomendado para</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Lâmpada smart</td>
+                  <td>Alta</td>
+                  <td>Controle de iluminação, horários e cenas.</td>
+                  <td>Quartos, salas e escritórios.</td>
+                </tr>
+
+                <tr>
+                  <td>Tomada inteligente</td>
+                  <td>Alta</td>
+                  <td>Automatizar aparelhos simples.</td>
+                  <td>Luminárias, ventiladores e pequenos equipamentos.</td>
+                </tr>
+
+                <tr>
+                  <td>Controle infravermelho</td>
+                  <td>Média/alta</td>
+                  <td>Controlar equipamentos com controle remoto.</td>
+                  <td>TV, ar-condicionado e aparelhos de som.</td>
+                </tr>
+
+                <tr>
+                  <td>Assistente virtual</td>
+                  <td>Média</td>
+                  <td>Controle por voz e rotinas integradas.</td>
+                  <td>Quem busca mais praticidade.</td>
+                </tr>
+
+                <tr>
+                  <td>Sensor de presença</td>
+                  <td>Média</td>
+                  <td>Acionamento automático de luzes.</td>
+                  <td>Corredores, banheiros e áreas de passagem.</td>
+                </tr>
+
+                <tr>
+                  <td>Câmera Wi-Fi</td>
+                  <td>Dependente da necessidade</td>
+                  <td>Monitoramento remoto do ambiente.</td>
+                  <td>Segurança básica residencial.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Exemplos -->
+        <section id="exemplos-praticos">
+          <h2>Exemplos práticos de automações simples</h2>
+
+          <h3>Rotina de estudo ou trabalho</h3>
+          <ul>
+            <li>Ligar a luminária automaticamente no horário definido.</li>
+            <li>Ajustar cor ou intensidade da luz.</li>
+            <li>Desligar automaticamente após determinado período.</li>
+          </ul>
+
+          <h3>Rotina de dormir</h3>
+          <ul>
+            <li>Apagar luzes por comando de voz.</li>
+            <li>Desligar tomada da luminária.</li>
+            <li>Reduzir a intensidade antes de dormir.</li>
+          </ul>
+
+          <h3>Rotina na sala</h3>
+          <ul>
+            <li>Ligar TV e ar-condicionado via app.</li>
+            <li>Criar cenário de filme ou descanso.</li>
+            <li>Usar assistente virtual para comandos rápidos.</li>
+          </ul>
+        </section>
+
+        <!-- Checklist -->
+        <section id="checklist">
+          <h2>Checklist para começar uma casa inteligente</h2>
+
+          <div class="checklist-box">
+            <div class="checklist-actions">
+              <button class="btn btn-outline" type="button" id="clearChecklist">
+                Limpar checklist
+              </button>
+
+              <button class="btn btn-primary" type="button" id="copyChecklist">
+                Copiar checklist
+              </button>
+            </div>
+
+            <ul class="checklist" id="smartHomeChecklist">
+              <li>
+                <label><input type="checkbox" /> Definir cômodo inicial</label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" /> Escolher necessidade principal
+                </label>
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Verificar qualidade do Wi-Fi</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" /> Conferir compatibilidade com app
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" /> Avaliar comentários de compradores
+                </label>
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Checar voltagem e padrão</label
+                >
+              </li>
+              <li>
+                <label>
+                  <input type="checkbox" /> Começar com lâmpada ou tomada
+                </label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Testar o aplicativo</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Criar uma rotina básica</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Expandir aos poucos</label>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Erros comuns -->
+        <section id="erros-comuns">
+          <h2>Erros comuns ao começar</h2>
+
+          <ul>
+            <li>Comprar vários dispositivos sem testar primeiro.</li>
+            <li>Escolher produtos incompatíveis entre si.</li>
+            <li>Ignorar a qualidade do Wi-Fi.</li>
+            <li>
+              Comprar interruptor inteligente sem verificar instalação elétrica.
+            </li>
+            <li>Escolher apenas pelo menor preço.</li>
+            <li>Não verificar avaliações e garantia.</li>
+            <li>Esperar economia instantânea sem planejamento.</li>
+          </ul>
+
+          <div class="important-box">
+            Regra prática: simplicidade, utilidade e expansão gradual são a base
+            de uma casa inteligente econômica e eficiente.
+          </div>
+        </section>
+
+        <!-- Expansão -->
+        <section id="como-expandir">
+          <h2>Como expandir aos poucos</h2>
+
+          <p>
+            Depois de testar e gostar da experiência, adicione dispositivos
+            conforme a rotina e o orçamento. Comece com iluminação, depois
+            controle de aparelhos, sensores, câmeras e rotinas mais avançadas.
+          </p>
+
+          <ul>
+            <li>
+              <strong>Etapa 1:</strong> lâmpadas ou luminárias inteligentes.
+            </li>
+            <li>
+              <strong>Etapa 2:</strong> tomadas inteligentes e controle
+              infravermelho.
+            </li>
+            <li>
+              <strong>Etapa 3:</strong> sensores de presença, abertura e
+              temperatura.
+            </li>
+            <li>
+              <strong>Etapa 4:</strong> câmeras, sensores de porta e alarmes.
+            </li>
+            <li>
+              <strong>Etapa 5:</strong> rotinas automáticas avançadas e
+              integração total.
+            </li>
+          </ul>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="article-faq">
+          <h2>Perguntas frequentes</h2>
+
+          <details>
+            <summary>Qual dispositivo é melhor para começar?</summary>
+            <p>
+              Uma lâmpada inteligente ou uma tomada inteligente. São acessíveis,
+              fáceis de instalar e úteis para testar automações simples.
+            </p>
+          </details>
+
+          <details>
+            <summary>Preciso de assistente virtual?</summary>
+            <p>
+              Não. O assistente virtual é opcional. Você pode controlar os
+              dispositivos diretamente pelo aplicativo no celular.
+            </p>
+          </details>
+
+          <details>
+            <summary>Casa inteligente economiza energia?</summary>
+            <p>
+              Pode ajudar, especialmente ao programar horários, evitar aparelhos
+              ligados sem necessidade e controlar melhor o uso de iluminação.
+            </p>
+          </details>
+
+          <details>
+            <summary>Precisa fazer reformas?</summary>
+            <p>
+              Não necessariamente. Lâmpadas, tomadas, câmeras e controles
+              infravermelho geralmente não exigem obras. Interruptores
+              inteligentes podem exigir atenção elétrica.
+            </p>
+          </details>
+
+          <details>
+            <summary>Produtos baratos valem a pena?</summary>
+            <p>
+              Depende. Avalie segurança, avaliações, reputação da marca,
+              compatibilidade e garantia antes de comprar.
+            </p>
+          </details>
+        </section>
+
+        <!-- Conclusão -->
+        <section id="conclusao">
+          <h2>Conclusão: comece pequeno e depois expanda</h2>
+
+          <p>
+            Começar uma casa inteligente gastando pouco é possível. O mais
+            importante é escolher produtos que resolvam necessidades reais,
+            tenham boa compatibilidade e sejam confiáveis.
+          </p>
+
+          <p>
+            Comece com um dispositivo simples, teste na prática e expanda aos
+            poucos conforme seu uso e orçamento. A melhor automação é aquela que
+            traz mais conforto, praticidade e controle para sua rotina.
+          </p>
+
+          <div class="final-cta">
+            <h2>Comece pelos itens mais úteis</h2>
+            <p>
+              Uma lâmpada inteligente, uma tomada smart e um controle
+              infravermelho já podem transformar a experiência da sua casa sem
+              exigir grandes investimentos.
+            </p>
+
+            <a href="../../public/ofertas.html" class="btn btn-primary">
+              Ver produtos recomendados
+            </a>
+          </div>
+        </section>
+
+        <!-- Tags -->
+        <footer class="article-footer">
+          <div class="article-tags" aria-label="Tags do artigo">
+            <span>Tags:</span>
+            <a href="#dispositivos-acessiveis">Casa inteligente</a>
+            <a href="#passo-a-passo">Automação</a>
+            <a href="#como-economizar">Economia</a>
+            <a href="#comparativo">Prioridades</a>
+            <a href="#exemplos-praticos">Rotinas</a>
+            <a href="#checklist">Checklist</a>
+          </div>
+        </footer>
+      </div>
+    </article>
+
+    <!-- =========================================================
+      FOOTER DO SITE
+    ========================================================== -->
+    <footer class="site-footer" aria-label="Rodapé do site">
+      <div class="site-footer-inner">
+        <a
+          class="site-footer-logo"
+          href="../../public/index.html"
+          aria-label="Página inicial do MigueCaue Recomenda"
+        >
+          <img
+            src="../../assets/images/logo-rodape.webp"
+            alt="Logo MigueCaue Recomenda"
+            width="170"
+            height="72"
+          />
+        </a>
+
+        <div class="site-footer-grid">
+          <div>
+            <h2>Navegação</h2>
+            <nav class="site-footer-links" aria-label="Links do rodapé">
+              <a href="../../public/blog.html">Blog</a>
+              <a href="../../public/guias-de-compras.html">Guias de compra</a>
+              <a href="../../public/comparativos.html">Comparativos</a>
+              <a href="../../public/ofertas.html">Ofertas</a>
+            </nav>
+          </div>
+
+          <div>
+            <h2>Categorias</h2>
+            <nav class="site-footer-links" aria-label="Categorias do rodapé">
+              <a href="../../pages/categorias/categoria-tecnologia.html">
+                Tecnologia
+              </a>
+              <a href="../../pages/categorias/categoria-eletrodomesticos.html">
+                Eletrodomésticos
+              </a>
+              <a href="../../pages/categorias/categoria-casa-inteligente.html">
+                Casa Inteligente
+              </a>
+            </nav>
+          </div>
+
+          <div>
+            <h2>Mais artigos</h2>
+            <nav class="site-footer-links" aria-label="Mais artigos">
+              <a href="escolher-airfryer.html">Escolher uma air fryer</a>
+              <a href="guia-compra-notebook.html">Escolher um notebook</a>
+              <a href="guia-compra-online.html">Comprar online com segurança</a>
+              <a href="kit-catastrofes.html">Kit de emergência</a>
+            </nav>
+          </div>
+
+          <div>
+            <h2>Transparência</h2>
+            <p>
+              Alguns links podem ser afiliados, sem custo adicional para você.
+            </p>
+            <a href="../../public/index.html#duvidas">Aviso de afiliados</a>
+          </div>
+        </div>
+
+        <div class="site-footer-bottom">
+          <p>© 2026 MigueCaue Recomenda. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botão voltar ao topo -->
+    <button
+      class="back-to-top"
+      id="backToTop"
+      type="button"
+      aria-label="Voltar ao topo"
+    >
+      ↑
+    </button>
+
+    <!-- =========================================================
+      JAVASCRIPT EMBUTIDO:
+      - Barra de progresso
+      - Botão voltar ao topo
+      - Checklist com localStorage
+      - Copiar checklist
+    ========================================================== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const progressBar = document.getElementById("mcReadingProgress");
+        const backToTop = document.getElementById("backToTop");
+
+        const checklist = document.getElementById("smartHomeChecklist");
+        const clearChecklist = document.getElementById("clearChecklist");
+        const copyChecklist = document.getElementById("copyChecklist");
+
+        /**
+         * Atualiza a barra de progresso de leitura
+         * e controla a exibição do botão "voltar ao topo".
+         */
+        function updateReadingProgress() {
+          const scrollTop = window.scrollY;
+          const docHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
+
+          const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+          if (progressBar) {
+            progressBar.style.width = progress + "%";
+          }
+
+          if (backToTop) {
+            backToTop.classList.toggle("is-visible", scrollTop > 600);
+          }
+        }
+
+        window.addEventListener("scroll", updateReadingProgress);
+        updateReadingProgress();
+
+        /**
+         * Botão de voltar ao topo com rolagem suave.
+         */
+        if (backToTop) {
+          backToTop.addEventListener("click", function () {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          });
+        }
+
+        /**
+         * Checklist interativo com persistência no localStorage.
+         */
+        if (checklist) {
+          const inputs = checklist.querySelectorAll("input[type='checkbox']");
+          const storageKey = "mc-casa-inteligente-checklist";
+
+          function saveChecklist() {
+            const checkedItems = Array.from(inputs).map(function (input) {
+              return input.checked;
+            });
+
+            localStorage.setItem(storageKey, JSON.stringify(checkedItems));
+          }
+
+          function loadChecklist() {
+            const saved = localStorage.getItem(storageKey);
+
+            if (!saved) return;
+
+            try {
+              const checkedItems = JSON.parse(saved);
+
+              inputs.forEach(function (input, index) {
+                input.checked = Boolean(checkedItems[index]);
+              });
+            } catch (error) {
+              localStorage.removeItem(storageKey);
+            }
+          }
+
+          inputs.forEach(function (input) {
+            input.addEventListener("change", saveChecklist);
+          });
+
+          loadChecklist();
+
+          /**
+           * Limpa todos os itens marcados no checklist.
+           */
+          if (clearChecklist) {
+            clearChecklist.addEventListener("click", function () {
+              inputs.forEach(function (input) {
+                input.checked = false;
+              });
+
+              saveChecklist();
+            });
+          }
+
+          /**
+           * Copia o checklist em formato de texto.
+           */
+          if (copyChecklist) {
+            copyChecklist.addEventListener("click", async function () {
+              const items = Array.from(checklist.querySelectorAll("label")).map(
+                function (label) {
+                  return "- " + label.textContent.trim();
+                },
+              );
+
+              const text =
+                "Checklist para começar uma casa inteligente gastando pouco:\n\n" +
+                items.join("\n");
+
+              try {
+                await navigator.clipboard.writeText(text);
+
+                copyChecklist.textContent = "Checklist copiado!";
+
+                setTimeout(function () {
+                  copyChecklist.textContent = "Copiar checklist";
+                }, 2000);
+              } catch (error) {
+                alert(
+                  "Não foi possível copiar automaticamente. Selecione e copie manualmente.",
+                );
+              }
+            });
+          }
+        }
+      });
+    </script>
+
+    <!-- =========================================================
+      SCHEMA SEO: ORGANIZATION + ARTICLE + BREADCRUMB + FAQ
+    ========================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.miguecaue.com.br/#organization",
+            "name": "MigueCaue Recomenda",
+            "url": "https://www.miguecaue.com.br",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.miguecaue.com.br/assets/images/logo-cabecalho.webp",
+              "width": 170,
+              "height": 78
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.miguecaue.com.br/artigos-blog.html/blog/casa-inteligente-gastando-pouco.html",
+            "url": "https://www.miguecaue.com.br/artigos-blog.html/blog/casa-inteligente-gastando-pouco.html",
+            "name": "Como começar uma casa inteligente gastando pouco",
+            "about": {
+              "@id": "https://www.miguecaue.com.br/#organization"
+            }
+          },
+          {
+            "@type": "Article",
+            "headline": "Como começar uma casa inteligente gastando pouco",
+            "description": "Guia completo para começar uma casa inteligente gastando pouco, com dispositivos acessíveis, passo a passo de automação, dicas de economia e expansão gradual.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://www.miguecaue.com.br/assets/images/hero-casa-inteligente-economica.webp",
+              "width": 1200,
+              "height": 675
+            },
+            "author": {
+              "@id": "https://www.miguecaue.com.br/#organization"
+            },
+            "publisher": {
+              "@id": "https://www.miguecaue.com.br/#organization"
+            },
+            "datePublished": "2026-08-23",
+            "dateModified": "2026-08-23",
+            "mainEntityOfPage": {
+              "@id": "https://www.miguecaue.com.br/artigos-blog.html/blog/casa-inteligente-gastando-pouco.html"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Início",
+                "item": "https://www.miguecaue.com.br/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://www.miguecaue.com.br/blog.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Casa Inteligente",
+                "item": "https://www.miguecaue.com.br/categorias/categoria-casa-inteligente.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Como começar uma casa inteligente gastando pouco",
+                "item": "https://www.miguecaue.com.br/artigos-blog.html/blog/casa-inteligente-gastando-pouco.html"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qual dispositivo é melhor para começar?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Uma lâmpada inteligente ou uma tomada inteligente. São acessíveis, fáceis de instalar e úteis para testar automações simples."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Preciso de assistente virtual?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Não. O assistente virtual é opcional. Você pode controlar os dispositivos diretamente pelo aplicativo no celular."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Casa inteligente economiza energia?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pode ajudar, especialmente ao programar horários, evitar aparelhos ligados sem necessidade e controlar melhor o uso de iluminação."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Precisa fazer reformas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Não necessariamente. Lâmpadas, tomadas, câmeras e controles infravermelho geralmente não exigem obras. Interruptores inteligentes podem exigir atenção elétrica."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Produtos baratos valem a pena?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Depende. Avalie segurança, avaliações, reputação da marca, compatibilidade e garantia antes de comprar."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>

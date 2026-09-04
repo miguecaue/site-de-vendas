@@ -1,0 +1,1953 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Como escolher um notebook bom | MigueCaue Recomenda</title>
+    <meta
+      name="description"
+      content="Veja como escolher um notebook bom para trabalho, estudos e uso diário, analisando processador, memória RAM, SSD, tela, bateria e custo-benefício."
+    />
+    <meta name="robots" content="index, follow" />
+    <link
+      rel="icon"
+      type="image/webp"
+      href="../../assets/images/favicon.webp"
+    />
+    <link
+      rel="canonical"
+      href="https://www.miguecaue.com.br/artigos-blog.html/blog/guia-compra-notebook.html"
+    />
+
+    <!-- =========================================================
+      ARTIGO COMPLETO PARA guia-compra-notebook.html
+      Site: MigueCaue Recomenda
+      Tema: Como escolher um notebook bom
+    ========================================================= -->
+
+    <style>
+      :root {
+        --mc-primary: #0f4c81;
+        --mc-primary-dark: #083456;
+        --mc-secondary: #ff6b35;
+        --mc-accent: #f4a261;
+        --mc-bg: #f7f8fa;
+        --mc-card: #ffffff;
+        --mc-text: #1f2937;
+        --mc-muted: #6b7280;
+        --mc-border: #e5e7eb;
+        --mc-success: #16803c;
+        --mc-warning: #b7791f;
+        --mc-radius: 18px;
+        --mc-shadow: 0 12px 35px rgba(15, 76, 129, 0.12);
+        --mc-font:
+          system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--mc-bg);
+        color: var(--mc-text);
+        font-family: var(--mc-font);
+        line-height: 1.75;
+      }
+
+      .mc-reading-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, var(--mc-primary), var(--mc-accent));
+        transition: width 0.15s ease;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #ffffff;
+        border-bottom: 1px solid var(--mc-border);
+        box-shadow: 0 4px 18px rgba(15, 76, 129, 0.08);
+      }
+
+      .site-header-inner,
+      .site-footer-inner {
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .site-header-inner {
+        min-height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .site-logo,
+      .site-footer-logo {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .site-logo img,
+      .site-footer-logo img {
+        width: 170px;
+        height: auto;
+      }
+
+      .site-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 6px 18px;
+        font-size: 0.92rem;
+        font-weight: 700;
+      }
+
+      .site-nav a {
+        color: var(--mc-primary-dark);
+        text-decoration: none;
+      }
+
+      .site-nav a:hover,
+      .site-nav a:focus-visible {
+        color: var(--mc-secondary);
+      }
+
+      .article-content {
+        width: min(1120px, calc(100% - 32px));
+        margin: 40px auto;
+        background: var(--mc-card);
+        border-radius: 24px;
+        box-shadow: var(--mc-shadow);
+        overflow: hidden;
+      }
+
+      .article-inner {
+        width: min(880px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 42px 0;
+      }
+
+      .article-header {
+        background:
+          linear-gradient(
+            135deg,
+            rgba(15, 76, 129, 0.94),
+            rgba(8, 52, 86, 0.92)
+          ),
+          url("../../assets/images/hero-guia-notebook.webp") center/cover
+            no-repeat;
+        color: #ffffff;
+        padding: 42px 24px 34px;
+      }
+
+      .article-header-inner {
+        width: min(960px, 100%);
+        margin: 0 auto;
+      }
+
+      .breadcrumb {
+        display: inline-block;
+        max-width: 100%;
+        margin-bottom: 24px;
+        padding: 9px 13px;
+        background: rgba(3, 32, 57, 0.38);
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: 10px;
+        font-size: 0.86rem;
+        line-height: 1.4;
+        backdrop-filter: blur(8px);
+      }
+
+      .breadcrumb ol {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px 0;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      .breadcrumb li {
+        display: inline-flex;
+        align-items: center;
+        color: #ffffff;
+      }
+
+      .breadcrumb li[aria-current="page"] {
+        color: #ffffff;
+        font-weight: 700;
+      }
+
+      .breadcrumb li:not(:last-child)::after {
+        content: "›";
+        margin: 0 9px;
+        color: #ffffff;
+        font-size: 1rem;
+      }
+
+      .article-content .breadcrumb a {
+        color: #ffffff;
+        text-decoration: none;
+        transition:
+          color 0.18s ease,
+          opacity 0.18s ease;
+      }
+
+      .article-content .breadcrumb a:hover,
+      .article-content .breadcrumb a:focus-visible {
+        color: var(--mc-accent);
+      }
+
+      .article-category {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        background: rgba(255, 255, 255, 0.16);
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        border-radius: 999px;
+        font-size: 0.88rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        transition:
+          color 0.18s ease,
+          background 0.18s ease;
+      }
+
+      .article-category:hover,
+      .article-category:focus-visible {
+        color: var(--mc-accent);
+        background: rgba(255, 255, 255, 0.24);
+        text-decoration: underline;
+      }
+
+      .article-header h1 {
+        max-width: 900px;
+        margin: 0 0 18px;
+        font-size: clamp(2rem, 5vw, 4rem);
+        line-height: 1.08;
+        letter-spacing: -0.045em;
+      }
+
+      .article-excerpt {
+        max-width: 820px;
+        margin: 0 0 22px;
+        color: rgba(255, 255, 255, 0.92);
+        font-size: clamp(1.05rem, 2vw, 1.25rem);
+      }
+
+      .article-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 0.95rem;
+      }
+
+      .article-cover {
+        margin: 28px 0 0;
+        border-radius: var(--mc-radius);
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .article-cover img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+
+      .article-cover figcaption {
+        padding: 12px 16px;
+        color: rgba(255, 255, 255, 0.82);
+        font-size: 0.9rem;
+      }
+
+      .affiliate-notice,
+      .important-box,
+      .article-cta,
+      .final-cta,
+      .checklist-box {
+        border-radius: var(--mc-radius);
+      }
+
+      .affiliate-notice {
+        margin: 0 0 32px;
+        padding: 18px 20px;
+        background: #fff7ed;
+        border: 1px solid #fed7aa;
+        color: #7c2d12;
+      }
+
+      .article-content h2,
+      .article-content h3,
+      .article-content h4 {
+        line-height: 1.25;
+        letter-spacing: -0.02em;
+      }
+
+      .article-content h2 {
+        margin-top: 46px;
+        margin-bottom: 16px;
+        color: var(--mc-primary-dark);
+        font-size: clamp(1.65rem, 3vw, 2.35rem);
+      }
+
+      .article-content h3 {
+        margin-top: 34px;
+        margin-bottom: 12px;
+        color: var(--mc-primary);
+        font-size: 1.35rem;
+      }
+
+      .article-content h4 {
+        margin-top: 22px;
+        margin-bottom: 8px;
+        color: #374151;
+        font-size: 1.05rem;
+      }
+
+      .article-content p {
+        margin: 0 0 18px;
+      }
+
+      .article-content a {
+        color: var(--mc-primary);
+      }
+
+      .article-content ul,
+      .article-content ol {
+        padding-left: 1.4rem;
+        margin-top: 10px;
+        margin-bottom: 22px;
+      }
+
+      .article-content li {
+        margin-bottom: 8px;
+      }
+
+      .article-toc {
+        margin: 34px 0;
+        padding: 24px;
+        background: #eef6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: var(--mc-radius);
+      }
+
+      .article-toc h2 {
+        margin-top: 0;
+        font-size: 1.35rem;
+      }
+
+      .article-toc ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 18px;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+      }
+
+      .article-toc a {
+        display: block;
+        padding: 10px 12px;
+        background: #ffffff;
+        border: 1px solid #dbeafe;
+        border-radius: 12px;
+        color: var(--mc-primary-dark);
+        text-decoration: none;
+        font-weight: 700;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+
+      .article-toc a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(15, 76, 129, 0.12);
+      }
+
+      .important-box {
+        padding: 20px;
+        margin: 26px 0;
+        background: #f0fdf4;
+        border: 1px solid #bbf7d0;
+        color: #14532d;
+      }
+
+      .warning-box {
+        padding: 20px;
+        margin: 26px 0;
+        background: #fffbeb;
+        border: 1px solid #fde68a;
+        border-radius: var(--mc-radius);
+        color: #78350f;
+      }
+
+      .article-cta {
+        margin: 24px 0;
+        padding: 22px;
+        background: linear-gradient(135deg, #eef6ff, #fff7ed);
+        border: 1px solid #dbeafe;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 46px;
+        padding: 12px 18px;
+        border-radius: 999px;
+        border: 0;
+        font-weight: 800;
+        text-decoration: none;
+        cursor: pointer;
+        transition:
+          transform 0.18s ease,
+          box-shadow 0.18s ease,
+          background 0.18s ease;
+      }
+
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .btn-primary {
+        background: linear-gradient(
+          135deg,
+          var(--mc-primary),
+          var(--mc-primary-dark)
+        );
+        color: #ffffff !important;
+        box-shadow: 0 12px 22px rgba(15, 76, 129, 0.22);
+      }
+
+      .btn-primary:hover {
+        box-shadow: 0 16px 26px rgba(15, 76, 129, 0.28);
+      }
+
+      .btn-outline {
+        border: 1px solid var(--mc-primary);
+        background: #ffffff;
+        color: var(--mc-primary) !important;
+      }
+
+      .btn-outline:hover {
+        background: #eef6ff;
+      }
+
+      .profile-grid,
+      .spec-grid,
+      .product-category-grid {
+        display: grid;
+        gap: 18px;
+        margin: 24px 0;
+      }
+
+      .profile-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .spec-grid,
+      .product-category-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .profile-card,
+      .spec-card,
+      .product-category-card {
+        padding: 22px;
+        background: #ffffff;
+        border: 1px solid var(--mc-border);
+        border-radius: var(--mc-radius);
+        box-shadow: 0 8px 22px rgba(17, 24, 39, 0.06);
+      }
+
+      .profile-card h3,
+      .spec-card h3,
+      .product-category-card h3 {
+        margin-top: 4px;
+      }
+
+      .profile-basic {
+        border-top: 5px solid var(--mc-success);
+      }
+
+      .profile-intermediate {
+        border-top: 5px solid var(--mc-warning);
+      }
+
+      .profile-advanced {
+        border-top: 5px solid var(--mc-primary);
+      }
+
+      .product-icon {
+        display: inline-flex;
+        width: 52px;
+        height: 52px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        background: #eef6ff;
+        border-radius: 16px;
+        font-size: 1.7rem;
+      }
+
+      .comparison-table-wrapper {
+        margin: 24px 0;
+        overflow-x: auto;
+        border: 1px solid var(--mc-border);
+        border-radius: var(--mc-radius);
+      }
+
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 720px;
+        background: #ffffff;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        padding: 14px 16px;
+        border-bottom: 1px solid var(--mc-border);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .comparison-table th {
+        background: #eef6ff;
+        color: var(--mc-primary-dark);
+        font-weight: 800;
+      }
+
+      .comparison-table tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .checklist-box {
+        padding: 22px;
+        background: #f9fafb;
+        border: 1px solid var(--mc-border);
+      }
+
+      .checklist-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+
+      .checklist {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px 14px;
+        padding-left: 0 !important;
+        list-style: none;
+      }
+
+      .checklist label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+        background: #ffffff;
+        border: 1px solid var(--mc-border);
+        border-radius: 12px;
+        cursor: pointer;
+        transition:
+          background 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .checklist input {
+        width: 18px;
+        height: 18px;
+        accent-color: var(--mc-success);
+      }
+
+      .checklist label:has(input:checked) {
+        background: #f0fdf4;
+        border-color: #86efac;
+        color: #14532d;
+        text-decoration: line-through;
+      }
+
+      .article-faq details {
+        margin-bottom: 12px;
+        background: #ffffff;
+        border: 1px solid var(--mc-border);
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .article-faq summary {
+        padding: 16px 18px;
+        font-weight: 800;
+        cursor: pointer;
+        color: var(--mc-primary-dark);
+      }
+
+      .article-faq details p {
+        padding: 0 18px 18px;
+        margin: 0;
+      }
+
+      .final-cta {
+        margin-top: 36px;
+        padding: 28px;
+        background: linear-gradient(
+          135deg,
+          var(--mc-primary),
+          var(--mc-primary-dark)
+        );
+        color: #ffffff;
+      }
+
+      .final-cta h2 {
+        margin-top: 0;
+        color: #ffffff;
+      }
+
+      .final-cta p {
+        color: rgba(255, 255, 255, 0.92);
+      }
+
+      .final-cta .btn-primary {
+        background: #ffffff;
+        color: var(--mc-primary-dark) !important;
+      }
+
+      .article-footer {
+        margin-top: 42px;
+        padding-top: 24px;
+        border-top: 1px solid var(--mc-border);
+      }
+
+      .article-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .article-tags span {
+        font-weight: 800;
+        color: var(--mc-primary-dark);
+      }
+
+      .article-tags a {
+        padding: 8px 12px;
+        background: #eef6ff;
+        border-radius: 999px;
+        color: var(--mc-primary-dark);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.9rem;
+      }
+
+      .article-tags a:hover {
+        background: #dbeafe;
+      }
+
+      .site-footer {
+        margin-top: 40px;
+        padding: 48px 0 24px;
+        background: var(--mc-primary-dark);
+        color: #ffffff;
+      }
+
+      .site-footer-inner {
+        display: grid;
+        gap: 28px;
+      }
+
+      .site-footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .site-footer h2 {
+        margin: 0 0 10px;
+        font-size: 1rem;
+      }
+
+      .site-footer p,
+      .site-footer a {
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 0.92rem;
+      }
+
+      .site-footer a {
+        text-decoration: none;
+      }
+
+      .site-footer a:hover,
+      .site-footer a:focus-visible {
+        color: #ffffff;
+      }
+
+      .site-footer-links {
+        display: grid;
+        gap: 7px;
+      }
+
+      .site-footer-bottom {
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.16);
+      }
+
+      .back-to-top {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 999;
+        display: none;
+        width: 46px;
+        height: 46px;
+        border-radius: 999px;
+        border: 0;
+        background: var(--mc-primary);
+        color: #ffffff;
+        font-size: 1.15rem;
+        cursor: pointer;
+        box-shadow: 0 10px 24px rgba(15, 76, 129, 0.28);
+      }
+
+      .back-to-top.is-visible {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      @media (max-width: 900px) {
+        .profile-grid,
+        .spec-grid,
+        .product-category-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .article-toc ul,
+        .checklist {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .site-header-inner {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 12px;
+          padding: 14px 0;
+        }
+
+        .site-nav {
+          justify-content: flex-start;
+        }
+
+        .site-footer-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .article-content {
+          width: min(100% - 18px, 1120px);
+          margin: 18px auto;
+          border-radius: 18px;
+        }
+
+        .article-header {
+          padding: 30px 18px;
+        }
+
+        .article-inner {
+          width: min(100% - 28px, 880px);
+          padding: 30px 0;
+        }
+
+        .profile-grid,
+        .spec-grid,
+        .product-category-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .breadcrumb {
+          display: block;
+          width: 100%;
+          margin-bottom: 20px;
+          padding: 8px 10px;
+          font-size: 0.8rem;
+        }
+
+        .btn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header" aria-label="Cabeçalho do site">
+      <div class="site-header-inner">
+        <a
+          class="site-logo"
+          href="../../public/index.html"
+          aria-label="Página inicial do MigueCaue Recomenda"
+        >
+          <img
+            src="../../assets/images/logo-cabeçalho.webp"
+            alt="Logo MigueCaue Recomenda"
+            width="170"
+            height="78"
+          />
+        </a>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="../../public/index.html">Início</a>
+          <a href="../../public/blog.html" aria-current="page">Blog</a>
+          <a href="../../pages/categorias/categoria-tecnologia.html"
+            >Tecnologia</a
+          >
+          <a href="../../pages/categorias/categoria-casa-inteligente.html">
+            Casa Inteligente
+          </a>
+          <a href="../../public/guias-de-compras.html">Guias</a>
+          <a href="../../public/comparativos.html">Comparativos</a>
+          <a href="../../public/ofertas.html">Ofertas</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mc-reading-progress" id="mcReadingProgress"></div>
+
+    <article
+      class="article-content"
+      itemscope
+      itemtype="https://schema.org/Article"
+    >
+      <!-- =====================================================
+        CABEÇALHO DO ARTIGO
+      ====================================================== -->
+      <header class="article-header">
+        <div class="article-header-inner">
+          <nav class="breadcrumb" aria-label="Caminho de navegação">
+            <ol>
+              <li><a href="../../public/index.html">Início</a></li>
+              <li><a href="../../public/blog.html">Blog</a></li>
+              <li>
+                <a href="../../pages/categorias/categoria-tecnologia.html"
+                  >Tecnologia</a
+                >
+              </li>
+              <li aria-current="page">Como escolher um notebook</li>
+            </ol>
+          </nav>
+
+          <a
+            class="article-category"
+            href="../../pages/categorias/categoria-tecnologia.html"
+          >
+            Tecnologia
+          </a>
+
+          <h1 itemprop="headline">
+            Como escolher um notebook bom para trabalho, estudos e uso diário
+          </h1>
+
+          <p class="article-excerpt" itemprop="description">
+            Veja os principais critérios para escolher um notebook eficiente,
+            equilibrando desempenho, bateria, tela, armazenamento e
+            custo-benefício para o dia a dia.
+          </p>
+
+          <div class="article-meta">
+            <span>
+              Por
+              <strong
+                itemprop="author"
+                itemscope
+                itemtype="https://schema.org/Organization"
+              >
+                <span itemprop="name">MigueCaue Recomenda</span>
+              </strong>
+            </span>
+            <span>
+              Atualizado em
+              <time datetime="2026-08-22" itemprop="dateModified">
+                22 de agosto de 2026
+              </time>
+            </span>
+            <span>Leitura estimada: 10 minutos</span>
+          </div>
+
+          <figure class="article-cover">
+            <img
+              src="../../assets/images/hero-guia-notebook.webp"
+              alt="Notebook aberto sobre uma mesa de trabalho com acessórios ao redor"
+              width="1200"
+              height="675"
+              loading="eager"
+              decoding="async"
+              itemprop="image"
+            />
+            <figcaption>
+              Escolher um bom notebook exige analisar o tipo de uso, desempenho,
+              tela, bateria, armazenamento e possibilidade de upgrades.
+            </figcaption>
+          </figure>
+        </div>
+      </header>
+
+      <div class="article-inner">
+        <!-- =====================================================
+          AVISO DE TRANSPARÊNCIA
+        ====================================================== -->
+        <aside class="affiliate-notice" aria-label="Aviso de transparência">
+          <strong>Transparência:</strong>
+          alguns links deste artigo podem ser links de afiliados. Isso significa
+          que o <strong>MigueCaue Recomenda</strong> pode receber uma comissão
+          caso você compre por meio deles, sem custo adicional para você. As
+          recomendações consideram desempenho, qualidade, recursos,
+          custo-benefício e adequação ao perfil de uso.
+        </aside>
+
+        <!-- =====================================================
+          INTRODUÇÃO
+        ====================================================== -->
+        <section id="introducao">
+          <p>
+            Escolher um notebook pode parecer simples, mas a grande quantidade
+            de modelos, processadores, memórias, telas e faixas de preço costuma
+            gerar dúvidas. Um notebook barato demais pode ficar lento em pouco
+            tempo, enquanto um modelo caro pode oferecer recursos que você
+            talvez nem precise.
+          </p>
+
+          <p>
+            Para fazer uma compra mais inteligente, o ideal é começar pelo seu
+            tipo de uso: estudos, trabalho, navegação, reuniões online, edição
+            de imagens, programação, jogos ou tarefas mais pesadas.
+          </p>
+
+          <p>
+            Neste guia, você verá os principais pontos que devem ser analisados
+            antes de comprar um notebook, com orientações práticas para
+            encontrar uma opção equilibrada e com bom custo-benefício.
+          </p>
+
+          <div class="important-box">
+            <strong>Resumo rápido:</strong>
+            para a maioria das pessoas, um bom notebook atualmente deve ter pelo
+            menos processador Intel Core i5, AMD Ryzen 5 ou equivalente, 8 GB de
+            RAM, SSD de 256 GB ou mais e tela Full HD.
+          </div>
+        </section>
+
+        <!-- =====================================================
+          SUMÁRIO
+        ====================================================== -->
+        <nav class="article-toc" aria-label="Sumário do artigo">
+          <h2>Neste guia você verá:</h2>
+          <ul>
+            <li><a href="#perfil-de-uso">Defina seu perfil de uso</a></li>
+            <li><a href="#processador">Como escolher o processador</a></li>
+            <li><a href="#memoria-ram">Memória RAM ideal</a></li>
+            <li><a href="#armazenamento">SSD e armazenamento</a></li>
+            <li><a href="#tela">Tela e qualidade de imagem</a></li>
+            <li><a href="#bateria">Bateria e portabilidade</a></li>
+            <li><a href="#tabela-comparativa">Tabela comparativa</a></li>
+            <li><a href="#checklist">Checklist de compra</a></li>
+            <li><a href="#recomendacoes">Recomendações por perfil</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+            <li><a href="#conclusao">Conclusão</a></li>
+          </ul>
+        </nav>
+
+        <!-- =====================================================
+          PERFIL DE USO
+        ====================================================== -->
+        <section id="perfil-de-uso">
+          <h2>1. Defina primeiro o seu perfil de uso</h2>
+
+          <p>
+            O erro mais comum ao comprar um notebook é escolher apenas pelo
+            preço ou pela marca. Antes disso, é importante entender para quais
+            tarefas o aparelho será usado no dia a dia.
+          </p>
+
+          <div class="profile-grid">
+            <section class="profile-card profile-basic">
+              <h3>Uso básico</h3>
+              <p>
+                Indicado para navegação na internet, estudos, aulas online,
+                textos, planilhas simples, vídeos e chamadas de vídeo.
+              </p>
+              <strong>Configuração sugerida:</strong>
+              <ul>
+                <li>Intel Core i3, Ryzen 3 ou equivalente.</li>
+                <li>8 GB de RAM.</li>
+                <li>SSD de 256 GB.</li>
+                <li>Tela Full HD.</li>
+              </ul>
+            </section>
+
+            <section class="profile-card profile-intermediate">
+              <h3>Uso intermediário</h3>
+              <p>
+                Ideal para trabalho, multitarefas, planilhas maiores, reuniões,
+                sistemas empresariais, estudo intenso e produtividade.
+              </p>
+              <strong>Configuração sugerida:</strong>
+              <ul>
+                <li>Intel Core i5, Ryzen 5 ou equivalente.</li>
+                <li>8 GB ou 16 GB de RAM.</li>
+                <li>SSD de 512 GB.</li>
+                <li>Boa bateria e construção.</li>
+              </ul>
+            </section>
+
+            <section class="profile-card profile-advanced">
+              <h3>Uso avançado</h3>
+              <p>
+                Recomendado para edição de vídeo, design, programação pesada,
+                engenharia, arquitetura, jogos ou softwares profissionais.
+              </p>
+              <strong>Configuração sugerida:</strong>
+              <ul>
+                <li>Intel Core i7, Ryzen 7 ou superior.</li>
+                <li>16 GB de RAM ou mais.</li>
+                <li>SSD de 512 GB ou 1 TB.</li>
+                <li>Placa de vídeo dedicada, se necessário.</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+
+        <!-- =====================================================
+          PROCESSADOR
+        ====================================================== -->
+        <section id="processador">
+          <h2>2. Como escolher o processador do notebook</h2>
+
+          <p>
+            O processador é um dos componentes que mais influenciam o
+            desempenho. Ele afeta a velocidade para abrir programas, navegar com
+            várias abas, participar de reuniões online e executar tarefas
+            simultâneas.
+          </p>
+
+          <h3>Processadores para uso básico</h3>
+          <p>
+            Modelos como Intel Core i3, AMD Ryzen 3 ou equivalentes podem
+            atender bem quem usa o notebook para tarefas leves. Porém, é
+            importante evitar modelos muito antigos ou com pouca memória RAM.
+          </p>
+
+          <h3>Processadores para melhor custo-benefício</h3>
+          <p>
+            Para a maioria dos usuários, Intel Core i5 e AMD Ryzen 5 costumam
+            oferecer o melhor equilíbrio entre preço, desempenho e durabilidade.
+          </p>
+
+          <h3>Processadores para uso pesado</h3>
+          <p>
+            Intel Core i7, Core i9, AMD Ryzen 7 e Ryzen 9 são mais indicados
+            para quem usa softwares pesados, edita vídeos, trabalha com projetos
+            complexos ou quer mais margem de desempenho para os próximos anos.
+          </p>
+
+          <div class="warning-box">
+            <strong>Atenção:</strong>
+            não avalie apenas o nome “i5” ou “i7”. A geração do processador
+            também importa. Um processador intermediário mais novo pode ser
+            melhor do que um processador avançado muito antigo.
+          </div>
+        </section>
+
+        <!-- =====================================================
+          MEMÓRIA RAM
+        ====================================================== -->
+        <section id="memoria-ram">
+          <h2>3. Quantos GB de memória RAM são suficientes?</h2>
+
+          <p>
+            A memória RAM influencia diretamente a capacidade do notebook de
+            manter vários programas e abas abertos ao mesmo tempo sem travar.
+          </p>
+
+          <ul>
+            <li>
+              <strong>4 GB de RAM:</strong>
+              hoje é pouco recomendado, mesmo para uso básico.
+            </li>
+            <li>
+              <strong>8 GB de RAM:</strong>
+              é o mínimo ideal para estudos, trabalho e uso diário.
+            </li>
+            <li>
+              <strong>16 GB de RAM:</strong>
+              melhor escolha para multitarefas, produtividade avançada,
+              programação, edição e maior durabilidade.
+            </li>
+            <li>
+              <strong>32 GB ou mais:</strong>
+              indicado apenas para usos profissionais muito específicos.
+            </li>
+          </ul>
+
+          <p>
+            Sempre que possível, verifique se o notebook permite expansão de
+            memória. Alguns modelos têm RAM soldada, o que limita upgrades
+            futuros.
+          </p>
+        </section>
+
+        <!-- =====================================================
+          ARMAZENAMENTO
+        ====================================================== -->
+        <section id="armazenamento">
+          <h2>4. SSD é essencial em um notebook atual</h2>
+
+          <p>
+            Um dos pontos mais importantes na escolha de um notebook é o tipo de
+            armazenamento. Modelos com SSD são muito mais rápidos para ligar,
+            abrir programas, carregar arquivos e executar o sistema operacional.
+          </p>
+
+          <h3>Qual capacidade escolher?</h3>
+          <ul>
+            <li>
+              <strong>128 GB:</strong>
+              pode ser pouco, especialmente para Windows e muitos arquivos.
+            </li>
+            <li>
+              <strong>256 GB:</strong>
+              atende bem uso básico e estudos.
+            </li>
+            <li>
+              <strong>512 GB:</strong>
+              melhor equilíbrio para trabalho, estudos e uso diário.
+            </li>
+            <li>
+              <strong>1 TB:</strong>
+              indicado para quem armazena muitos arquivos, fotos, vídeos ou
+              projetos.
+            </li>
+          </ul>
+
+          <div class="article-cta">
+            <p>
+              <strong>Dica de compra:</strong>
+              se estiver em dúvida entre um notebook com HD e outro com SSD,
+              priorize o SSD. A diferença de velocidade costuma ser muito
+              perceptível no uso diário.
+            </p>
+            <a
+              href="../../public/ofertas.html"
+              class="btn btn-primary"
+              rel="nofollow sponsored"
+            >
+              Ver notebooks com SSD
+            </a>
+          </div>
+        </section>
+
+        <!-- =====================================================
+          TELA
+        ====================================================== -->
+        <section id="tela">
+          <h2>5. Tela: resolução, tamanho e conforto visual</h2>
+
+          <p>
+            A tela impacta diretamente a experiência de uso, principalmente para
+            quem passa muitas horas estudando ou trabalhando no notebook.
+          </p>
+
+          <h3>Resolução</h3>
+          <p>
+            Sempre que possível, escolha uma tela Full HD. Telas HD ainda
+            aparecem em notebooks de entrada, mas oferecem menor área útil e
+            imagem menos definida.
+          </p>
+
+          <h3>Tamanho da tela</h3>
+          <ul>
+            <li>
+              <strong>13 a 14 polegadas:</strong>
+              melhor para mobilidade e transporte frequente.
+            </li>
+            <li>
+              <strong>15,6 polegadas:</strong>
+              tamanho mais comum e equilibrado para casa, trabalho e estudos.
+            </li>
+            <li>
+              <strong>16 polegadas ou mais:</strong>
+              bom para produtividade visual, edição e uso mais fixo.
+            </li>
+          </ul>
+
+          <h3>Tipo de painel</h3>
+          <p>
+            Painéis IPS geralmente oferecem melhores ângulos de visão e cores
+            mais agradáveis do que painéis TN. Para trabalho visual, design ou
+            consumo de mídia, esse detalhe pode fazer diferença.
+          </p>
+        </section>
+
+        <!-- =====================================================
+          BATERIA
+        ====================================================== -->
+        <section id="bateria">
+          <h2>6. Bateria, peso e portabilidade</h2>
+
+          <p>
+            Se você pretende levar o notebook para faculdade, trabalho, viagens
+            ou reuniões, bateria e peso devem entrar na decisão. Um modelo
+            potente, mas pesado e com pouca autonomia, pode ser ruim para quem
+            precisa de mobilidade.
+          </p>
+
+          <ul>
+            <li>
+              Verifique a autonomia estimada pelo fabricante, mas considere que
+              o uso real pode variar.
+            </li>
+            <li>
+              Modelos mais leves costumam ser melhores para transporte diário.
+            </li>
+            <li>
+              Notebooks gamer e modelos com placa de vídeo dedicada geralmente
+              consomem mais bateria.
+            </li>
+            <li>
+              Carregamento via USB-C pode ser um diferencial em alguns modelos.
+            </li>
+          </ul>
+        </section>
+
+        <!-- =====================================================
+          TABELA COMPARATIVA
+        ====================================================== -->
+        <section id="tabela-comparativa">
+          <h2>Tabela rápida: configuração ideal por tipo de uso</h2>
+
+          <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Tipo de uso</th>
+                  <th>Processador indicado</th>
+                  <th>Memória RAM</th>
+                  <th>Armazenamento</th>
+                  <th>Observação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Estudos e navegação</td>
+                  <td>Core i3, Ryzen 3 ou equivalente</td>
+                  <td>8 GB</td>
+                  <td>SSD 256 GB</td>
+                  <td>Evite modelos com apenas 4 GB de RAM.</td>
+                </tr>
+                <tr>
+                  <td>Trabalho e produtividade</td>
+                  <td>Core i5, Ryzen 5 ou equivalente</td>
+                  <td>8 GB ou 16 GB</td>
+                  <td>SSD 512 GB</td>
+                  <td>Melhor faixa para custo-benefício.</td>
+                </tr>
+                <tr>
+                  <td>Programação</td>
+                  <td>Core i5, Ryzen 5 ou superior</td>
+                  <td>16 GB</td>
+                  <td>SSD 512 GB ou 1 TB</td>
+                  <td>Priorize tela boa e possibilidade de expansão.</td>
+                </tr>
+                <tr>
+                  <td>Edição e design</td>
+                  <td>Core i7, Ryzen 7 ou superior</td>
+                  <td>16 GB ou mais</td>
+                  <td>SSD 512 GB ou 1 TB</td>
+                  <td>Placa de vídeo dedicada pode ser necessária.</td>
+                </tr>
+                <tr>
+                  <td>Jogos</td>
+                  <td>Core i5/i7 ou Ryzen 5/7</td>
+                  <td>16 GB</td>
+                  <td>SSD 512 GB ou mais</td>
+                  <td>Verifique a placa de vídeo dedicada.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- =====================================================
+          OUTROS CRITÉRIOS
+        ====================================================== -->
+        <section id="outros-criterios">
+          <h2>Outros critérios importantes antes de comprar</h2>
+
+          <div class="spec-grid">
+            <article class="spec-card">
+              <span class="product-icon" aria-hidden="true">🔌</span>
+              <h3>Conexões</h3>
+              <p>
+                Confira portas USB, HDMI, USB-C, entrada para fone, leitor de
+                cartão e compatibilidade com monitores externos.
+              </p>
+            </article>
+
+            <article class="spec-card">
+              <span class="product-icon" aria-hidden="true">⌨️</span>
+              <h3>Teclado</h3>
+              <p>
+                Teclado confortável, padrão ABNT2 e iluminação podem fazer
+                diferença para quem digita bastante.
+              </p>
+            </article>
+
+            <article class="spec-card">
+              <span class="product-icon" aria-hidden="true">📷</span>
+              <h3>Webcam</h3>
+              <p>
+                Para reuniões e aulas online, uma webcam com boa qualidade e
+                microfone razoável é um diferencial.
+              </p>
+            </article>
+
+            <article class="spec-card">
+              <span class="product-icon" aria-hidden="true">🛠️</span>
+              <h3>Upgrade</h3>
+              <p>
+                Verifique se o modelo permite expandir memória RAM ou trocar o
+                SSD no futuro.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- =====================================================
+          CHECKLIST
+        ====================================================== -->
+        <section id="checklist">
+          <h2>Checklist para escolher um notebook bom</h2>
+
+          <p>
+            Antes de finalizar a compra, use esta lista para verificar se o
+            modelo escolhido atende ao que você realmente precisa.
+          </p>
+
+          <div class="checklist-box">
+            <div class="checklist-actions">
+              <button class="btn btn-outline" type="button" id="clearChecklist">
+                Limpar checklist
+              </button>
+              <button class="btn btn-primary" type="button" id="copyChecklist">
+                Copiar checklist
+              </button>
+            </div>
+
+            <ul class="checklist" id="notebookChecklist">
+              <li>
+                <label
+                  ><input type="checkbox" /> Processador adequado ao meu
+                  uso</label
+                >
+              </li>
+              <li>
+                <label><input type="checkbox" /> Pelo menos 8 GB de RAM</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> SSD de 256 GB ou mais</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Tela Full HD</label>
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Boa autonomia de bateria</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Peso adequado para
+                  transporte</label
+                >
+              </li>
+              <li>
+                <label><input type="checkbox" /> Teclado confortável</label>
+              </li>
+              <li>
+                <label><input type="checkbox" /> Conexões suficientes</label>
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Possibilidade de upgrade</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Garantia e assistência
+                  verificadas</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Avaliações de consumidores
+                  analisadas</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Preço comparado em mais de uma
+                  loja</label
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- =====================================================
+          RECOMENDAÇÕES POR PERFIL
+        ====================================================== -->
+        <section id="recomendacoes">
+          <h2>Que tipo de notebook vale mais a pena para cada perfil?</h2>
+
+          <p>
+            Não existe um único notebook ideal para todo mundo. O melhor modelo
+            depende do seu orçamento, rotina e nível de exigência.
+          </p>
+
+          <div class="product-category-grid">
+            <article class="product-category-card">
+              <span class="product-icon" aria-hidden="true">🎓</span>
+              <h3>Para estudantes</h3>
+              <p>
+                Priorize leveza, bateria, SSD e 8 GB de RAM. Um Core i3 ou Ryzen
+                3 recente pode ser suficiente para estudos.
+              </p>
+              <a
+                href="../../public/ofertas.html"
+                class="btn btn-outline"
+                rel="nofollow sponsored"
+              >
+                Ver opções para estudos
+              </a>
+            </article>
+
+            <article class="product-category-card">
+              <span class="product-icon" aria-hidden="true">💼</span>
+              <h3>Para trabalho</h3>
+              <p>
+                Modelos com Core i5 ou Ryzen 5, SSD de 512 GB e boa tela
+                costumam entregar melhor produtividade.
+              </p>
+              <a
+                href="../../public/ofertas.html"
+                class="btn btn-outline"
+                rel="nofollow sponsored"
+              >
+                Ver opções para trabalho
+              </a>
+            </article>
+
+            <article class="product-category-card">
+              <span class="product-icon" aria-hidden="true">🎨</span>
+              <h3>Para edição e design</h3>
+              <p>
+                Busque processador forte, 16 GB de RAM, tela de melhor qualidade
+                e, em alguns casos, placa de vídeo dedicada.
+              </p>
+              <a
+                href="../../public/ofertas.html"
+                class="btn btn-outline"
+                rel="nofollow sponsored"
+              >
+                Comparar modelos avançados
+              </a>
+            </article>
+
+            <article class="product-category-card">
+              <span class="product-icon" aria-hidden="true">🎮</span>
+              <h3>Para jogos</h3>
+              <p>
+                A placa de vídeo é essencial. Também avalie resfriamento, tela,
+                memória RAM e capacidade do SSD.
+              </p>
+              <a
+                href="../../public/ofertas.html"
+                class="btn btn-outline"
+                rel="nofollow sponsored"
+              >
+                Ver notebooks gamer
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <!-- =====================================================
+          CUSTO-BENEFÍCIO
+        ====================================================== -->
+        <section id="custo-beneficio">
+          <h2>Como avaliar o custo-benefício de um notebook?</h2>
+
+          <p>
+            Um notebook com bom custo-benefício não é necessariamente o mais
+            barato. É aquele que entrega desempenho, qualidade e durabilidade
+            compatíveis com o preço cobrado.
+          </p>
+
+          <h3>Vale a pena pagar mais quando:</h3>
+          <ul>
+            <li>O processador é mais atual.</li>
+            <li>O notebook tem 16 GB de RAM ou permite expansão.</li>
+            <li>O SSD tem maior capacidade.</li>
+            <li>A tela é Full HD com boa qualidade.</li>
+            <li>A construção é melhor e mais resistente.</li>
+            <li>A bateria é superior.</li>
+            <li>A marca oferece bom suporte e garantia.</li>
+          </ul>
+
+          <h3>Desconfie quando:</h3>
+          <ul>
+            <li>O preço é muito baixo, mas o modelo tem apenas 4 GB de RAM.</li>
+            <li>O notebook ainda usa HD como armazenamento principal.</li>
+            <li>A tela é apenas HD em uma faixa de preço intermediária.</li>
+            <li>Não há informações claras sobre geração do processador.</li>
+            <li>
+              As avaliações indicam aquecimento, travamentos ou baixa
+              durabilidade.
+            </li>
+          </ul>
+
+          <div class="article-cta">
+            <p>
+              <strong>Compra mais segura:</strong>
+              compare preço, avaliações, ficha técnica e garantia antes de
+              decidir. O menor preço nem sempre representa a melhor escolha.
+            </p>
+            <a
+              href="../../public/guias-de-compras.html#guias"
+              class="btn btn-primary"
+            >
+              Ver mais guias de compra
+            </a>
+          </div>
+        </section>
+
+        <!-- =====================================================
+          FAQ
+        ====================================================== -->
+        <section id="faq" class="article-faq">
+          <h2>Perguntas frequentes sobre como escolher um notebook</h2>
+
+          <details>
+            <summary>
+              Qual é a configuração mínima para um notebook bom?
+            </summary>
+            <p>
+              Para a maioria dos usuários, o mínimo recomendado é um processador
+              Intel Core i3, AMD Ryzen 3 ou equivalente recente, 8 GB de RAM,
+              SSD de 256 GB e tela Full HD.
+            </p>
+          </details>
+
+          <details>
+            <summary>Notebook com 4 GB de RAM ainda vale a pena?</summary>
+            <p>
+              Em geral, não é a melhor escolha. Modelos com 4 GB de RAM podem
+              apresentar lentidão com várias abas abertas, reuniões online e
+              programas atuais. O ideal é priorizar pelo menos 8 GB.
+            </p>
+          </details>
+
+          <details>
+            <summary>SSD faz tanta diferença assim?</summary>
+            <p>
+              Sim. O SSD deixa o notebook muito mais rápido para ligar, abrir
+              programas, carregar arquivos e executar tarefas do dia a dia. É um
+              dos upgrades mais importantes em desempenho.
+            </p>
+          </details>
+
+          <details>
+            <summary>Core i5 é melhor que Core i7?</summary>
+            <p>
+              Depende da geração e do modelo específico. Um Core i5 mais recente
+              pode superar um Core i7 antigo. Por isso, é importante comparar a
+              geração, o consumo de energia e os testes de desempenho quando
+              disponíveis.
+            </p>
+          </details>
+
+          <details>
+            <summary>Qual notebook é melhor para estudar?</summary>
+            <p>
+              Para estudos, um notebook leve, com boa bateria, 8 GB de RAM, SSD
+              e tela Full HD costuma ser suficiente. Se também for usado para
+              trabalho ou programas mais pesados, vale considerar um Core i5 ou
+              Ryzen 5.
+            </p>
+          </details>
+
+          <details>
+            <summary>Notebook gamer vale a pena para trabalho?</summary>
+            <p>
+              Pode valer para tarefas pesadas, como edição, renderização e
+              softwares 3D. Porém, notebooks gamer costumam ser mais pesados,
+              consumir mais bateria e ter visual menos discreto. Para trabalho
+              comum, um modelo convencional pode ser mais equilibrado.
+            </p>
+          </details>
+        </section>
+
+        <!-- =====================================================
+          CONCLUSÃO
+        ====================================================== -->
+        <section id="conclusao">
+          <h2>Conclusão: qual notebook comprar?</h2>
+
+          <p>
+            Para escolher um notebook bom, comece pelo seu perfil de uso. Quem
+            precisa apenas estudar e navegar pode ficar bem atendido com uma
+            configuração básica bem escolhida. Já quem trabalha com muitas abas,
+            planilhas, reuniões e programas simultâneos deve priorizar modelos
+            intermediários.
+          </p>
+
+          <p>
+            Na maioria dos casos, a melhor escolha está em um notebook com
+            processador Intel Core i5, AMD Ryzen 5 ou equivalente, 8 GB ou 16 GB
+            de RAM, SSD de 512 GB e tela Full HD. Essa configuração tende a
+            entregar bom equilíbrio entre desempenho, durabilidade e
+            custo-benefício.
+          </p>
+
+          <p>
+            Antes de comprar, compare preços, avaliações de consumidores,
+            garantia, construção e possibilidade de upgrade. Assim, você reduz o
+            risco de arrependimento e aumenta as chances de escolher um notebook
+            realmente adequado à sua rotina.
+          </p>
+
+          <div class="final-cta">
+            <h2>Compare antes de decidir</h2>
+            <p>
+              Veja ofertas, compare especificações e escolha o notebook que faz
+              mais sentido para o seu tipo de uso, orçamento e expectativa de
+              durabilidade.
+            </p>
+            <a
+              href="../../public/ofertas.html"
+              class="btn btn-primary"
+              rel="nofollow sponsored"
+            >
+              Ver ofertas de notebooks
+            </a>
+          </div>
+        </section>
+
+        <!-- =====================================================
+          TAGS
+        ====================================================== -->
+        <footer class="article-footer">
+          <div class="article-tags" aria-label="Tags do artigo">
+            <span>Tags:</span>
+            <a href="#perfil-de-uso">Notebook</a>
+            <a href="#processador">Processador</a>
+            <a href="#memoria-ram">Memória RAM</a>
+            <a href="#armazenamento">SSD</a>
+            <a href="#tela">Tela Full HD</a>
+            <a href="#custo-beneficio">Custo-benefício</a>
+            <a href="#recomendacoes">Tecnologia</a>
+          </div>
+        </footer>
+      </div>
+    </article>
+
+    <footer class="site-footer" aria-label="Rodapé do site">
+      <div class="site-footer-inner">
+        <a
+          class="site-footer-logo"
+          href="../../public/index.html"
+          aria-label="Página inicial do MigueCaue Recomenda"
+        >
+          <img
+            src="../../assets/images/logo-rodape.webp"
+            alt="Logo MigueCaue Recomenda"
+            width="170"
+            height="72"
+          />
+        </a>
+
+        <div class="site-footer-grid">
+          <div>
+            <h2>Navegação</h2>
+            <nav class="site-footer-links" aria-label="Links do rodapé">
+              <a href="../../public/blog.html">Blog</a>
+              <a href="../../public/guias-de-compras.html">Guias de compra</a>
+              <a href="../../public/comparativos.html">Comparativos</a>
+              <a href="../../public/ofertas.html">Ofertas</a>
+            </nav>
+          </div>
+
+          <div>
+            <h2>Categorias</h2>
+            <nav class="site-footer-links" aria-label="Categorias do rodapé">
+              <a href="../../pages/categorias/categoria-tecnologia.html"
+                >Tecnologia</a
+              >
+              <a href="../../pages/categorias/categoria-eletrodomesticos.html">
+                Eletrodomésticos
+              </a>
+              <a href="../../pages/categorias/categoria-casa-inteligente.html">
+                Casa Inteligente
+              </a>
+            </nav>
+          </div>
+
+          <div>
+            <h2>Mais artigos</h2>
+            <nav class="site-footer-links" aria-label="Mais artigos">
+              <a href="casa-inteligente.html">Casa inteligente</a>
+              <a href="escolher-airfryer.html">Escolher uma air fryer</a>
+              <a href="guia-compra-online.html">Comprar online com segurança</a>
+              <a href="kit-catastrofes.html">Kit de emergência</a>
+            </nav>
+          </div>
+
+          <div>
+            <h2>Transparência</h2>
+            <p>
+              Alguns links podem ser afiliados, sem custo adicional para você.
+            </p>
+            <a href="../../public/index.html#duvidas">Aviso de afiliados</a>
+          </div>
+        </div>
+
+        <div class="site-footer-bottom">
+          <p>© 2026 MigueCaue Recomenda. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      class="back-to-top"
+      id="backToTop"
+      type="button"
+      aria-label="Voltar ao topo"
+    >
+      ↑
+    </button>
+
+    <!-- =====================================================
+      JAVASCRIPT: PROGRESSO DE LEITURA, CHECKLIST E BOTÃO TOPO
+    ====================================================== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const progressBar = document.getElementById("mcReadingProgress");
+        const backToTop = document.getElementById("backToTop");
+        const checklist = document.getElementById("notebookChecklist");
+        const clearChecklist = document.getElementById("clearChecklist");
+        const copyChecklist = document.getElementById("copyChecklist");
+
+        function updateReadingProgress() {
+          const scrollTop = window.scrollY;
+          const docHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
+          const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+
+          if (progressBar) {
+            progressBar.style.width = progress + "%";
+          }
+
+          if (backToTop) {
+            backToTop.classList.toggle("is-visible", scrollTop > 600);
+          }
+        }
+
+        window.addEventListener("scroll", updateReadingProgress);
+        updateReadingProgress();
+
+        if (backToTop) {
+          backToTop.addEventListener("click", function () {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          });
+        }
+
+        if (checklist) {
+          const inputs = checklist.querySelectorAll("input[type='checkbox']");
+          const storageKey = "mc-notebook-checklist";
+
+          function saveChecklist() {
+            const checkedItems = Array.from(inputs).map(function (input) {
+              return input.checked;
+            });
+
+            localStorage.setItem(storageKey, JSON.stringify(checkedItems));
+          }
+
+          function loadChecklist() {
+            const saved = localStorage.getItem(storageKey);
+
+            if (!saved) return;
+
+            try {
+              const checkedItems = JSON.parse(saved);
+
+              inputs.forEach(function (input, index) {
+                input.checked = Boolean(checkedItems[index]);
+              });
+            } catch (error) {
+              localStorage.removeItem(storageKey);
+            }
+          }
+
+          inputs.forEach(function (input) {
+            input.addEventListener("change", saveChecklist);
+          });
+
+          loadChecklist();
+
+          if (clearChecklist) {
+            clearChecklist.addEventListener("click", function () {
+              inputs.forEach(function (input) {
+                input.checked = false;
+              });
+
+              saveChecklist();
+            });
+          }
+
+          if (copyChecklist) {
+            copyChecklist.addEventListener("click", async function () {
+              const items = Array.from(checklist.querySelectorAll("label")).map(
+                function (label) {
+                  return "- " + label.textContent.trim();
+                },
+              );
+
+              const text =
+                "Checklist para escolher um notebook bom:\n\n" +
+                items.join("\n");
+
+              try {
+                await navigator.clipboard.writeText(text);
+                copyChecklist.textContent = "Checklist copiado!";
+                setTimeout(function () {
+                  copyChecklist.textContent = "Copiar checklist";
+                }, 2000);
+              } catch (error) {
+                alert(
+                  "Não foi possível copiar automaticamente. Selecione e copie manualmente.",
+                );
+              }
+            });
+          }
+        }
+      });
+    </script>
+
+    <!-- =====================================================
+      SCHEMA SEO: ARTICLE + FAQ
+    ====================================================== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Article",
+            "headline": "Como escolher um notebook bom para trabalho, estudos e uso diário",
+            "description": "Guia completo para escolher um notebook bom, analisando processador, memória RAM, SSD, tela, bateria, portabilidade, custo-benefício e perfil de uso.",
+            "image": "../../assets/images/hero-guia-notebook.webp",
+            "author": {
+              "@type": "Organization",
+              "name": "MigueCaue Recomenda"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "MigueCaue Recomenda"
+            },
+            "datePublished": "2026-08-22",
+            "dateModified": "2026-08-22",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://www.miguecaue.com.br/artigos-blog.html/blog/guia-compra-notebook.html"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qual é a configuração mínima para um notebook bom?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Para a maioria dos usuários, o mínimo recomendado é um processador Intel Core i3, AMD Ryzen 3 ou equivalente recente, 8 GB de RAM, SSD de 256 GB e tela Full HD."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Notebook com 4 GB de RAM ainda vale a pena?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Em geral, não é a melhor escolha. Modelos com 4 GB de RAM podem apresentar lentidão com várias abas abertas, reuniões online e programas atuais. O ideal é priorizar pelo menos 8 GB."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "SSD faz tanta diferença assim?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. O SSD deixa o notebook muito mais rápido para ligar, abrir programas, carregar arquivos e executar tarefas do dia a dia."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Core i5 é melhor que Core i7?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Depende da geração e do modelo específico. Um Core i5 mais recente pode superar um Core i7 antigo, por isso é importante comparar a geração e o desempenho real do processador."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Qual notebook é melhor para estudar?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Para estudos, um notebook leve, com boa bateria, 8 GB de RAM, SSD e tela Full HD costuma ser suficiente. Para uso mais intenso, vale considerar um Core i5 ou Ryzen 5."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>
